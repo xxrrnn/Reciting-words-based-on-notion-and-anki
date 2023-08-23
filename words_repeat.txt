@@ -1,12 +1,30 @@
 -------------------- word 0 --------------------
-splintered
-splinter
-https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/e/eus/eus74/eus74342.mp3
+murderously
+murderously
+https://dictionary.cambridge.org/us/media/english/us_pron/c/cdo/cdo11/cdo1121usbelo0529.mp3
 ===== translation0 =====
-a small, sharp, broken piece of wood, glass, plastic, or similar material 
-（木头、玻璃、塑料等的）尖细条，尖碎片 
-to break into small, sharp pieces 
-裂成碎片 
 >>>>> phrase 0 <<<<<
 ///// sentences 0 /////
-The civil-rights movement had splintered, as more radical voices, such as Stokely Carmichael’s, grew louder.
+We do not know when or where, but soon Ukraine will launch its long-planned counter-offensive against the invaders who squat, illegally and murderously, in almost a fifth of the country.
+-------------------- word 1 --------------------
+squat
+squat
+https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/s/squ/squat/squat.mp3
+===== translation1 =====
+to position yourself close to the ground balancing on the front part of your feet with your legs bent under your body 
+蹲，蹲坐 
+to live in an empty building or area of land without the permission of the owner 
+擅自占用（空房或空地）；偷住 
+short and wide, usually in a way that is not attractive 
+低矮的；矮墩墩的，矮胖的 
+a squatting position 
+蹲坐；蹲伏 
+an exercise in which you stand on the ground with your feet apart and raise and lower your bottom by bending and straightening your legs  
+（健身动作）深蹲 
+the place that you live in when you are squatting 
+擅自占用的地方；偷住的房子 
+anything 
+任何东西 
+>>>>> phrase 1 <<<<<
+///// sentences 1 /////
+We do not know when or where, but soon Ukraine will launch its long-planned counter-offensive against the invaders who squat, illegally and murderously, in almost a fifth of the country.

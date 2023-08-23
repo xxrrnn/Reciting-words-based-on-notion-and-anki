@@ -497,6 +497,36 @@ class Economists:
             if word not in self.words and len(word) != 0:
                 self.words.append(word)
 
+    def get_clip_passage(self):
+        pyperclip.copy('')
+        # 初始上一次的剪切板内容为空
+        prev_clipboard_content = ''
+        with open("passage.txt", 'w', encoding='utf-8') as file:
+            file.truncate()
+        print("检查clash是否关闭")
+        input("文档已经清空，请选中并复制全部文章，enter开始运行")
+        while True:
+            # 获取剪切板内容
+            # time.sleep(5)
+            clipboard_content = pyperclip.paste()
+            clipboard_content = clipboard_content.strip()
+            # # 如果剪切板内容发生变化且不为空，则写入到txt文件中
+            # if clipboard_content != prev_clipboard_content and clipboard_content and clipboard_content not in self.words:
+            print(clipboard_content)
+            # with open("all_passage.txt", 'r', encoding='utf-8') as file:
+            #     file.write(clipboard_content)
+            with open("passage.txt", 'w', encoding='utf-8') as file:
+                file.write(clipboard_content)
+            # self.words.append(clipboard_content)
+            # 更新上一次的剪切板内容为当前内容
+            # prev_clipboard_content = clipboard_content
+            resp = input("文章全部复制了？ 1/0")
+            if resp != "0":
+                break
+            # 每隔一秒钟检查一次剪切板内容
+            time.sleep(1)
+        subprocess.run(['notepad.exe', "passage.txt"], check=True)
+
     def get_clip(self):
         pyperclip.copy('')
         # 初始上一次的剪切板内容为空
@@ -504,12 +534,14 @@ class Economists:
         with open("words.txt", 'w',encoding='utf-8') as file:
             file.truncate()
         print("检查clash是否关闭")
-        print("文档已经清空，开始运行")
+        print("文档已经清空，开始运行，可以开始选词")
+
         while True:
             # 获取剪切板内容
             clipboard_content = pyperclip.paste()
             clipboard_content = clipboard_content.strip()
             if clipboard_content == "20":
+                print("停止检测单词")
                 break
             # 如果剪切板内容发生变化且不为空，则写入到txt文件中
             if clipboard_content != prev_clipboard_content and clipboard_content and clipboard_content not in self.words:
@@ -564,7 +596,46 @@ class Economists:
                 # 如果utf-8解码失败，则使用latin-1解码
                 paragraph = line.decode('latin-1', errors='replace')  # 替换无法解码的字符
                 paragraphs.append(paragraph)
+        #分句
+        sentences_all = []
+        for paragraph in paragraphs:
+            dot_index = [0]
+            paragraph = paragraph.replace("\r\n","")
+            if "." not in paragraph or " " not in paragraph:
+                if len(paragraph) != 0:
+                    sentences_all.append(paragraph)
+                    continue
+            for alpha_num in range(len(paragraph)):
+                if alpha_num != 0:
+                    if paragraph[alpha_num-1] == "." and paragraph[alpha_num] == " ":
+                        dot_index.append(alpha_num)
+                    elif paragraph[alpha_num-2] == "." and paragraph[alpha_num-1] == ")":
+                        dot_index.append(alpha_num)
+                    elif paragraph[alpha_num-2] == "." and paragraph[alpha_num-1] == "\"":
+                        dot_index.append(alpha_num)
+                    else:
+                        pass
+            for dot_num in range(len(dot_index)-1):
+                sentences_all.append(paragraph[dot_index[dot_num]:dot_index[dot_num + 1]])
 
+
+
+            # 去除* 和 # 和 (http)
+        for sen_num in range(len(sentences_all)):
+            sentence = sentences_all[sen_num]
+            if "long-planned" in sentences_all[sen_num] :
+                pass
+            sentences_all[sen_num] = sentences_all[sen_num].replace('\n', '')
+            sentences_all[sen_num] = sentences_all[sen_num].replace('\r', '')
+            sentences_all[sen_num] = sentences_all[sen_num].strip('*# ')
+            sentences_all[sen_num] = re.sub(r'\((.*?)\)|\[([^\]]+)\]', lambda m: m.group(2) if m.group(2) else "", sentences_all[sen_num] )
+            # sentences_all[sen_num] = sentences_all[sen_num].strip('*')
+            # sentences_all[sen_num] = sentences_all[sen_num].strip()
+            # sentences_all[sen_num] = sentences_all[sen_num].strip('#')
+            # sentences_all[sen_num] = sentences_all[sen_num].strip()
+            # sentences_all[sen_num] = sentences_all[sen_num].strip('*')
+            # sentences_all[sen_num] = sentences_all[sen_num].strip()
+            a = sentences_all[sen_num]
         for word_num in range(len(self.words)):
             find_true_sentence = False
             current_word = self.words[word_num]
@@ -572,26 +643,11 @@ class Economists:
             # if "main" in current_word:
             #     print("main")
             if ' ' in current_word or '-' in current_word: # 词组
-                for paragraph in paragraphs:
-                    if find_true_sentence:
-                        break
-                    sentences_all = paragraph.split('. ')
-                    # 去除* 和 #
-                    for sen_num in range(len(sentences_all)):
-                        sentences_all[sen_num]  = sentences_all[sen_num] .replace('\n', '')
-                        sentences_all[sen_num]  = sentences_all[sen_num] .replace('\r', '')
-                        sentences_all[sen_num] = sentences_all[sen_num].strip()
-                        sentences_all[sen_num] = sentences_all[sen_num].strip('*')
-                        sentences_all[sen_num] = sentences_all[sen_num].strip()
-                        sentences_all[sen_num] = sentences_all[sen_num].strip('#')
-                        sentences_all[sen_num] = sentences_all[sen_num].strip()
-                        sentences_all[sen_num] = sentences_all[sen_num].strip('*')
-                        sentences_all[sen_num] = sentences_all[sen_num].strip()
-                    for sentence in sentences_all:
-                            if self.words[word_num] in sentence:
-                                sentences_contain_word.append(sentence)
-                                find_true_sentence = True
-                                break
+                for sentence in sentences_all:
+                        if self.words[word_num] in sentence:
+                            sentences_contain_word.append(sentence)
+                            find_true_sentence = True
+                            break
 
                                 # if '\n' in sentence:
                                 #     sentence = sentence.replace('\n', '')
@@ -603,7 +659,6 @@ class Economists:
                 for paragraph in paragraphs:
                     if find_true_sentence:
                         break
-                    sentences_all = paragraph.split('. ')
                     for sentence in sentences_all:
                         if current_word in sentence:
                             if self.words[word_num] in sentence:
@@ -733,6 +788,11 @@ class Economists:
         except:
             self.setup()
         self.num = input("输入这次的文章标号：参考063：\n")
+        selection = input("passage.txt是否已经是本次文章了,不是打0 \n")
+        if selection == "0":
+            self.get_clip_passage()
+        else:
+            pass
         selection = input("words.txt是否已经是拷贝的单词,是打1,不是打0 \n")
         if selection == "1":
             self.get_words_txt()
@@ -962,6 +1022,7 @@ if __name__ == "__main__":
     # test.get_cambridge_origin_pronoun_voice(soup)
     # test.notion()
     # print(len(test.notion()),)
+    # test.get_sentences()
     test.run()
 
 # with open("result.txt", "r") as file:
