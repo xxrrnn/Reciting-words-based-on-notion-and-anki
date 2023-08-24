@@ -1,4 +1,5 @@
 import re
+from PIL import Image
 
 text = "这是一段话，用于示范分割功能. 另一段话则使用了另一种分割方式.\" 最后一段话使用了另外的分割符号. "
 split_text = text.split(". ") #+ text.split(".) ")+ text.split(".\" ")

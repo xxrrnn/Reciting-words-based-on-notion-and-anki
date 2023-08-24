@@ -27,8 +27,9 @@ def DataBase_item_query(query_database_id):
     S_0 = res_notion.json()
     res_travel = S_0['results']
     if_continue = len(res_travel)
-    if if_continue>0:
-        while if_continue%100 == 0:
+    print(len(res_travel))
+    if if_continue > 0:
+        while if_continue % 100 == 0:
             body = {
                 'start_cursor' : res_travel[-1]['id']
             }
@@ -301,10 +302,12 @@ def patch_update(response):
             elif KnowSome:
                 if int(level) >= 4:
                     next_level = str(int(int(level) /2))
-                    if int(next_level) < 1:
-                        next_level = '0'
+                    # if int(next_level) < 1:
+                    #     next_level = '0'
+                elif int(level) >= 2:
+                    next_level = str(int(level) - 1)
                 else:
-                    next_level = str(int(level))
+                    next_level = str(int(level) )
                 next_str = next_day_on_level(next_level)
             elif ForgetAll:
                 next_level = '0'
@@ -346,7 +349,7 @@ def patch_update(response):
                 second_time = datetime.datetime.strptime(next, "%Y-%m-%d").date()
                 last_time = datetime.datetime.strptime(last, "%Y-%m-%d").date()
                 late = False
-                if second_time <= today:
+                if second_time < today:
                     late = True
                 if late:
                     d_day = [0,1,2,3]
@@ -411,7 +414,9 @@ if __name__ == "__main__":
         "accept": "application/json",
         "Notion-Version": "2022-06-28"  # Notion版本号
     }
+    print("start getting response")
     response = DataBase_item_query(query_id)
+    print("start updating")
     patch_update(response)
 
 
