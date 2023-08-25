@@ -520,7 +520,7 @@ class Economists:
             # self.words.append(clipboard_content)
             # 更新上一次的剪切板内容为当前内容
             # prev_clipboard_content = clipboard_content
-            resp = input("文章全部复制了？ 1/0")
+            resp = input("文章全部复制了？ 不是打0")
             if resp != "0":
                 break
             # 每隔一秒钟检查一次剪切板内容

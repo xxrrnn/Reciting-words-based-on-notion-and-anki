@@ -1,30 +1,40 @@
--------------------- word 0 --------------------
-murderously
-murderously
-https://dictionary.cambridge.org/us/media/english/us_pron/c/cdo/cdo11/cdo1121usbelo0529.mp3
-===== translation0 =====
->>>>> phrase 0 <<<<<
-///// sentences 0 /////
-We do not know when or where, but soon Ukraine will launch its long-planned counter-offensive against the invaders who squat, illegally and murderously, in almost a fifth of the country.
--------------------- word 1 --------------------
-squat
-squat
-https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/s/squ/squat/squat.mp3
-===== translation1 =====
-to position yourself close to the ground balancing on the front part of your feet with your legs bent under your body 
-蹲，蹲坐 
-to live in an empty building or area of land without the permission of the owner 
-擅自占用（空房或空地）；偷住 
-short and wide, usually in a way that is not attractive 
-低矮的；矮墩墩的，矮胖的 
-a squatting position 
-蹲坐；蹲伏 
-an exercise in which you stand on the ground with your feet apart and raise and lower your bottom by bending and straightening your legs  
-（健身动作）深蹲 
-the place that you live in when you are squatting 
-擅自占用的地方；偷住的房子 
-anything 
-任何东西 
->>>>> phrase 1 <<<<<
-///// sentences 1 /////
-We do not know when or where, but soon Ukraine will launch its long-planned counter-offensive against the invaders who squat, illegally and murderously, in almost a fifth of the country.
+-------------------- word 13 --------------------
+puppets
+puppet
+https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/p/pup/puppe/puppet.mp3
+===== translation13 =====
+a toy in the shape of a person or animal that you can move with strings or by putting your hand inside 
+木偶 
+a person or group whose actions are controlled by someone else 
+傀儡 
+>>>>> phrase 13 <<<<<
+///// sentences 13 /////
+The new threat of the virus and the old one of perceived enemies, notably “imperialist” America and its “puppets” in South Korea, commingled.
+-------------------- word 21 --------------------
+snoop
+snoop
+https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/s/sno/snoop/snoop.mp3
+===== translation21 =====
+to look around a place secretly, in order to discover things or find out information about someone or something 
+窥探，打探 
+to try to find out about other people's private lives 
+（对别人的私生活）窥探 
+the act of snooping 
+窥探，打探 
+someone who snoops 
+窥探者，打探者 
+>>>>> phrase 21 <<<<<
+///// sentences 21 /////
+Given past hyper-vigilance, the reticence is hardly surprising.
+-------------------- word 28 --------------------
+streamline
+streamline
+https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/s/str/strea/streamline.mp3
+===== translation28 =====
+to shape something so that it can move as effectively and quickly as possible through a liquid or gas 
+把…设计成流线型，使成流线型 
+to improve the effectiveness of an organization such as a business or government, often by making the way activities are performed simpler 
+（常通过简化办事程序）使（机构）效率更高；简化 
+>>>>> phrase 28 <<<<<
+///// sentences 28 /////
+He has continued to streamline party organisation, and has forced the powerful army to defer more to the party.

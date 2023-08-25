@@ -3,15 +3,18 @@ import re
 from bs4 import BeautifulSoup
 import random
 from datetime import timedelta, date
+import configparser
 
 # short https://www.notion.so/58951b5a29544562a93fd0c1f5d7112f?v=316bed45c314462c84dca09b30578cea&pvs=4
 # query_id = "58951b5a29544562a93fd0c1f5d7112f"
 # database_id = "316bed45c314462c84dca09b30578cea"
 # https://www.notion.so/4d044f4888104a4c89fbe30487f0198f?v=49f70ebd825a4c85a2a13b9ea10180b8&pvs=4
-query_id = "4d044f4888104a4c89fbe30487f0198f"
-database_id = "49f70ebd825a4c85a2a13b9ea10180b8"
-guidURL = 'https://dictionary.cambridge.org/dictionary/english-chinese-simplified/'
-guidURL_en = 'https://dictionary.cambridge.org/us/dictionary/english/'
+config = configparser.ConfigParser()
+config.read('../token.ini')
+token = config.get('token', 'id')
+database_id = config.get('database', 'short_database')  # 取database前边的
+query_id = config.get('database', 'short_query')  # 取database前边的
+passage_query_id = config.get('database','passage_query')
 def DataBase_item_query(query_database_id):
     url_notion_block = 'https://api.notion.com/v1/databases/'+query_database_id+'/query'
     res_notion = requests.post(url_notion_block,headers=headers)
@@ -245,21 +248,66 @@ def patch_all_date(responce):
         )
         print(r.text)
 
+def patch_all_relation(passage_response,word_response):
+    all_word_id = []
+    passage_dict = {}
+    word_dict = {}
+    all_words = []
+    count = 0
+    for dict in passage_response:
+        title_all = dict['properties']['Name']['title'][0]['text']['content']
+        title_all = title_all.split('-')
+        title = title_all[0]
+        passage_dict[title] = dict['id']
+    for dict in word_response:
+        all_word_id.append(dict['id'])
+        passages = dict['properties']['passage']['multi_select']
+        word_title = []
+        for passage in passages:
+            word_title.append(passage['name'])
+        word_dict[dict['id']] = word_title
+    for dict in response:
+        try:
+            if dict['properties']['passage']['multi_select'][0]['name'] != -1:
+                # print(dict['properties']['words']['title'][0]['plain_text'])
+                all_words.append(dict['properties']['words']['title'][0]['plain_text'])
+                count += 1
+        except:
+            print(dict)
+    for word_num in range(len(all_words)):
+        word = all_words[word_num]
+        page_id = all_page_id[word_num]
+        print(word)
+        print(word_num / count, count)
+        soup,is_chinese = get_cambridge_soup(word)
+        origin, pronounciation, url_voice = get_cambridge_origin_pronoun_voice(soup)
+        if origin == None:
+            origin = word
+        if pronounciation == None:
+            pronounciation = ""
+        if url_voice == None:
+            url_voice = ""
+        # notion_words_patch(page_id ,origin,pronounciation,url_voice)
+
+
 
 
 if __name__ == "__main__":
-    import configparser
-    config = configparser.ConfigParser()
-    config.read('../token.ini')
-    token = config.get('token', 'id')
 
     headers = {
         "Authorization": "Bearer " + token,
         "accept": "application/json",
         "Notion-Version": "2022-06-28"  # Notion版本号
     }
-    response = DataBase_item_query(query_id)
-    patch_all_pronoun_and_voice(response)
+    print("get word database")
+    word_response = DataBase_item_query(query_id)
+    # word_response = None
+    print("get passage database")
+    passage_response = DataBase_item_query(passage_query_id)
+    # passage_response = None
+    # patch_all_pronoun_and_voice(response)
+    patch_all_relation(passage_response,word_response)
+
     # patch_all_date(response)
 
 

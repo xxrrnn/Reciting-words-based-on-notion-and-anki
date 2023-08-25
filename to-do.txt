@@ -1,9 +1,9 @@
 063
-1
+1 完成
 https://dictionary.cambridge.org/dictionary/english-chinese-simplified/reverence
 音标问题
 2
-ally
+ally 完成
 sentence问题
 
 Yet by the time King died many considered him yesterday’s man
@@ -11,11 +11,19 @@ Kennedy, Lyndon Johnson’s two-faced truculence, and illegal monitoring and har
 
 
 3
-删除如下括号内容
+删除如下括号内容 完成
 Now remembered [for his oratory](https://www.economist.com/books-and-arts/2018/03/28/the-making-of-martin-luther-kings-speeches), as a young seminarian, Mr Eig notes, “he earned As in his philosophy classes and Cs in public speaking.” Mr Eig speculates that some of his northern, white professors “were not enthralled with the black Baptist style”
 
 
-4 读音问题
+4 读音问题 完成
 alienated
 
 5 取消■？
+
+6 文章中单词出现多个句子的情况，将句子全部获取
+
+7 新建一个list，保存txt中修剪单词，用旧单词查句子，新单词查cambridge
+
+8 增加一个ini，保存基础模式，如test模式、addle模式等
+
+9 anki表格增加relation，用于和文章界面构建联系
