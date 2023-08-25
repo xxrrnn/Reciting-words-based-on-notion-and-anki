@@ -5,6 +5,7 @@ import random
 from datetime import timedelta, date
 import datetime
 import configparser
+import matplotlib.pyplot as plt
 
 # short https://www.notion.so/58951b5a29544562a93fd0c1f5d7112f?v=316bed45c314462c84dca09b30578cea&pvs=4
 # query_id = "58951b5a29544562a93fd0c1f5d7112f"
@@ -270,7 +271,17 @@ def next_day_on_level(level):
         print("wrong level")
     return (date.today() + timedelta(days=n)).strftime('%Y-%m-%d')
 
+def patch_one_data(data, page_id)
+    r = requests.patch(
+        "https://api.notion.com/v1/pages/{}".format(page_id),
+        json=data,
+        headers=headers,
+    )
+    print(r.text)
+
 def patch_update(response):
+    word_next_dict = {}
+    word_level_dict = {}
     colors = ["default","gray","brown","orange","yellow","green","blue","purple","pink","red"]
     all_page_id = []
     count = 0
@@ -315,6 +326,14 @@ def patch_update(response):
             else:
                 next_level = '0'
                 next_str = next_day_on_level(next_level)
+            try:
+                word_next_dict[next_str] = word_next_dict[next_str] + 1
+            except:
+                word_next_dict[next_str] = 1
+            try:
+                word_level_dict[next_level] = word_level_dict[next_level] + 1
+            except:
+                word_level_dict[next_level] = 1
             data = {
                 "parent": {"type": "database_id", "database_id": database_id},
                 'properties': {
@@ -331,26 +350,40 @@ def patch_update(response):
                     # '移動方式': {'rich_text': [{"text": {"content": move}}]},
                 }
             }
-            r = requests.patch(
-                "https://api.notion.com/v1/pages/{}".format(page_id),
-                json=data,
-                headers=headers,
-            )
-            print(r.text)
+            patch_one_data(data,page_id)
+            # r = requests.patch(
+            #     "https://api.notion.com/v1/pages/{}".format(page_id),
+            #     json=data,
+            #     headers=headers,
+            # )
+            # print(r.text)
         # 如果没选
         else:
             try:
                 next = dict['properties']["Next"]['date']['start']
                 last = dict['properties']["Last"]['date']['start']
+                level = dict['properties']["Level"]['select']['name']
             except:
                 next = None
+                level = 0
             # second_time = datetime.datetime.strptime(next, "%Y-%m-%d %H:%M:%S")
+
+            try:
+                word_level_dict[level] = word_level_dict[level] + 1
+            except:
+                word_level_dict[level] = 1
+
             if next != None:
                 second_time = datetime.datetime.strptime(next, "%Y-%m-%d").date()
                 last_time = datetime.datetime.strptime(last, "%Y-%m-%d").date()
                 late = False
                 if second_time < today:
                     late = True
+                else:
+                    try:
+                        word_next_dict[str(second_time)] = word_next_dict[str(second_time)] + 1
+                    except:
+                        word_next_dict[str(second_time)] = 1
                 if late:
                     d_day = [0,1,2,3]
                     n = random.sample(d_day, len(d_day))[0]
@@ -368,12 +401,17 @@ def patch_update(response):
                             # '移動方式': {'rich_text': [{"text": {"content": move}}]},
                         }
                     }
-                    r = requests.patch(
-                        "https://api.notion.com/v1/pages/{}".format(page_id),
-                        json=data,
-                        headers=headers,
-                    )
-                    print(r.text)
+                    # r = requests.patch(
+                    #     "https://api.notion.com/v1/pages/{}".format(page_id),
+                    #     json=data,
+                    #     headers=headers,
+                    # )
+                    patch_one_data(data, page_id)
+                    try:
+                        word_next_dict[next_str] = word_next_dict[next_str] + 1
+                    except:
+                        word_next_dict[next_str] = 1
+                    # print(r.text)
 
             else:
                 level = dict['properties']["Level"]['select']['name']
@@ -391,14 +429,90 @@ def patch_update(response):
                         # '移動方式': {'rich_text': [{"text": {"content": move}}]},
                     }
                 }
-                r = requests.patch(
-                    "https://api.notion.com/v1/pages/{}".format(page_id),
-                    json=data,
-                    headers=headers,
-                )
-                print(r.text)
+                # r = requests.patch(
+                #     "https://api.notion.com/v1/pages/{}".format(page_id),
+                #     json=data,
+                #     headers=headers,
+                # )
+                # print(r.text)
+                patch_one_data(data, page_id)
             pass
     print(count)
+    # # 提取键和值
+    # categories = list(word_next_dict.keys())
+    # values = list(word_next_dict.values())
+    #
+    # colors = ['red', 'green', 'blue', 'purple', 'orange']
+    #
+    # plt.figure(figsize=(10, 6))
+    # # 创建柱状图
+    # bars = plt.bar(categories, values, color=colors)
+    #
+    # # 添加标题和标签
+    # plt.title('Words Count')
+    # plt.xlabel('Date')
+    # plt.ylabel('Word Amount')
+    # for i, v in enumerate(values):
+    #     plt.text(i, v + 1, str(v), ha='center', va='bottom')
+    # plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+    # plt.xticks(rotation=45, ha='right')
+    # for bar in bars:
+    #     plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())), ha='center',
+    #              va='bottom')
+
+
+
+
+    # # 显示图形
+    # plt.show()
+    # plt.figure()
+    categories = list(word_level_dict.keys())
+    values = list(word_level_dict.values())
+
+    # 对标签进行排序并获取排序后的索引
+    sorted_indices = sorted(range(len(categories)), key=lambda k: categories[k])
+    categories_level = [categories[i] for i in sorted_indices]
+    values_level = [values[i] for i in sorted_indices]
+
+    categories_next = list(word_next_dict.keys())
+    values_next = list(word_next_dict.values())
+
+    colors = ['red', 'green', 'blue', 'purple', 'orange']
+
+    plt.figure(figsize=(6, 6))  # 调整图的大小
+
+    # 创建上方的子图
+    plt.subplot(2, 1, 1)
+    bars1 = plt.bar(range(len(categories_level)), values_level, color=colors)
+    plt.title('Level Bar Chart')
+    plt.xlabel('Levels')
+    plt.ylabel('Word Amount')
+    plt.xticks(range(len(categories_level)), categories_level, rotation=45, ha='right')
+    plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+
+
+    for bar in bars1:
+        plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())), ha='center',
+                 va='bottom')
+
+    # 创建下方的子图
+    plt.subplot(2, 1, 2)
+    bars2 = plt.bar(range(len(categories_next)), values_next, color=colors, alpha=0.7)
+    plt.title('Next Day Chart')
+    plt.xlabel('Next Day')
+    plt.ylabel('Word Amount')
+    plt.xticks(range(len(categories_next)), categories_next, rotation=45, ha='right')
+    plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+
+
+    for bar in bars2:
+        plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())), ha='center',
+                 va='bottom')
+
+    plt.tight_layout(pad=2.0)  # 增加子图间的纵向距离
+
+    plt.show()
+
 
 
 
