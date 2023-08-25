@@ -13,8 +13,62 @@ config = configparser.ConfigParser()
 config.read('../token.ini')
 token = config.get('token', 'id')
 database_id = config.get('database', 'short_database')  # 取database前边的
-query_id = config.get('database', 'short_query')  # 取database前边的
+query_id = config.get('database', 'anki_query')  # 取database前边的
 passage_query_id = config.get('database','passage_query')
+
+basic_data ={"parent": {"database_id": database_id},
+            "properties": {
+             "Tags": {"select": {"name": "生词", "color": "yellow"}},
+             "words": {"title": [{"type": "text", "text": {"content": "word_content"}}]},
+             "passage": {"multi_select": [{"name": "001"}]},
+             "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": "pronoun"}}]},
+             "meaning": {
+                 "rich_text": [{"type": "text", "text": {"content": "meaning"}}]},
+             "Last": {"date": {"start": None}},
+             "Next": {"date": {"start": None}},
+             "voice": {"url": "voice_url"},
+             "Level": {"select": {"name": "7", "color": "purple"}},
+             "KnowAll": {"checkbox": False},
+             "KnowSome": {"checkbox": False},
+             "ForgetAll": {"checkbox": False},
+             "relation": {
+                 "relation":[
+
+                     {
+                         "id": "6c214fd7f70348728b21089c2318e243",
+
+                     },
+                     {
+                         "id": "cfd93e8b93c44a73b08f474cb66e491e",
+
+                     }
+                 ]
+
+                  },
+         },
+
+         "children": [
+             {
+                 "type": "heading_3",
+                 "heading_3": {
+                     "rich_text": [{
+                         "type": "text",
+                         "text": {
+                             "content": "sentence",
+                         }
+                     }],
+                     "color": "default",
+                     "is_toggleable": False,
+                 }
+
+             }
+         ],
+         }
+
+
+
+
+
 def DataBase_item_query(query_database_id):
     url_notion_block = 'https://api.notion.com/v1/databases/'+query_database_id+'/query'
     res_notion = requests.post(url_notion_block,headers=headers)
@@ -249,11 +303,22 @@ def patch_all_date(responce):
         print(r.text)
 
 def patch_all_relation(passage_response,word_response):
+    origin_data = {
+        "parent": {"type": "database_id", "database_id": "49f70ebd825a4c85a2a13b9ea10180b8"},
+        'properties': {
+            "🌏 Economist Reading": {
+                "relation": [
+                ]
+            },
+        }
+    }
+    all_num = len(word_response)
     all_word_id = []
     passage_dict = {}
     word_dict = {}
     all_words = []
     count = 0
+
     for dict in passage_response:
         title_all = dict['properties']['Name']['title'][0]['text']['content']
         title_all = title_all.split('-')
@@ -264,31 +329,34 @@ def patch_all_relation(passage_response,word_response):
         passages = dict['properties']['passage']['multi_select']
         word_title = []
         for passage in passages:
-            word_title.append(passage['name'])
+            name = passage['name'].split(" ")[0]
+            word_title.append(name)
         word_dict[dict['id']] = word_title
-    for dict in response:
-        try:
-            if dict['properties']['passage']['multi_select'][0]['name'] != -1:
-                # print(dict['properties']['words']['title'][0]['plain_text'])
-                all_words.append(dict['properties']['words']['title'][0]['plain_text'])
-                count += 1
-        except:
-            print(dict)
-    for word_num in range(len(all_words)):
-        word = all_words[word_num]
-        page_id = all_page_id[word_num]
-        print(word)
-        print(word_num / count, count)
-        soup,is_chinese = get_cambridge_soup(word)
-        origin, pronounciation, url_voice = get_cambridge_origin_pronoun_voice(soup)
-        if origin == None:
-            origin = word
-        if pronounciation == None:
-            pronounciation = ""
-        if url_voice == None:
-            url_voice = ""
-        # notion_words_patch(page_id ,origin,pronounciation,url_voice)
-
+    word_ids = list(word_dict.keys())
+    count = 0
+    for word_id in word_ids:
+        count += 1
+        print(count/all_num)
+        passage_in_words = word_dict[word_id]
+        origin_data = {
+            "parent": {"type": "database_id", "database_id": "49f70ebd825a4c85a2a13b9ea10180b8"},
+            'properties': {
+                "🌏 Economist Reading": {
+                    "relation": [
+                    ]
+                },
+            }
+        }
+        data = origin_data.copy()
+        for passage_in_word in passage_in_words:
+            passage_id = passage_dict[passage_in_word]
+            data['properties']["🌏 Economist Reading"]["relation"].append({"id":passage_id})
+        r = requests.patch(
+            "https://api.notion.com/v1/pages/{}".format(word_id),
+            json=data,
+            headers=headers,
+        )
+        print(r.text)
 
 
 

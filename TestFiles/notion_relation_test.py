@@ -69,10 +69,6 @@ def relation_post(database_id):
              "KnowAll": {"checkbox": False},
              "KnowSome": {"checkbox": False},
              "ForgetAll": {"checkbox": False},
-#https://www.notion.so/291869fb8127414fbd5abb6fc1665dcc?v=19389f0bd13044ab9ad4df98f7ab99b8&pvs=4
-#https://www.notion.so/001-230408-026-The-sonic-outernationalist-832eb1c98c1a4abda09e473d14ff7e70?pvs=4
-#https://www.notion.so/064-8min-230729-Asia-Unsplendid-isolation-6c214fd7f70348728b21089c2318e243?pvs=4
-# https://www.notion.so/002-0325-008-Leaders-How-the-EU-should-respond-to-American-subsidies-cfd93e8b93c44a73b08f474cb66e491e?pvs=4
              "relation": {
                  "relation":[
 
@@ -86,15 +82,7 @@ def relation_post(database_id):
                      }
                  ]
 
-                    # "synced_property_name": "064-8min-230729-Asia-Unsplendid isolation"
                   },
-             # "Checkbox 1": {"checkbox": False},
-             # "Checkbox 2": {"checkbox": False},
-             # "Checkbox 3": {"checkbox": False},
-             # "Checkbox 4": {"checkbox": False},
-             # "Checkbox 5": {"checkbox": False},
-             # "Checkbox 6": {"checkbox": False},
-             # "Date Wrong": {"date": {"start": today}},
          },
 
          "children": [
