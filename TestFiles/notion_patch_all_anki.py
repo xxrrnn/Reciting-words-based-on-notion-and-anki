@@ -271,7 +271,7 @@ def next_day_on_level(level):
         print("wrong level")
     return (date.today() + timedelta(days=n)).strftime('%Y-%m-%d')
 
-def patch_one_data(data, page_id)
+def patch_one_data(data, page_id):
     r = requests.patch(
         "https://api.notion.com/v1/pages/{}".format(page_id),
         json=data,
