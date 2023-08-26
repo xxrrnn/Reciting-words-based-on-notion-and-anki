@@ -1,0 +1,11 @@
+-------------------- word 0 --------------------
+calculus
+calculus
+===== translation0 =====
+an area of advanced mathematics in which continuously changing values are studied 
+微积分 
+>>>>> phrase 0 <<<<<
+///// sentences 0 /////
+None of that will have altered Mr Xi’s strategic calculus.
+
+

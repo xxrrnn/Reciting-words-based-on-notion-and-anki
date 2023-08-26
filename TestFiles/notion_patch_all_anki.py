@@ -289,7 +289,7 @@ def patch_update(response):
     today_str = date.today().strftime('%Y-%m-%d')
     for dict in response:
         count += 1
-        print(count)
+        print(count/len(dict))
         try:
             word = dict['properties']['words']['title'][0]['plain_text']
         except:
@@ -517,6 +517,7 @@ def patch_update(response):
     plt.show()
 
 
+# def release_tension():
 
 
 

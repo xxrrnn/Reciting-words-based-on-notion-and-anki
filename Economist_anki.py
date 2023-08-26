@@ -66,6 +66,7 @@ class Economists:
 
 
         self.words = []
+        self.words_to_cambridge = []
         self.repeat_words = []
         self.words_origin = []
         self.sentences = []
@@ -513,16 +514,24 @@ class Economists:
         self.detected_encoding = result["encoding"]
         # with open("filename.txt", "r", encoding=detected_encoding) as file:
 
-
-
         # with open("words.txt", "r", encoding="utf-8") as file:
         with open("words.txt", "r", encoding=self.detected_encoding) as file:
-            words = file.readlines()
-        for num in range(len(words)):
-            words[num] = words[num].replace('\n','')
-        for word in words:
-            if word not in self.words and len(word) != 0:
-                self.words.append(word)
+            words_clip = file.readlines()
+        for num in range(len(words_clip)):
+            words_clip[num] = words_clip[num].replace('\n','')
+
+
+        with open("words_to_cambridge.txt", "r", encoding=self.detected_encoding) as file:
+            words_to_cambridge = file.readlines()
+        for num in range(len(words_to_cambridge)):
+            words_to_cambridge[num] = words_to_cambridge[num].replace('\n','')
+
+        assert len(words_to_cambridge) == len(words_clip)
+        for num in range(len(words_to_cambridge)):
+            if words_to_cambridge[num] != "0":
+                self.words_to_cambridge.append(words_to_cambridge[num])
+                self.words.append(words_clip[num])
+                print(words_to_cambridge[num], words_clip[num])
 
     def get_clip_passage(self):
         pyperclip.copy('')
@@ -560,36 +569,62 @@ class Economists:
         prev_clipboard_content = ''
         with open("words.txt", 'w',encoding='utf-8') as file:
             file.truncate()
+        with open("words_to_cambridge.txt", 'w',encoding='utf-8') as file:
+            file.truncate()
         print("检查clash是否关闭")
         print("文档已经清空，开始运行，可以开始选词")
-
+        words_clip = []
         while True:
             # 获取剪切板内容
             clipboard_content = pyperclip.paste()
+            clipboard_content = clipboard_content.strip()
+            clipboard_content = clipboard_content.replace('\n', '')
             clipboard_content = clipboard_content.strip()
             if clipboard_content == "20":
                 print("停止检测单词")
                 break
             # 如果剪切板内容发生变化且不为空，则写入到txt文件中
-            if clipboard_content != prev_clipboard_content and clipboard_content and clipboard_content not in self.words:
+            if clipboard_content != prev_clipboard_content and len(clipboard_content) != 0 and clipboard_content not in words_clip:
+                words_clip.append(clipboard_content)
                 with open("words.txt", 'a',encoding='utf-8') as file:
                     file.write(clipboard_content + '\n')
                     print(clipboard_content)
+                with open("words_to_cambridge.txt", 'a', encoding='utf-8') as file:
+                    file.write(clipboard_content + '\n')
                     # self.words.append(clipboard_content)
                 # 更新上一次的剪切板内容为当前内容
                 prev_clipboard_content = clipboard_content
 
             # 每隔一秒钟检查一次剪切板内容
             time.sleep(1)
-        subprocess.run(['notepad.exe',"words.txt"],check = True)
         # myinput = input("完成剪切板调用，请检查文档内容并修正")
-        with open("words.txt","r") as file:
+
+        # words = []
+        words_to_cambridge = []
+        # for word in words_txt:
+        #     word = word.replace('\n','')
+        #     word = word.strip()
+        #     if word not in self.words and len(word) != 0:
+        #         words.append(word)
+        # 打开txt，进行修改，比如将动词还原等
+        subprocess.run(['notepad.exe',"words_to_cambridge.txt"],check = True)
+        with open("words_to_cambridge.txt","r") as file:
             words_txt = file.readlines()
         for word in words_txt:
             word = word.replace('\n','')
             word = word.strip()
-            if word not in self.words and len(word) != 0:
-                self.words.append(word)
+            if word not in words_to_cambridge and len(word) != 0:
+                words_to_cambridge.append(word)
+        assert len(words_to_cambridge) == len(words_clip)
+        for num in range(len(words_to_cambridge)):
+            if words_to_cambridge[num] != "0":
+                self.words_to_cambridge.append(words_to_cambridge[num])
+                self.words.append(words_clip[num])
+                print(words_to_cambridge[num], words_clip[num])
+
+
+
+
         with open("words.txt", "rb") as file:
             raw_data = file.read()
             result = chardet.detect(raw_data)
@@ -615,15 +650,18 @@ class Economists:
             # lines = file.readlines()
             for line in file:
                 lines.append(line.strip())
+        paragraphs = []
         for line in lines:
             try:
-                passage = line.decode('utf-8')  # 尝试用utf-8解码
+                passage =line.decode('utf-8')  # 尝试用utf-8解码
+                paragraphs.append(passage)
                 # paragraphs.append(paragraph)
             except UnicodeDecodeError:
                 # 如果utf-8解码失败，则使用latin-1解码
-                passage = line.decode('latin-1', errors='replace')  # 替换无法解码的字符
+                passage=line.decode('latin-1', errors='replace')  # 替换无法解码的字符
+                paragraphs.append(passage)
                 # paragraphs.append(paragraph)
-        paragraphs = passage.split('\r\r')
+        # paragraphs = passage.split('\r\r')
 
 
         #分句
@@ -678,12 +716,16 @@ class Economists:
             find_true_sentence = False
             current_word = self.words[word_num].lower()
             sentences_contain_word = []
-            # if "main" in current_word:
+            # if word_num == 5:
             #     print("main")
             if ' ' in current_word or '-' in current_word: # 词组
+                # count = 0
                 for sentence in sentences_all:
                     sentence_lower = sentence.lower()
-                    if self.words[word_num] in sentence_lower:
+                    # count += 1
+                    # if count > 50:
+                    #     print(">50")
+                    if current_word in sentence_lower:
                         sentences_contain_word.append(sentence)
                             # find_true_sentence = True
                             # break
@@ -699,8 +741,9 @@ class Economists:
                 #     break
                 for sentence in sentences_all:
                     sentence_lower = sentence.lower()
+                    sentence_lower = re.sub(r'[^\w\s]', '', sentence_lower)
                     if current_word in sentence.lower():
-                        if self.words[word_num] in sentence_lower.split(' '):
+                        if current_word in sentence_lower.split(' '):
                             sentences_contain_word.append(sentence)
                             continue
                             # find_true_sentence = True
@@ -709,7 +752,7 @@ class Economists:
                             sentence_lines = sentence_lower.split('-')
                             for sentence_line in sentence_lines:
                                 sentence_space = sentence_line.split(" ")
-                                if self.words[word_num] in sentence_space:
+                                if current_word in sentence_space:
                                     sentences_contain_word.append(sentence)
                                     continue
                                     # find_true_sentence = True
@@ -747,7 +790,7 @@ class Economists:
         translations = []
         error_words = []
         origin_pronoun_voice = []
-        for word in self.words:
+        for word in self.words_to_cambridge:
             current_soup, is_chinese_soup = self.get_cambridge_soup(word)
             origin, pronounciation, voice = self.get_cambridge_origin_pronoun_voice(current_soup)
             self.words_origin.append(origin)
@@ -840,7 +883,7 @@ class Economists:
                 # "Tags": {"select": {"name": word_tag, "color": word_color}},
                 # "words": {"title": [{"type": "text", "text": {"content": word_content}}]},
                 # "passage": {"multi_select": [{"name": self.title}]},
-                "passage": {"multi_select": []},
+                "passage": {"multi_select": [{"name":self.title}]},
                 # "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": pronoun}}]},
                 # "meaning": {
                 #     "rich_text": [{"type": "text", "text": {"content": meaning}}]},
@@ -871,9 +914,13 @@ class Economists:
             data = copy.deepcopy(origin_data)
             for title_origin in title_origins:
                 title = title_origin['name']
-                data["properties"]["passage"]["multi_select"].append({"name":title})
-            if {"name":self.title} not in data["properties"]["passage"]["multi_select"]:
-                data["properties"]["passage"]["multi_select"].append({"name":self.title})
+                if {"name":title} not in data["properties"]["passage"]["multi_select"]:
+                    data["properties"]["passage"]["multi_select"].append({"name":title})
+            for relation in result["properties"]["🌏 Economist Reading"]["relation"]:
+                if relation not in data["properties"]["🌏 Economist Reading"]["relation"]:
+                    data["properties"]["🌏 Economist Reading"]["relation"].append(relation)
+            # if {"name":self.title} not in data["properties"]["passage"]["multi_select"]:
+            #     data["properties"]["passage"]["multi_select"].append({"name":self.title})
             r = requests.patch(
                 "https://api.notion.com/v1/pages/{}".format(word_id),
                 json=data,
@@ -949,7 +996,10 @@ class Economists:
             if self.words[i] not in error_words:
                 if self.words[i] in self.my_dict or self.words_origin[i] in self.my_dict:
                     chongfu_num += 1
-                    self.repeat_words.append(self.words[i])
+                    if self.words[i] in self.my_dict:
+                        self.repeat_words.append(self.words[i])
+                    else:
+                        self.repeat_words.append(self.words_origin[i])
                     with open("words_repeat.txt","a", encoding='utf-8') as file:
                         current_translation = translations[translations_num]
                         # except:
@@ -1043,6 +1093,7 @@ class Economists:
                                     meaning +=phrase_eng_trans[pj] + "\n"
                                     meaning +=phrase_chi_trans[pj] + "\n"
                             pass
+                        meaning.rstrip()
                         up_meaning.append(meaning)
                         file.write("///// sentences " + str(i) + " /////" + "\n")
                         file.write(self.sentences[i] + "\n")
