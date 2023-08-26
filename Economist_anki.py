@@ -23,7 +23,7 @@ import pyautogui
 # import paddleocr
 from PIL import Image
 import time
-# import pywinauto.mouse
+import pywinauto.mouse
 import ebooklib
 from ebooklib import epub
 from urllib import parse
@@ -38,6 +38,7 @@ from datetime import timedelta, date
 import datetime
 import random
 import configparser
+import copy
 
 class Economists:
     # 类属性（类级别的属性）
@@ -52,6 +53,7 @@ class Economists:
         config = configparser.ConfigParser()
         config.read('token.ini')
         self.token = config.get('token', 'id')
+        self.passage_query = config.get('database','passage_query')
         self.database_id = config.get('database', 'anki_query')  # 取database前边的
         self.guidURL = 'https://dictionary.cambridge.org/dictionary/english-chinese-simplified/'
         self.guidURL_en = 'https://dictionary.cambridge.org/us/dictionary/english/'
@@ -64,10 +66,15 @@ class Economists:
 
 
         self.words = []
+        self.repeat_words = []
         self.words_origin = []
         self.sentences = []
-        self.num = "060"
-        self.my_dict = []
+        self.title = "060"
+        self.my_dict = {}
+        # self.my_dict_new = {}
+        self.passage_id = {}
+        self.passage_num = 0
+        self.state = "new"
 
     def find_middle_sentence_with_phrase(sentence_list, target_phrase):
         # 将目标词组转换为小写，以忽略大小写的差异
@@ -84,6 +91,27 @@ class Economists:
 
         # 返回中间句子的索引位置和句子内容
         return sentence_list[closest_index]
+
+    def DataBase_item_query(self, query_database_id):
+        url_notion_block = 'https://api.notion.com/v1/databases/' + query_database_id + '/query'
+        res_notion = requests.post(url_notion_block, headers=self.notion_headers)
+        S_0 = res_notion.json()
+        res_travel = S_0['results']
+        if_continue = len(res_travel)
+        if if_continue > 0:
+            while if_continue % 100 == 0:
+                body = {
+                    'start_cursor': res_travel[-1]['id']
+                }
+                res_notion_plus = requests.post(url_notion_block, headers=self.headers, json=body)
+                S_0plus = res_notion_plus.json()
+                res_travel_plus = S_0plus['results']
+                for i in res_travel_plus:
+                    if i['id'] == res_travel[-1]['id']:
+                        continue
+                    res_travel.append(i)
+                if_continue = len(res_travel_plus)
+        return res_travel
 
     def next_day_on_level(self, level):
         if level == '0':
@@ -122,7 +150,7 @@ class Economists:
         notion_position = pyautogui.locateOnScreen('pictures/clash.png', grayscale=True, confidence= 0.9)
         notion_center = pyautogui.center(notion_position)
         pyautogui.click(notion_center, clicks=1, interval=0.25)
-        time.sleep(3)
+        time.sleep(2)
         notion_position = pyautogui.locateOnScreen('pictures/open.png', grayscale=True, confidence=0.9)
         if notion_position != None:
             notion_center = pyautogui.center(notion_position)
@@ -147,7 +175,7 @@ class Economists:
     #     return formatted_date
     def get_cambridge_soup(self,word_to_search):
         current_guideUrl = self.guidURL
-        self.headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0'}
+        # self.headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0'}
         url = current_guideUrl + word_to_search
         source_code = requests.get(url, headers=self.headers).text
         soup = BeautifulSoup(source_code, 'html.parser')
@@ -451,14 +479,13 @@ class Economists:
                         continue
                     res_travel.append(i)
                 if_continue = len(res_travel_plus)
-        words = []
+        self.my_dict = {}
         count = 0
         for dict in res_travel:
             try:
-                if dict['properties']['passage']['multi_select'][0]['name'] != -1:
-                    # print(dict['properties']['words']['title'][0]['plain_text'])
-                    words.append(dict['properties']['words']['title'][0]['plain_text'])
-                    count += 1
+                self.my_dict[dict['properties']['words']['title'][0]['plain_text']] = dict['id']
+                count += 1
+                print(count,dict['properties']['words']['title'][0]['plain_text'])
             except:
                 print(dict)
                 continue
@@ -468,13 +495,13 @@ class Economists:
         # with open('vocabularies.data', 'rb') as file:
         #     my_dict = pickle.load(file)
 
-        for dict_num in range(len(words)):
-            # if ' ' == self.my_dict[dict_num][0] or ' ' == self.my_dict[dict_num][len(self.my_dict[dict_num]) - 1]:
-            words[dict_num] = words[dict_num].strip()
-            words[dict_num] = words[dict_num].replace('\n', '')
-            print(words[dict_num])
+        # for dict_num in range(len(self.my_dict.keys())):
+        #     # if ' ' == self.my_dict[dict_num][0] or ' ' == self.my_dict[dict_num][len(self.my_dict[dict_num]) - 1]:
+        #     self.my_dict[dict_num] = self.my_dict[dict_num].strip()
+        #     self.my_dict[dict_num] = self.my_dict[dict_num].replace('\n', '')
+        #     print(self.my_dict[dict_num])
         with open('vocabularies.data', 'wb') as file:
-            pickle.dump(words, file)
+            pickle.dump(self.my_dict, file)
 
     def get_words_txt(self):
 
@@ -560,6 +587,7 @@ class Economists:
             words_txt = file.readlines()
         for word in words_txt:
             word = word.replace('\n','')
+            word = word.strip()
             if word not in self.words and len(word) != 0:
                 self.words.append(word)
         with open("words.txt", "rb") as file:
@@ -581,25 +609,34 @@ class Economists:
         # with open("passage.txt", "r", encoding='utf-8') as bookFile:
         #     paragraphs = bookFile.readlines()
 
-
+        lines = []
         # copy notion to txt, use this
         with open("passage.txt", "rb") as file:
-            lines = file.readlines()
-
-        paragraphs = []
-
+            # lines = file.readlines()
+            for line in file:
+                lines.append(line.strip())
         for line in lines:
             try:
-                paragraph = line.decode('utf-8')  # 尝试用utf-8解码
-                paragraphs.append(paragraph)
+                passage = line.decode('utf-8')  # 尝试用utf-8解码
+                # paragraphs.append(paragraph)
             except UnicodeDecodeError:
                 # 如果utf-8解码失败，则使用latin-1解码
-                paragraph = line.decode('latin-1', errors='replace')  # 替换无法解码的字符
-                paragraphs.append(paragraph)
+                passage = line.decode('latin-1', errors='replace')  # 替换无法解码的字符
+                # paragraphs.append(paragraph)
+        paragraphs = passage.split('\r\r')
+
+
         #分句
         sentences_all = []
         for paragraph in paragraphs:
             dot_index = [0]
+            if ".jpeg" in paragraph or "菜单" in paragraph or ".mp3" in paragraph:
+                paragraph= re.sub(r'\.mp3|\.jpeg', ' ', paragraph)
+                paragraph = re.sub(r'[^\x00-\x7F]+|\|', ' ', paragraph)
+
+                # sentences_all[sen_num] = re.sub(r'[^a-zA-Z0-9]|', ' ', sentences_all[sen_num])
+                continue
+
             paragraph = paragraph.replace("\r\n","")
             if "." not in paragraph or " " not in paragraph:
                 if len(paragraph) != 0:
@@ -617,14 +654,15 @@ class Economists:
                         pass
             for dot_num in range(len(dot_index)-1):
                 sentences_all.append(paragraph[dot_index[dot_num]:dot_index[dot_num + 1]])
-
+            sentences_all.append(paragraph[dot_index[len(dot_index)-1]:len(paragraph)-1])
 
 
             # 去除* 和 # 和 (http)
         for sen_num in range(len(sentences_all)):
             sentence = sentences_all[sen_num]
-            if "long-planned" in sentences_all[sen_num] :
-                pass
+            # if "long-planned" in sentences_all[sen_num] :
+            #     pass
+            sentences_all[sen_num] = sentences_all[sen_num].replace(u'\xa0', ' ')
             sentences_all[sen_num] = sentences_all[sen_num].replace('\n', '')
             sentences_all[sen_num] = sentences_all[sen_num].replace('\r', '')
             sentences_all[sen_num] = sentences_all[sen_num].strip('*# ')
@@ -635,19 +673,20 @@ class Economists:
             # sentences_all[sen_num] = sentences_all[sen_num].strip()
             # sentences_all[sen_num] = sentences_all[sen_num].strip('*')
             # sentences_all[sen_num] = sentences_all[sen_num].strip()
-            a = sentences_all[sen_num]
+            # a = sentences_all[sen_num]
         for word_num in range(len(self.words)):
             find_true_sentence = False
-            current_word = self.words[word_num]
+            current_word = self.words[word_num].lower()
             sentences_contain_word = []
             # if "main" in current_word:
             #     print("main")
             if ' ' in current_word or '-' in current_word: # 词组
                 for sentence in sentences_all:
-                        if self.words[word_num] in sentence:
-                            sentences_contain_word.append(sentence)
-                            find_true_sentence = True
-                            break
+                    sentence_lower = sentence.lower()
+                    if self.words[word_num] in sentence_lower:
+                        sentences_contain_word.append(sentence)
+                            # find_true_sentence = True
+                            # break
 
                                 # if '\n' in sentence:
                                 #     sentence = sentence.replace('\n', '')
@@ -655,29 +694,29 @@ class Economists:
                                 #     self.sentences.append(sentence)
                                 # else:
                                 #     self.sentences.append(sentence + '.')
-            else:   #单词，因为有的单词是被其他单词包含的，需要分割为list才能用in
-                for paragraph in paragraphs:
-                    if find_true_sentence:
-                        break
-                    for sentence in sentences_all:
-                        if current_word in sentence:
-                            if self.words[word_num] in sentence:
-                                # print(self.words[word_num] , sentence)
-                                if self.words[word_num] in sentence.split(' '):
+            else:
+                # if find_true_sentence:
+                #     break
+                for sentence in sentences_all:
+                    sentence_lower = sentence.lower()
+                    if current_word in sentence.lower():
+                        if self.words[word_num] in sentence_lower.split(' '):
+                            sentences_contain_word.append(sentence)
+                            continue
+                            # find_true_sentence = True
+                            # break
+                        else:
+                            sentence_lines = sentence_lower.split('-')
+                            for sentence_line in sentence_lines:
+                                sentence_space = sentence_line.split(" ")
+                                if self.words[word_num] in sentence_space:
                                     sentences_contain_word.append(sentence)
-                                    find_true_sentence = True
-                                    break
-                                elif self.words[word_num] in sentence.split('-'):
-                                        sentences_contain_word.append(sentence)
-                                        find_true_sentence = True
-                                        break
-                                else:
-                                    # print(self.words[word_num])
-                                    # print(sentence)
-                                    sentences_contain_word.append(sentence)
+                                    continue
+                                    # find_true_sentence = True
+                                    # break
+            assert len(sentences_contain_word) > 0
 
-
-
+            sentences_list = ""
             for sentence_contain_word in sentences_contain_word:
                 if '\n' in sentence_contain_word:
                     sentence_contain_word = sentence_contain_word.replace('\n', '')
@@ -685,11 +724,24 @@ class Economists:
                     sentence_contain_word = sentence_contain_word.replace('\r', '')
                 if '.' not in sentence_contain_word:
                     sentence_contain_word += '.'
-            self.sentences.append(sentence_contain_word)
+                sentences_list += sentence_contain_word + "\n\n"
+
+            self.sentences.append(sentences_list)
                         # print(self.words[word_num])
                         # print(len(self.sentences))
         # for num in len(self.sentences):
         #     print(self.words[num],self.sentences[num])
+
+    def get_passage_id(self):
+        word_passage_num = self.title.split(" ")[0]
+        passage_response = self.DataBase_item_query(self.passage_query)
+        self.passage_num = len(passage_response)
+        for dict in passage_response:
+            title_all = dict['properties']['Name']['title'][0]['text']['content']
+            if word_passage_num in title_all:
+                self.passage_id = dict['id']
+                break
+        assert len(self.passage_id) > 0
 
     def get_cambridge(self):
         translations = []
@@ -731,7 +783,7 @@ class Economists:
              "properties": {
                  "Tags": {"select": {"name": word_tag, "color": word_color}},
                  "words": {"title": [{"type": "text", "text": {"content": word_content}}]},
-                 "passage": {"multi_select": [{"name": self.num}]},
+                 "passage": {"multi_select": [{"name": self.title}]},
                  "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": pronoun}}]},
                  "meaning": {
                      "rich_text": [{"type": "text", "text": {"content": meaning}}]},
@@ -742,15 +794,14 @@ class Economists:
                  "KnowAll": {"checkbox": False},
                  "KnowSome": {"checkbox": False},
                  "ForgetAll": {"checkbox": False},
-
-
-                 # "Checkbox 1": {"checkbox": False},
-                 # "Checkbox 2": {"checkbox": False},
-                 # "Checkbox 3": {"checkbox": False},
-                 # "Checkbox 4": {"checkbox": False},
-                 # "Checkbox 5": {"checkbox": False},
-                 # "Checkbox 6": {"checkbox": False},
-                 # "Date Wrong": {"date": {"start": today}},
+                 "Checked Times": {"number": 0},
+                 "🌏 Economist Reading": {
+                    "relation": [
+                        {
+                            "id": self.passage_id
+                        }
+                    ]
+                    },
              },
 
              "children": [
@@ -782,19 +833,68 @@ class Economists:
         else:
             print("导入Notion失败！")
 
+    def repeat_patch(self):
+        origin_data = {
+            "parent": {"type": "database_id", "database_id": self.database_id},
+            "properties": {
+                # "Tags": {"select": {"name": word_tag, "color": word_color}},
+                # "words": {"title": [{"type": "text", "text": {"content": word_content}}]},
+                # "passage": {"multi_select": [{"name": self.title}]},
+                "passage": {"multi_select": []},
+                # "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": pronoun}}]},
+                # "meaning": {
+                #     "rich_text": [{"type": "text", "text": {"content": meaning}}]},
+                # "Last": {"date": {"start": today_str}},
+                # "Next": {"date": {"start": next_str}},
+                # "voice": {"url": voice_url},
+                # "Level": {"select": {"name": "0", "color": "default"}},
+                # "KnowAll": {"checkbox": False},
+                # "KnowSome": {"checkbox": False},
+                # "ForgetAll": {"checkbox": False},
+                # "Checked Times": {"number": 0},
+                "🌏 Economist Reading": {
+                    "relation": [
+                        {
+                            "id": self.passage_id
+                        }
+                    ]
+                },
+            },
+        }
+        for repeat_word in self.repeat_words:
+            print(repeat_word)
+            word_id = self.my_dict[repeat_word]
+            url = 'https://api.notion.com/v1/pages/' + word_id
+            notion_page = requests.get(url, headers=self.notion_headers)
+            result = notion_page.json()
+            title_origins = result["properties"]["passage"]["multi_select"]
+            data = copy.deepcopy(origin_data)
+            for title_origin in title_origins:
+                title = title_origin['name']
+                data["properties"]["passage"]["multi_select"].append({"name":title})
+            if {"name":self.title} not in data["properties"]["passage"]["multi_select"]:
+                data["properties"]["passage"]["multi_select"].append({"name":self.title})
+            r = requests.patch(
+                "https://api.notion.com/v1/pages/{}".format(word_id),
+                json=data,
+                headers=self.notion_headers,
+            )
+            print(r.text)
+
+
     def run(self):
         try:
             source_code = requests.get(self.guidURL + 'and', headers=self.headers).text
         except:
             self.setup()
-        self.num = input("输入这次的文章标号：参考063：\n")
-        selection = input("passage.txt是否已经是本次文章了,不是打0 \n")
-        if selection == "0":
+        self.title = input("输入这次的文章标号：参考063：\n")
+        selection = input("需要clip文章吗？ 不需要打0 \n")
+        if selection != "0":
             self.get_clip_passage()
         else:
             pass
-        selection = input("words.txt是否已经是拷贝的单词,是打1,不是打0 \n")
-        if selection == "1":
+        selection = input("需要clip吗？ 不需要打0\n")
+        if selection == "0":
             self.get_words_txt()
         else:
             self.get_clip()
@@ -819,19 +919,19 @@ class Economists:
         print("word",self.words)
         print("sentences",self.sentences)
         print("error",error_words)
-        is_check = input("要不要检查有没有重复 1/0: \n")
-        if is_check == "1":
+        is_check = input("要不要检查有没有重复 不要打0: \n")
+        if is_check != "0":
             with open('vocabularies.data', 'rb') as file:
                 self.my_dict = pickle.load(file)
         else:
             pass
         print(self.my_dict)
         print(len(self.my_dict))
-        for dict_num  in range(len(self.my_dict)):
-            # if ' ' == self.my_dict[dict_num][0] or ' ' == self.my_dict[dict_num][len(self.my_dict[dict_num]) - 1]:
-            self.my_dict[dict_num] = self.my_dict[dict_num].strip()
-            self.my_dict[dict_num] = self.my_dict[dict_num].replace('\n','')
-            pass
+        # for dict_num in range(len(self.my_dict)):
+        #     # if ' ' == self.my_dict[dict_num][0] or ' ' == self.my_dict[dict_num][len(self.my_dict[dict_num]) - 1]:
+        #     self.my_dict[dict_num] = self.my_dict[dict_num].strip()
+        #     self.my_dict[dict_num] = self.my_dict[dict_num].replace('\n','')
+        #     pass
 
         translations_num = 0
         chongfu_num = 0
@@ -849,6 +949,7 @@ class Economists:
             if self.words[i] not in error_words:
                 if self.words[i] in self.my_dict or self.words_origin[i] in self.my_dict:
                     chongfu_num += 1
+                    self.repeat_words.append(self.words[i])
                     with open("words_repeat.txt","a", encoding='utf-8') as file:
                         current_translation = translations[translations_num]
                         # except:
@@ -950,6 +1051,7 @@ class Economists:
             else:
                 if self.words[i] in self.my_dict:
                     chongfu_num += 1
+                    self.repeat_words.append(self.words[i])
                     with open("words_repeat.txt","a",encoding='utf-8') as file:
                         file.write("-------------------- error word " + str(i) + " --------------------" + "\n")
                         file.write(self.words[i] + "\n")
@@ -992,6 +1094,9 @@ class Economists:
                 print(opv)
         # today = self.get_today()
         # today = self.get_today()
+
+        self.get_passage_id()
+
         # 开始上传notion
         for num in range(len(up_word_content)-1,-1,-1):
             self.notion_post(up_word_tag[num],up_word_color[num],up_word_content[num],up_meaning[num],up_pronoun[num],up_sentence[num],up_voiceUrl[num])
@@ -999,6 +1104,13 @@ class Economists:
         #     if word not in self.my_dict:
         #         self.my_dict.append(word)
         self.new_dict()
+        selection = input("准备更新重复的单词的tag和relation ")
+        if selection != "0":
+            self.repeat_patch()
+            print("End, 恭喜你精读了一篇文章，这是您看的第" + str(self.passage_num) + "篇")
+        else:
+            print("End, 恭喜你精读了一篇文章，这是您看的第" + str(self.passage_num) + "篇")
+
         # with open('vocabularies.data', 'wb') as file:
         #     pickle.dump(self.my_dict, file)
     # for word in self.words:
@@ -1015,6 +1127,8 @@ class Economists:
 
 if __name__ == "__main__":
     test = Economists()
+    test.run()
+    # test.new_dict()
     # with open('vocabularies.data', 'rb') as file:
     #     my_dict = pickle.load(file)
     # print(my_dict)
@@ -1023,7 +1137,6 @@ if __name__ == "__main__":
     # test.notion()
     # print(len(test.notion()),)
     # test.get_sentences()
-    test.run()
 
 # with open("result.txt", "r") as file:
 #     all_content = file.readlines()
@@ -1033,4 +1146,3 @@ if __name__ == "__main__":
 #             word_index.append[num]
 #     for index in word_index:
 
-    print("End")

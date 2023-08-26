@@ -226,7 +226,7 @@ def patch_all_pronoun_and_voice(responce):
             url_voice = ""
         notion_words_patch(page_id ,origin,pronounciation,url_voice)
     pass
-def patch_all_level(responce):
+def patch_all_level(response):
     levels = []
     all_page_id = []
     count = 0
@@ -266,7 +266,7 @@ def get_day_of_day(n=0):
     else:
         return (date.today() + timedelta(days=n)).strftime('%Y-%m-%d')
 
-def patch_all_date(responce):
+def patch_all_date(response):
     dates = []
     all_page_id = []
     count = 0
@@ -359,22 +359,46 @@ def patch_all_relation(passage_response,word_response):
         print(r.text)
 
 
+def patch_all_checked_times(word_response):
+    all_word_id = []
+    all_num = len(word_response)
+    count = 0
+    for dict in word_response:
+        count += 1
+        print(count, str(count / all_num * 100) + " %")
+        all_word_id.append(dict['id'])
+        data = {
+            "parent": {"type": "database_id", "database_id": query_id},
+            'properties': {
+                "Checked Times": {"number": 0},
+                },
+            }
+        r = requests.patch(
+        "https://api.notion.com/v1/pages/{}".format(dict['id']),
+        json = data,
+        headers = headers,
+    )
+        print(r.text)
+
+
+
 
 if __name__ == "__main__":
-
     headers = {
-        "Authorization": "Bearer " + token,
-        "accept": "application/json",
-        "Notion-Version": "2022-06-28"  # Notion版本号
-    }
+    "Authorization": "Bearer " + token,
+    "accept": "application/json",
+    "Notion-Version": "2022-06-28"  # Notion版本号
+
+}
     print("get word database")
     word_response = DataBase_item_query(query_id)
     # word_response = None
-    print("get passage database")
-    passage_response = DataBase_item_query(passage_query_id)
+    # print("get passage database")
+    # passage_response = DataBase_item_query(passage_query_id)
     # passage_response = None
     # patch_all_pronoun_and_voice(response)
-    patch_all_relation(passage_response,word_response)
+    # patch_all_relation(passage_response,word_response)
+    patch_all_checked_times(word_response)
 
     # patch_all_date(response)
 

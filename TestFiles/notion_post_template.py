@@ -27,7 +27,14 @@ p = {"parent": {"database_id": page_id},
                   },
          "网址": {"url": "https://notion.so/notiondevs"},
          "邮箱": {"email": "hello@test.com"},
-         "电话": {"phone_number": "415-000-1111"}
+         "电话": {"phone_number": "415-000-1111"},
+         "relation": {
+                    "relation": [
+                        {
+                            "id":"page_id"
+                        }
+                    ]
+                },
 
      },
 

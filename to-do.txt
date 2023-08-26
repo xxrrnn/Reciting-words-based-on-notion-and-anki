@@ -22,8 +22,8 @@ alienated
 
 6 文章中单词出现多个句子的情况，将句子全部获取
 
-7 新建一个list，保存txt中修剪单词，用旧单词查句子，新单词查cambridge
+7 新建一个list，保存txt中修剪单词，用旧单词查句子，新单词查cambridge 好像没有必要
 
 8 增加一个ini，保存基础模式，如test模式、addle模式等
 
-9 anki表格增加relation，用于和文章界面构建联系
+9 anki表格增加relation，用于和文章界面构建联系 完成

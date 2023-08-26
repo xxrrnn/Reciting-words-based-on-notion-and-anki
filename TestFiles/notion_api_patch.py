@@ -28,29 +28,39 @@ if __name__ == "__main__":
     config = configparser.ConfigParser()
     config.read('../token.ini')
     token = config.get('token', 'id')
+    query_id = config.get('database','anki_query')
     headers = {
         "Authorization": "Bearer " + token,
         "accept": "application/json",
         "Notion-Version": "2022-06-28"  # Notion版本号
     }
     all_page_id = []
-    response = DataBase_item_query("58951b5a29544562a93fd0c1f5d7112f")
+    all_words = []
+    response = DataBase_item_query(query_id)
     for dict in response:
         all_page_id.append(dict['id'])
-
-
-    data = {
-        "parent": {"type": "database_id", "database_id": "316bed45c314462c84dca09b30578cea"},
-        'properties': {
-             "Date Wrong": {"date": {"start": "2023-11-21"}},
-        #'移動方式': {'rich_text': [{"text": {"content": move}}]},
-        }
-    }
-
+        word = dict['properties']['words']['title'][0]['plain_text']
+        word = word.strip()
+        all_words.append(word)
+    print(len(all_words),len(all_page_id))
     # page_id = "4ec6696bb3994c4fae2dc7e4ba6e192d"
-    for page_id in all_page_id:
+    for num in range(len(all_page_id)):
+        data = {
+            "parent": {"type": "database_id", "database_id": query_id},
+            'properties': {
+                # "Level": {"select": {"name": level, "color": colors[int(level)]}},
+                "words": {"title": [{"type": "text", "text": {"content": all_words[num]}}]},
+                # "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": pronounciation}}]},
+                # "voice": {"url": url_voice},
+                # "Date Wrong": {"date": {"start": "2023-11-21"}},
+                # '移動方式': {'rich_text': [{"text": {"content": move}}]},
+            }
+        }
+
+        print(all_words[num])
         r = requests.patch(
-            "https://api.notion.com/v1/pages/{}".format(page_id),
+            "https://api.notion.com/v1/pages/{}".format(all_page_id[num]),
             json = data,
             headers=headers,
         )
+        print(r.text)

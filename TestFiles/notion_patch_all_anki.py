@@ -298,10 +298,12 @@ def patch_update(response):
         KnowAll = dict['properties']["KnowAll"]['checkbox']
         KnowSome = dict['properties']["KnowSome"]['checkbox']
         ForgetAll = dict['properties']["ForgetAll"]['checkbox']
+        checked_times = dict['properties']["Checked Times"]['number']
         # if word == "jello":
         #     pass
         # 如果选了
         if KnowAll or KnowSome or ForgetAll:
+            checked_times += 1
             print(word)
             print(KnowAll, KnowSome, ForgetAll)
             level = dict['properties']["Level"]['select']['name']
@@ -343,6 +345,7 @@ def patch_update(response):
                     "KnowAll": {"checkbox": False},
                     "KnowSome": {"checkbox": False},
                     "ForgetAll": {"checkbox": False},
+                    "Checked Times": {"number": checked_times},
                     # "words": {"title": [{"type": "text", "text": {"content": origin}}]},
                     # "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": pronoun}}]},
                     # "voice": {"url": url_voice},

@@ -1,40 +1,28 @@
--------------------- word 13 --------------------
-puppets
-puppet
-https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/p/pup/puppe/puppet.mp3
-===== translation13 =====
-a toy in the shape of a person or animal that you can move with strings or by putting your hand inside 
-木偶 
-a person or group whose actions are controlled by someone else 
-傀儡 
->>>>> phrase 13 <<<<<
-///// sentences 13 /////
-The new threat of the virus and the old one of perceived enemies, notably “imperialist” America and its “puppets” in South Korea, commingled.
--------------------- word 21 --------------------
-snoop
-snoop
-https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/s/sno/snoop/snoop.mp3
-===== translation21 =====
-to look around a place secretly, in order to discover things or find out information about someone or something 
-窥探，打探 
-to try to find out about other people's private lives 
-（对别人的私生活）窥探 
-the act of snooping 
-窥探，打探 
-someone who snoops 
-窥探者，打探者 
->>>>> phrase 21 <<<<<
-///// sentences 21 /////
-Given past hyper-vigilance, the reticence is hardly surprising.
--------------------- word 28 --------------------
-streamline
-streamline
-https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/s/str/strea/streamline.mp3
-===== translation28 =====
-to shape something so that it can move as effectively and quickly as possible through a liquid or gas 
-把…设计成流线型，使成流线型 
-to improve the effectiveness of an organization such as a business or government, often by making the way activities are performed simpler 
-（常通过简化办事程序）使（机构）效率更高；简化 
->>>>> phrase 28 <<<<<
-///// sentences 28 /////
-He has continued to streamline party organisation, and has forced the powerful army to defer more to the party.
+-------------------- word 0 --------------------
+seclusion
+seclusion
+https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/s/sec/seclu/seclusion.mp3
+===== translation0 =====
+the state of being alone, away from other people 
+与世隔绝；退隐 
+>>>>> phrase 0 <<<<<
+///// sentences 0 /////
+Ongoing pandemic-era seclusion hurts North Koreans—but suits their dictator.
+
+SECLUSION FROM the world has long been a guiding principle for the rulers of North Korea, a secretive hereditary dictatorship.
+
+In recent weeks speculation has grown that seclusion may at last be easing.
+
+
+-------------------- word 1 --------------------
+armistice
+armistice
+https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/a/arm/armis/armistice.mp3
+===== translation1 =====
+a formal agreement between two countries or groups at war to stop fighting for a particular time, especially to talk about possible peace 
+（尤指为进行和谈的）停火（协议），停战（协议） 
+>>>>> phrase 1 <<<<<
+///// sentences 1 /////
+On July 25th and 26th Chinese and Russian delegations travelled to North Korea for a military parade to mark the armistice that ended the Korean War.
+
+
