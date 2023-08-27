@@ -950,7 +950,7 @@ class Economists:
         else:
             self.get_clip()
         print(len(self.words),self.words)
-        input("check it \n")
+        input("check it 按回车开始爬虫\n")
         self.get_sentences()
         origin_pronoun_voice,translations, error_words = self.get_cambridge()
         if len(self.words) != len(self.sentences):
