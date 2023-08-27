@@ -39,7 +39,7 @@ import datetime
 import random
 import configparser
 import copy
-
+from notion_patch_all_anki import Update_anki
 class Economists:
     # 类属性（类级别的属性）
     # class_attribute = "This is a class attribute"
@@ -1177,8 +1177,20 @@ class Economists:
         # cv2.waitKey()
 
 if __name__ == "__main__":
-    test = Economists()
-    test.run()
+    selection = input("您好，请选择要执行的内容：\n1. Anki Update\n2. 读新的文章\n3. test")
+    if selection == "1":
+        print("start getting response")
+        a = Update_anki()
+        response = a.DataBase_item_query()
+        # response = None
+        print("start updating")
+        a.patch_update(response)
+    elif selection == "2":
+        test = Economists()
+        test.run()
+    else:
+        test = Economists()
+        test.run()
     # test.new_dict()
     # with open('vocabularies.data', 'rb') as file:
     #     my_dict = pickle.load(file)

@@ -214,8 +214,20 @@ def find_duplicates(input_list):
             seen.add(item)
 
     return duplicates
+
+
+# https://www.notion.so/luminary-96bd5d554faf49aa9b02c702b76ecdfb?pvs=4
+delete_page("96bd5d554faf49aa9b02c702b76ecdfb")
+
+
+
+
 # https://www.notion.so/217a6cab505e4e52b85246a9610bb467?v=6bf2517c64914cc58902c8860808693b&pvs=4
 # https://www.notion.so/yacht-f8b5a284368343758886f45ce107e947?pvs=4
+
+
+
+
 get_page_information("f8b5a284368343758886f45ce107e947")
 
 

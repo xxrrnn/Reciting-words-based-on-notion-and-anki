@@ -26,7 +26,7 @@ guidURL_en = 'https://dictionary.cambridge.org/us/dictionary/english/'
 class Update_anki:
     def __init__(self):
         config = configparser.ConfigParser()
-        config.read('../token.ini')
+        config.read('token.ini')
         self.token = config.get('token', 'id')
         self.database_id = config.get('database', 'anki_database')  # 取database前边的
         self.query_id = config.get('database', 'anki_query')  # 取database前边的
@@ -35,9 +35,39 @@ class Update_anki:
         "accept": "application/json",
         "Notion-Version": "2022-06-28"  # Notion版本号
     }
+        self.today = {}
+        self.knowall_list = []
+        self.knowsome_list = []
+        self.forgetall_list = []
+        self.today_query_id = config.get('database', 'today_query')  # 取database前边的
+        self.today_database_id = config.get('database', 'today_database')  # 取database前边的
+        self.word_level_dict = {}
+        self.word_next_dict = []
+        self.count_know_all = 0
+        self.count_know_some = 0
+        self.count_forget_all = 0
+        self.selection_dict = {"KnowAll": "green","KnowSome":"yellow", "ForgetAll":"red"}
 
-    def DataBase_item_query(self):
-        query_database_id = self.query_id
+    def delete_page(self,page_id):
+        body = {
+            'archived': True
+        }
+        url = 'https://api.notion.com/v1/pages/' + page_id
+        notion = requests.patch(url, headers=self.headers, json=body)
+
+        return 0
+    def DataBase_item_delete(self,response):
+        print("start deleting")
+        count = 0
+        for dict in response:
+            count += 1
+            id = dict['id']
+            print(count / len(response), dict['properties']['words']['title'][0]['plain_text'])
+            self.delete_page(id)
+
+
+    def DataBase_item_query(self,query_database_id):
+        # query_database_id = self.query_id
         url_notion_block = 'https://api.notion.com/v1/databases/'+query_database_id+'/query'
         res_notion = requests.post(url_notion_block,headers=self.headers)
         S_0 = res_notion.json()
@@ -149,7 +179,7 @@ class Update_anki:
         )
         print(r.text)
 
-    def patch_all_pronoun_and_voice(self,responce):
+    def patch_all_pronoun_and_voice(self,response):
         all_page_id = []
         all_words = []
         count = 0
@@ -178,7 +208,7 @@ class Update_anki:
                 url_voice = ""
             self.notion_words_patch(page_id ,origin,pronounciation,url_voice)
         pass
-    def patch_all_level(self,responce):
+    def patch_all_level(self,response):
         levels = []
         all_page_id = []
         count = 0
@@ -218,7 +248,7 @@ class Update_anki:
         else:
             return (date.today() + timedelta(days=n)).strftime('%Y-%m-%d')
 
-    def patch_all_date(self,responce):
+    def patch_all_date(self,response):
         dates = []
         all_page_id = []
         count = 0
@@ -294,8 +324,10 @@ class Update_anki:
         )
         print(r.text)
 
-    def patch_update(self,response):
-        modified_time = os.path.getmtime("word_today.txt")
+    def patch_update(self):
+        print("start get response")
+        response = self.DataBase_item_query(self.query_id)
+        modified_time = os.path.getmtime("TestFiles\word_today.txt")
         modified_datetime = datetime.datetime.fromtimestamp(modified_time)
         modified_datetime = modified_datetime.date()
         # 获取当前日期
@@ -303,16 +335,15 @@ class Update_anki:
         if modified_datetime != current_datetime:
             with open("word_today.txt", "w") as file:
                 file.truncate()
-        word_next_dict = {}
-        word_level_dict = {}
+        self.word_next_dict = {}
+
         colors = ["default","gray","brown","orange","yellow","green","blue","purple","pink","red"]
         all_page_id = []
         count = 0
         today = date.today()
         today_str = date.today().strftime('%Y-%m-%d')
-        count_know_all = 0
-        count_know_some = 0
-        count_forget_all = 0
+
+
         for dict in response:
             count += 1
             print(count/len(dict))
@@ -336,13 +367,15 @@ class Update_anki:
                 print(KnowAll, KnowSome, ForgetAll)
                 level = dict['properties']["Level"]['select']['name']
                 if KnowAll:
-                    count_know_all += 1
+                    self.count_know_all += 1
+                    self.knowall_list.append(dict)
                     next_level = str(int(level) + 1)
                     if int(next_level) > 9:
                         next_level = '9'
                     next_str = self.next_day_on_level(next_level)
                 elif KnowSome:
-                    count_know_some += 1
+                    self.count_know_some += 1
+                    self.knowsome_list.append(dict)
                     if int(level) >= 4:
                         next_level = str(int(int(level) /2))
                         # if int(next_level) < 1:
@@ -353,20 +386,25 @@ class Update_anki:
                         next_level = str(int(level) )
                     next_str = self.next_day_on_level(next_level)
                 elif ForgetAll:
-                    count_forget_all += 1
+                    self.count_forget_all += 1
+                    self.forgetall_list.append(dict)
                     next_level = '0'
                     next_str = self.next_day_on_level(next_level)
                 else:
                     next_level = '0'
                     next_str = self.next_day_on_level(next_level)
                 try:
-                    word_next_dict[next_str] = word_next_dict[next_str] + 1
+                    self.word_next_dict[next_str] = self.word_next_dict[next_str] + 1
                 except:
-                    word_next_dict[next_str] = 1
+                    self.word_next_dict[next_str] = 1
                 try:
-                    word_level_dict[next_level] = word_level_dict[next_level] + 1
+                    self.word_level_dict[next_level] = self.word_level_dict[next_level] + 1
                 except:
-                    word_level_dict[next_level] = 1
+                    self.word_level_dict[next_level] = 1
+                self.today["KnowAll"] = self.knowall_list
+                self.today["KnowSome"] = self.knowsome_list
+                self.today["ForgetAll"] = self.forgetall_list
+
                 data = {
                     "parent": {"type": "database_id", "database_id": self.database_id},
                     'properties': {
@@ -385,6 +423,7 @@ class Update_anki:
                         # '移動方式': {'rich_text': [{"text": {"content": move}}]},
                     }
                 }
+                # must change
                 self.patch_one_data(data,page_id)
 
             # 如果没选
@@ -399,9 +438,9 @@ class Update_anki:
                 # second_time = datetime.datetime.strptime(next, "%Y-%m-%d %H:%M:%S")
 
                 try:
-                    word_level_dict[level] = word_level_dict[level] + 1
+                    self.word_level_dict[level] = self.word_level_dict[level] + 1
                 except:
-                    word_level_dict[level] = 1
+                    self.word_level_dict[level] = 1
 
                 if next != None:
                     second_time = datetime.datetime.strptime(next, "%Y-%m-%d").date()
@@ -411,9 +450,9 @@ class Update_anki:
                         late = True
                     else:
                         try:
-                            word_next_dict[str(second_time)] = word_next_dict[str(second_time)] + 1
+                            self.word_next_dict[str(second_time)] = self.word_next_dict[str(second_time)] + 1
                         except:
-                            word_next_dict[str(second_time)] = 1
+                            self.word_next_dict[str(second_time)] = 1
                     if late:
                         d_day = [0,1,2,3]
                         n = random.sample(d_day, len(d_day))[0]
@@ -438,9 +477,9 @@ class Update_anki:
                         # )
                         self.patch_one_data(data, page_id)
                         try:
-                            word_next_dict[next_str] = word_next_dict[next_str] + 1
+                            self.word_next_dict[next_str] = self.word_next_dict[next_str] + 1
                         except:
-                            word_next_dict[next_str] = 1
+                            self.word_next_dict[next_str] = 1
                         # print(r.text)
 
                 else:
@@ -459,54 +498,33 @@ class Update_anki:
                             # '移動方式': {'rich_text': [{"text": {"content": move}}]},
                         }
                     }
-                    # r = requests.patch(
-                    #     "https://api.notion.com/v1/pages/{}".format(page_id),
-                    #     json=data,
-                    #     headers=headers,
-                    # )
-                    # print(r.text)
+
                     self.patch_one_data(data, page_id)
                 pass
         print(count)
-        # # 提取键和值
-        # categories = list(word_next_dict.keys())
-        # values = list(word_next_dict.values())
-        #
-        # colors = ['red', 'green', 'blue', 'purple', 'orange']
-        #
-        # plt.figure(figsize=(10, 6))
-        # # 创建柱状图
-        # bars = plt.bar(categories, values, color=colors)
-        #
-        # # 添加标题和标签
-        # plt.title('Words Count')
-        # plt.xlabel('Date')
-        # plt.ylabel('Word Amount')
-        # for i, v in enumerate(values):
-        #     plt.text(i, v + 1, str(v), ha='center', va='bottom')
-        # plt.grid(True, axis='y', linestyle='--', alpha=0.7)
-        # plt.xticks(rotation=45, ha='right')
-        # for bar in bars:
-        #     plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())), ha='center',
-        #              va='bottom')
 
 
 
 
+        self.draw_pic()
+        self.checked_move_to_today()
+
+    def draw_pic(self):
         # # 显示图形
         # plt.show()
         # plt.figure()
-        categories = list(word_level_dict.keys())
-        values = list(word_level_dict.values())
+        categories = list(self.word_level_dict.keys())
+        values = list(self.word_level_dict.values())
 
         # 对标签进行排序并获取排序后的索引
         sorted_indices = sorted(range(len(categories)), key=lambda k: categories[k])
         categories_level = [categories[i] for i in sorted_indices]
         values_level = [values[i] for i in sorted_indices]
 
-        word_next_dict = OrderedDict(sorted(word_next_dict.items(), key=lambda x: dt.strptime(x[0], '%Y-%m-%d')))
-        categories_next = list(word_next_dict.keys())
-        values_next = list(word_next_dict.values())
+        self.word_next_dict = OrderedDict(
+            sorted(self.word_next_dict.items(), key=lambda x: dt.strptime(x[0], '%Y-%m-%d')))
+        categories_next = list(self.word_next_dict.keys())
+        values_next = list(self.word_next_dict.values())
 
         colors = ['red', 'green', 'blue', 'purple', 'orange']
 
@@ -521,10 +539,10 @@ class Update_anki:
         axs[0, 0].set_xticks(range(len(categories_level)), categories_level, rotation=45, ha='right')
         axs[0, 0].grid(True, axis='y', linestyle='--', alpha=0.7)
 
-
         for bar in bars1:
-            axs[0, 0].text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())), ha='center',
-                     va='bottom')
+            axs[0, 0].text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())),
+                           ha='center',
+                           va='bottom')
 
         # 创建下方的子图
         bars2 = axs[1, 0].bar(range(len(categories_next)), values_next, color=colors, alpha=0.7)
@@ -534,23 +552,22 @@ class Update_anki:
         axs[1, 0].set_xticks(range(len(categories_next)), categories_next, rotation=45, ha='right')
         axs[1, 0].grid(True, axis='y', linestyle='--', alpha=0.7)
 
-
         for bar in bars2:
-            axs[1, 0].text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())), ha='center',
-                     va='bottom')
-
-
+            axs[1, 0].text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())),
+                           ha='center',
+                           va='bottom')
 
         my_dpi = 96
         # plt.figure(figsize=(480/my_dpi,480/my_dpi), dpi=my_dpi)
-        if count_forget_all == 0 and count_know_some == 0 and count_forget_all == 0:
+        if self.count_forget_all == 0 and self.count_know_some == 0 and self.count_forget_all == 0:
             axs[0, 1].axis('off')
         else:
-            axs[0, 1].pie(x = [count_know_all,count_know_some,count_forget_all],
-                    labels=['know all','know some','forget all'],
-                    autopct='%.2f%%')
+            axs[0, 1].pie(x=[self.count_know_all, self.count_know_some, self.count_forget_all],
+                          labels=['know all', 'know some', 'forget all'],
+                          autopct='%.2f%%')
             # plt.legend(patches, [f"{label}: {size}" for label, size in zip(labels, sizes)], loc="upper left")
-            title = "Know All: {}    Know Some:{}    Forget All:{}".format(count_know_all,count_know_some,count_forget_all)
+            title = "Know All: {}    Know Some:{}    Forget All:{}".format(self.count_know_all, self.self.count_know_some,
+                                                                           self.count_forget_all)
             axs[0, 1].set_title(title)
 
         axs[1, 1].axis('off')
@@ -559,9 +576,81 @@ class Update_anki:
         plt.show()
 
 
-# def release_tension():
 
+    def checked_move_to_today(self):
+        response = self.DataBase_item_query(self.today_query_id)
+        # 判断是否有之前的内容，如果有就清空
+        just_add = False
+        if len(response) == 0:
+            just_add = True
+        else:
+            dict = response[0]
+            checked_date = dt.strptime(dict['properties']["Last"]['date']['start'], '%Y-%m-%d')
+            today = date.today()
+            if checked_date == today:
+                just_add = True
+            else:
+                just_add = False
+        # 不是今天且表格不空的话就清空
+        if just_add != True and len(response) != 0:
+            self.DataBase_item_delete(response)
 
+        #清空后post今天看到的单词
+        for selection in self.selection_dict.keys():
+            checked_list = self.today[selection]
+            for body in checked_list:
+                body["parent"]["database_id"] = self.today_database_id
+                word_tag = body["properties"]['Tags']['select']['name']
+                word_color = body["properties"]['Tags']['select']['color']
+                title = body["properties"]['passage']['multi_select'][0]['name']
+                word_content = body["properties"]['words']['title'][0]['plain_text']
+                pronoun = body["properties"]['phonetic symbol']['rich_text'][0]['text']['content']
+                meaning = body["properties"]['meaning']['rich_text'][0]['text']['content']
+                today_str = date.today().strftime('%Y-%m-%d')
+                # next_str = body["properties"]['Next']['date']['start']
+                voice_url = body["properties"]['voice']['url']
+                passage_id = body["properties"]['🌏 Economist Reading']['relation'][0]['id']
+                # today_str = body["properties"]['words']['title'][0]['plain_text']
+
+                p = {
+                    "parent": {"database_id": self.today_query_id},
+                    # "properties":body["properties"]
+                     "properties": {
+                         "Tags": {"select": {"name": word_tag, "color": word_color}},
+                         "words": {"title": [{"type": "text", "text": {"content": word_content}}]},
+                         "passage": {"multi_select": [{"name": title}]},
+                         "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": pronoun}}]},
+                         "meaning": {
+                             "rich_text": [{"type": "text", "text": {"content": meaning}}]},
+                         "Checked Date": {"date": {"start": today_str}},
+                         # "Next": {"date": {"start": next_str}},
+                         "voice": {"url": voice_url},
+                         "Level": {"select": {"name": "0", "color": "default"}},
+                         "KnowAll": {"checkbox": False},
+                         "KnowSome": {"checkbox": False},
+                         "ForgetAll": {"checkbox": False},
+                         "Checked Times": {"number": 0},
+                         "🌏 Economist Reading": {
+                             "relation": [
+                                 {
+                                     "id": passage_id
+                                 }
+                             ]
+                         },
+                         "Selection":{
+                             "select":{"name":selection,"color":self.selection_dict[selection]}
+                         }
+                     },
+                 }
+
+                url = "https://api.notion.com/v1/pages"
+                headers = {
+                    "Notion-Version": "2022-06-28",
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer " + self.token
+                }
+                r = requests.post(url, json=p, headers=self.headers)
+                print(r.text)
 
 
 
@@ -570,12 +659,12 @@ class Update_anki:
 if __name__ == "__main__":
     # print(next_day_on_level("8"))
 
-    print("start getting response")
+    # print("start getting response")
     a = Update_anki()
-    response = a.DataBase_item_query()
+    # response = a.DataBase_item_query()
     # response = None
     print("start updating")
-    a.patch_update(response)
+    a.patch_update()
 
 
 
