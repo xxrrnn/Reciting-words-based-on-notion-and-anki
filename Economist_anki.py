@@ -716,10 +716,10 @@ class Economists:
             # sentences_all[sen_num] = sentences_all[sen_num].strip('*')
             # sentences_all[sen_num] = sentences_all[sen_num].strip()
             # a = sentences_all[sen_num]
+        sentences_contain_word = []
         for word_num in range(len(self.words)):
             find_true_sentence = False
             current_word = self.words[word_num].lower()
-            sentences_contain_word = []
             # if word_num == 5:
             #     print("main")
             if ' ' in current_word or '-' in current_word: # 词组
