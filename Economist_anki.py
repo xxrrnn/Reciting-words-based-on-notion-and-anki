@@ -331,7 +331,7 @@ class Economists:
             return translation, phrase
     def get_cambridge_origin_pronoun_voice(self,soup, flag = 1):
         if len(soup) == 0:
-            return None,None,None
+            return "","",""
         # 原词行获取
         #<span class="hw dhw">normalize</span>
         # origin_spans = soup.find_all(class_='hw dhw')
@@ -343,7 +343,7 @@ class Economists:
                 if origin != None:
                     break
         else:
-            return None,None,None
+            return "","",""
         # print(origin[0])
 
         # 音标获取
@@ -647,7 +647,6 @@ class Economists:
 
         # with open("passage.txt", "r", encoding='utf-8') as bookFile:
         #     paragraphs = bookFile.readlines()
-
         lines = []
         # copy notion to txt, use this
         with open("passage.txt", "rb") as file:
@@ -716,9 +715,9 @@ class Economists:
             # sentences_all[sen_num] = sentences_all[sen_num].strip('*')
             # sentences_all[sen_num] = sentences_all[sen_num].strip()
             # a = sentences_all[sen_num]
-        sentences_contain_word = []
         for word_num in range(len(self.words)):
-            find_true_sentence = False
+            sentences_contain_word = []
+
             current_word = self.words[word_num].lower()
             # if word_num == 5:
             #     print("main")
@@ -753,12 +752,17 @@ class Economists:
                             # find_true_sentence = True
                             # break
                         else:
-                            sentence_lines = sentence_lower.split('-')
-                            for sentence_line in sentence_lines:
-                                sentence_space = sentence_line.split(" ")
-                                if current_word in sentence_space:
-                                    sentences_contain_word.append(sentence)
-                                    continue
+                            split_result = re.split(r'[-\s—]+', sentence)
+                            res_lower = [item.lower() for item in split_result]
+                            if current_word in res_lower:
+                                sentences_contain_word.append(sentence)
+                            continue
+                            #
+                            # for sentence_line in sentence_lines:
+                            #     sentence_space = sentence_line.split(" ")
+                            #     if current_word in sentence_space:
+                            #         sentences_contain_word.append(sentence)
+                            #         continue
                                     # find_true_sentence = True
                                     # break
             assert len(sentences_contain_word) > 0
@@ -802,7 +806,7 @@ class Economists:
             translation, phase_translation = self.get_cambridge_translation(current_soup,word,is_chinese_soup)
             # print(translation,phase_translation)
 
-            if origin == None or pronounciation == None or translation == None:
+            if origin == "" or pronounciation == "" or translation == "":
                 error_words.append(word)
                 continue
             ori_pro_voi = []
@@ -968,7 +972,7 @@ class Economists:
             file.truncate()
 
         print("word",self.words)
-        print("sentences",self.sentences)
+        # print("sentences",self.sentences)
         print("error",error_words)
         is_check = input("要不要检查有没有重复 不要打0: \n")
         if is_check != "0":
@@ -976,7 +980,7 @@ class Economists:
                 self.my_dict = pickle.load(file)
         else:
             pass
-        print(self.my_dict)
+        # print(self.my_dict)
         print(len(self.my_dict))
         # for dict_num in range(len(self.my_dict)):
         #     # if ' ' == self.my_dict[dict_num][0] or ' ' == self.my_dict[dict_num][len(self.my_dict[dict_num]) - 1]:
@@ -984,7 +988,7 @@ class Economists:
         #     self.my_dict[dict_num] = self.my_dict[dict_num].replace('\n','')
         #     pass
 
-        translations_num = 0
+        translations_num = -1
         chongfu_num = 0
         up_word_tag = []
         up_word_color = []
@@ -993,11 +997,12 @@ class Economists:
         up_pronoun = []
         up_sentence = []
         up_voiceUrl = []
-        print(self.my_dict)
+        # print(self.my_dict)
 
         for i in range(len(self.words)):
             current_word = self.words[i]
-            if self.words[i] not in error_words:
+            if self.words_to_cambridge[i] not in error_words:
+                translations_num += 1
                 if self.words[i] in self.my_dict or self.words_origin[i] in self.my_dict:
                     chongfu_num += 1
                     if self.words[i] in self.my_dict:
@@ -1038,10 +1043,10 @@ class Economists:
                             pass
                         file.write("///// sentences " + str(i) + " /////" + "\n")
                         file.write(self.sentences[i] + "\n")
-                    translations_num += 1
                     continue
                 else:
             # if self.words[i] not in error_words:
+            #         translations_num += 1
                     with open("words_upload.txt","a",encoding='utf-8') as file:
                         # file.write(self.words[i] + " " + origin_pronoun + "\n")
                         # file.write(translations[i] + "\n")
@@ -1102,7 +1107,6 @@ class Economists:
                         file.write("///// sentences " + str(i) + " /////" + "\n")
                         file.write(self.sentences[i] + "\n")
                         up_sentence.append(self.sentences[i])
-                    translations_num += 1
             else:
                 if self.words[i] in self.my_dict:
                     chongfu_num += 1

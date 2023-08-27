@@ -1,79 +1,356 @@
--------------------- word 0 --------------------
-metaverse
-metaverse
-===== translation0 =====
-the internet considered as an imaginary area without limits where you can meet people in virtual reality (= images and sounds, produced by a computer, that seem to represent a real place or situation) 
-元宇宙 
->>>>> phrase 0 <<<<<
+-------------------- error word 0 --------------------
+mused on
 ///// sentences 0 /////
-How to bring scents to the metaverse.
+BILL BURNS, the director of the CIA, recently mused on what fate might await Yevgeny Prigozhin, the mercenary leader who mounted a short-lived mutiny in Russia in June.
 
 
 -------------------- word 1 --------------------
-evocative
-evocative
+mutiny
+mutiny
 ===== translation1 =====
-making you remember or imagine something pleasant 
-引起（愉快）回忆的；产生（美好）联想的；唤起（美好）感情的 
+an occasion when a group of people, especially soldiers or sailors, refuses to obey orders and/or attempts to take control from people in authority 
+（尤指士兵或船员的）反叛，哗变，暴动 
+to take part in a mutiny 
+反叛，叛变；哗变 
 >>>>> phrase 1 <<<<<
 ///// sentences 1 /////
-VR enthusiasts turn their attentions to an evocative, but neglected, sense.
+BILL BURNS, the director of the CIA, recently mused on what fate might await Yevgeny Prigozhin, the mercenary leader who mounted a short-lived mutiny in Russia in June.
 
-Odours are famously evocative.
+“In my experience Putin is the ultimate apostle of payback so I would be surprised if Prigozhin escapes further retribution.” On August 23rd, precisely two months after that mutiny, Mr Prigozhin’s jet plunged to the ground
+
+General Surovikin was closely associated with Mr Prigozhin and had come under suspicion of aiding the mutiny or having foreknowledge of it.
+
+Russian prosecutors, who promptly shut down an investigation into Mr Prigozhin’s mutiny after he accepted a deal to go into exile in Belarus, were quick to open an investigation into a violation of “air traffic and safety rules”.
 
 
--------------------- word 2 --------------------
-Mount
-mount
-===== translation2 =====
-to gradually increase, rise, or get bigger 
-增加；增长；上升 
-to get on a horse, bicycle, etc.. in order to ride 
-骑上（马、自行车等） 
-to go up or onto 
-登上 
-to organize and begin an activity or event 
-组织；发动；开展；举行 
-to fix something to a wall, in a frame, etc., so that it can be looked at or used 
-安放，安装；镶嵌；裱贴 
-to place someone on guard 
-设置（岗哨）；担任（警卫） 
-a horse 
-马 
-something, such as a piece of card, that you put something on to show it 
-底板，托板；装帧，衬托纸，框 
-used as part of the name of a mountain 
-（用于山名前）山，峰 
->>>>> phrase 2 <<<<<
-mount guard (on/over sb)
-to guard someone
-守护，保卫（某人）
+-------------------- error word 2 --------------------
+a dish best served cold
 ///// sentences 2 /////
-Mounted under the cinema seats, the system pumped out 30 different scents—from salty ocean breezes to whiffs of wine—at crucial moments in the plot.
+Vladimir Putin, Russia’s president, “is generally someone who thinks that revenge is a dish best served cold,” he said.
 
 
 -------------------- word 3 --------------------
-whiff
-whiff
+apostle
+apostle
 ===== translation3 =====
-a slight smell, carried on a current of air 
-一阵气味，一股味道 
+someone who strongly supports a particular belief or political movement 
+（信仰或政治运动的）倡导者，鼓吹者，先驱 
 >>>>> phrase 3 <<<<<
-a whiff of sth
-a slight sign of something
-一点点，些许
+the Apostles
+the group of early Christians who travelled to different places telling people about Jesus Christ
+基督的十二使徒
 ///// sentences 3 /////
-Mounted under the cinema seats, the system pumped out 30 different scents—from salty ocean breezes to whiffs of wine—at crucial moments in the plot.
+“In my experience Putin is the ultimate apostle of payback so I would be surprised if Prigozhin escapes further retribution.” On August 23rd, precisely two months after that mutiny, Mr Prigozhin’s jet plunged to the ground
 
 
 -------------------- word 4 --------------------
-quirk
-quirk
+payback
+payback
 ===== translation4 =====
-an unusual habit or part of someone's personality, or something that is strange and unexpected 
-怪癖；古怪之处 
+an advantage received from something, especially the profit from a financial investment 
+回报，收益 
+something bad that is done to you because of something bad that you have done previously 
+（因为过去的错失而不得不经受目前的遭遇）偿还 
 >>>>> phrase 4 <<<<<
 ///// sentences 4 /////
-The system had its quirks.
+“In my experience Putin is the ultimate apostle of payback so I would be surprised if Prigozhin escapes further retribution.” On August 23rd, precisely two months after that mutiny, Mr Prigozhin’s jet plunged to the ground
+
+
+-------------------- word 5 --------------------
+retribution
+retribution
+===== translation5 =====
+deserved and severe punishment 
+严惩；应得的惩罚；报应 
+>>>>> phrase 5 <<<<<
+///// sentences 5 /////
+“In my experience Putin is the ultimate apostle of payback so I would be surprised if Prigozhin escapes further retribution.” On August 23rd, precisely two months after that mutiny, Mr Prigozhin’s jet plunged to the ground
+
+Notably, the crash came on a day of wider retribution.
+
+
+-------------------- word 6 --------------------
+plunged
+plunge
+===== translation6 =====
+to (cause someone or something to) move or fall suddenly and often a long way forward, down, or into something 
+（使）（某人或某物）骤然移动，骤然下降 
+to become lower in value or level very suddenly and quickly 
+（价值或程度）暴跌，骤降 
+a sudden movement or fall forward, down, or into something 
+跳入；下跌；落下 
+a sudden and large fall in value or level 
+暴跌，骤降 
+>>>>> phrase 6 <<<<<
+///// sentences 6 /////
+“In my experience Putin is the ultimate apostle of payback so I would be surprised if Prigozhin escapes further retribution.” On August 23rd, precisely two months after that mutiny, Mr Prigozhin’s jet plunged to the ground
+
+
+-------------------- word 7 --------------------
+incline to
+incline to/towards sth
+===== translation7 =====
+to think that a belief or opinion is probably correct 
+倾向于认为；倾向于赞同 
+>>>>> phrase 7 <<<<<
+///// sentences 7 /////
+One possibility, though few online commenters seemed inclined to believe it, is that it was an accident.
+
+
+-------------------- word 8 --------------------
+jumpy
+jumpy
+===== translation8 =====
+nervous and worried, especially because you are frightened or guilty 
+提心吊胆的；胆战心惊的；紧张不安的 
+>>>>> phrase 8 <<<<<
+///// sentences 8 /////
+Local air-defences may thus have been jumpy; in 2020 Iran shot down one of its own civilian airliners in Tehran during a period of high alert.
+
+
+-------------------- word 9 --------------------
+irate
+irate
+===== translation9 =====
+very angry 
+极其愤怒的，大怒的 
+>>>>> phrase 9 <<<<<
+///// sentences 9 /////
+A senior source in Ukrainian intelligence said several figures in Russia were enraged enough to want Mr Prigozhin dead, including Sergei Shoigu, Russia’s defence minister, a frequent target of Mr Prigozhin’s irate video messages over the summer.
+
+
+-------------------- error word 10 --------------------
+spymaster
+///// sentences 10 /////
+“There’s not much that happens in Russia that Putin’s not behind.” Mr Burns was not the only spymaster to have seen trouble coming Mr Prigozhin’s way.
+
+
+-------------------- word 11 --------------------
+mutineer
+mutineer
+===== translation11 =====
+someone who takes part in a mutiny 
+反叛者，叛变者 
+>>>>> phrase 11 <<<<<
+///// sentences 11 /////
+In an interview in June, Kyrylo Budanov, the chief of HUR , claimed the FSB, Russia’s security service, had been tasked to assassinate the mutineer.
+
+
+-------------------- word 12 --------------------
+demotion
+demotion
+===== translation12 =====
+a reduction in rank or position 
+降级；降职 
+>>>>> phrase 12 <<<<<
+///// sentences 12 /////
+Earlier on August 23rd General Sergei Surovikin, who had served as commander of Russian forces in Ukraine until demotion in January, was relieved as commander of Russia’s air and space forces.
+
+
+-------------------- word 13 --------------------
+relieve
+relieve
+===== translation13 =====
+to make an unpleasant feeling, such as pain or worry, less strong 
+缓解，减轻，解除（疼痛或担忧）；使宽心，使宽慰 
+to improve an unpleasant situation 
+缓和，缓解（令人不快的局势） 
+to provide relief for a bad situation or for people in need 
+救济；救援；救助 
+to take the place of someone and continue doing their job or duties 
+接替；换…的班；替下 
+to free a place that has been surrounded by an enemy army by military force 
+将（某地从敌人的围困中）解围；解救 
+>>>>> phrase 13 <<<<<
+relieve yourself
+polite word forurinate 
+撒尿，排尿（urinate 的礼貌性说法）
+///// sentences 13 /////
+Earlier on August 23rd General Sergei Surovikin, who had served as commander of Russian forces in Ukraine until demotion in January, was relieved as commander of Russia’s air and space forces.
+
+
+-------------------- word 14 --------------------
+foreknowledge
+foreknowledge
+===== translation14 =====
+knowledge of an event before it happens 
+预知，事先知道 
+>>>>> phrase 14 <<<<<
+///// sentences 14 /////
+General Surovikin was closely associated with Mr Prigozhin and had come under suspicion of aiding the mutiny or having foreknowledge of it.
+
+
+-------------------- error word 15 --------------------
+shoved aside
+///// sentences 15 /////
+Wagner forces had been shoved aside after they led the conquest of Bakhmut in May.
+
+
+-------------------- word 16 --------------------
+functionary
+functionary
+===== translation16 =====
+a person who has official duties, especially in a government or political party 
+（尤指政府机关或政党的）工作人员，公务员 
+>>>>> phrase 16 <<<<<
+///// sentences 16 /////
+Wagner is not the only mercenary firm on the continent, and African leaders in need of muscle will not much care whether Russian troops answer to Mr Prigozhin or another Kremlin functionary.
+
+
+-------------------- word 17 --------------------
+ripple
+ripple
+===== translation17 =====
+a small wave on the surface of water 
+涟漪；微波；细浪 
+a sound or feeling that spreads through a person or group of people, gradually increasing and then becoming smaller 
+（声音的）传播起伏；（感情的）逐渐扩散 
+plain ice cream with thin lines of other flavours in it 
+彩条冰激凌 
+to (cause to) move in small waves 
+（使）起涟漪；（使）如波浪般起伏 
+>>>>> phrase 17 <<<<<
+///// sentences 17 /////
+The biggest ripples will be those inside Russia.
+
+
+-------------------- word 18 --------------------
+vengeful
+vengeful
+===== translation18 =====
+expressing a strong wish to punish someone who has harmed you or your family or friends 
+图谋报复的；意图复仇的 
+>>>>> phrase 18 <<<<<
+///// sentences 18 /////
+If Mr Prigozhin was killed on Mr Putin’s orders, it would reinforce the president’s image as a vengeful strongman willing to dispense with procedure and law.
+
+
+-------------------- word 19 --------------------
+dispense with
+dispense with sth/sb
+===== translation19 =====
+to get rid of or stop using something or someone that you do not need 
+免除；废止；省去；不再使用 
+>>>>> phrase 19 <<<<<
+///// sentences 19 /////
+If Mr Prigozhin was killed on Mr Putin’s orders, it would reinforce the president’s image as a vengeful strongman willing to dispense with procedure and law.
+
+
+-------------------- word 20 --------------------
+memorable
+memorable
+===== translation20 =====
+likely to be remembered or worth remembering 
+难忘的；值得纪念的 
+>>>>> phrase 20 <<<<<
+///// sentences 20 /////
+He first caught the imagination of the Russian public as Russia’s president with a memorable pledge to “catch Chechen rebels on the toilet” and “wipe them out in the outhouse”.
+
+
+-------------------- word 22 --------------------
+outhouse
+outhouse
+===== translation22 =====
+a small building joined to or near to a larger one 
+（与大建筑物相连或相近的）附属建筑，外围建筑 
+a toilet in an outbuilding 
+户外厕所 
+>>>>> phrase 22 <<<<<
+///// sentences 22 /////
+He first caught the imagination of the Russian public as Russia’s president with a memorable pledge to “catch Chechen rebels on the toilet” and “wipe them out in the outhouse”.
+
+
+-------------------- word 23 --------------------
+radioactive
+radioactive
+===== translation23 =====
+having or producing the energy that comes from the breaking up of atoms 
+具有放射性的；有辐射性的 
+>>>>> phrase 23 <<<<<
+///// sentences 23 /////
+Over the following years, his enemies suffered a range of increasingly exotic methods of attack and assassination—from a radioactive isotope slipped in tea to nerve agent smeared on door handles and underpants—designed to cow would-be opponents.
+
+
+-------------------- word 24 --------------------
+isotope
+isotope
+===== translation24 =====
+a form of an atom that has a different atomic weight from other forms of the same atom but the same chemical structure 
+同位素 
+>>>>> phrase 24 <<<<<
+///// sentences 24 /////
+Over the following years, his enemies suffered a range of increasingly exotic methods of attack and assassination—from a radioactive isotope slipped in tea to nerve agent smeared on door handles and underpants—designed to cow would-be opponents.
+
+
+-------------------- word 25 --------------------
+nerve agent
+nerve agent
+===== translation25 =====
+a poisonous substance that damages the nervous system of the body, used as a weapon 
+（用作武器的）神经毒剂 
+>>>>> phrase 25 <<<<<
+///// sentences 25 /////
+Over the following years, his enemies suffered a range of increasingly exotic methods of attack and assassination—from a radioactive isotope slipped in tea to nerve agent smeared on door handles and underpants—designed to cow would-be opponents.
+
+
+-------------------- word 26 --------------------
+smear
+smear
+===== translation26 =====
+to spread a liquid or a thick substance over a surface 
+涂抹（黏腻的东西） 
+to publicly accuse someone of something unpleasant, unreasonable, or unlikely to be true in order to harm their reputation 
+诽谤，污蔑 
+a dirty mark made by spreading a liquid or a thick substance over a surface 
+（将某种液体或稠厚物质涂在表面上形成的）污点 
+an attempt to harm someone's reputation by publicly accusing them of something that is unpleasant, unreasonable, or unlikely to be true 
+诽谤，污蔑 
+a medical test in which cells from a woman's cervix (= entrance to the womb) are removed and examined to discover if there is any disease 
+（宫颈）涂片测试 
+>>>>> phrase 26 <<<<<
+///// sentences 26 /////
+Over the following years, his enemies suffered a range of increasingly exotic methods of attack and assassination—from a radioactive isotope slipped in tea to nerve agent smeared on door handles and underpants—designed to cow would-be opponents.
+
+
+-------------------- error word 27 --------------------
+underpants
+///// sentences 27 /////
+Over the following years, his enemies suffered a range of increasingly exotic methods of attack and assassination—from a radioactive isotope slipped in tea to nerve agent smeared on door handles and underpants—designed to cow would-be opponents.
+
+
+-------------------- word 29 --------------------
+mafia
+mafia
+===== translation29 =====
+a close group of people who are involved in similar activities and who help and protect each other, sometimes to the disadvantage of others 
+团伙，帮派，小集团 
+>>>>> phrase 29 <<<<<
+the Mafia
+a criminal organization that began in Sicily and is active in Italy and the US
+黑手党（起源于意大利西西里的犯罪组织，现活跃于意大利和美国）
+///// sentences 29 /////
+Yet these methods have also undermined the notion that Russia is a regular state, exposing Mr Putin’s regime as a mafia-like enterprise driven by personal whim and blood feuds.
+
+
+-------------------- word 30 --------------------
+mood
+mood
+===== translation30 =====
+the way you feel at a particular time 
+心境，心情，情绪；精神状态 
+>>>>> phrase 30 <<<<<
+///// sentences 30 /////
+“The people who gave the order do not understand the mood in the army and morale at all.
+
+
+-------------------- word 31 --------------------
+prosecutor
+prosecutor
+===== translation31 =====
+a legal official who accuses someone of committing a crime, especially in a law court 
+检察官；公诉人 
+>>>>> phrase 31 <<<<<
+///// sentences 31 /////
+Russian prosecutors, who promptly shut down an investigation into Mr Prigozhin’s mutiny after he accepted a deal to go into exile in Belarus, were quick to open an investigation into a violation of “air traffic and safety rules”.
 
 
