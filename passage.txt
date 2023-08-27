@@ -1,44 +1,30 @@
-### **First contact**
+[070 Science and technology - Smell-O-Vision 2_0.mp3](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6eaea6fd-6d13-4573-94af-02f488cb04b4/070_Science_and_technology_-_Smell-O-Vision_2_0.mp3)
 
-# **At last, Xi Jinping calls Volodymyr Zelensky**
+### **Smell-O-Vision 2.0**
 
-*China’s leader promises to push peace in Ukraine*
+# **How to bring scents to the metaverse**
 
-Apr 26th 2023 |
+*VR enthusiasts turn their attentions to an evocative, but neglected, sense*
 
-![f792ce22-000c-4211-aa3b-a6d0ecd26407.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1f4ced5f-78e0-45f2-9864-682cbb308278/f792ce22-000c-4211-aa3b-a6d0ecd26407.jpg)
+May 10th 2023 |
 
-FOR WEEKS, Chinese officials have told foreign counterparts that the time is not right to push for peace talks between Russia and Ukraine. Neither is interested, the officials argued, as each hopes to gain ground in the coming months. Likewise, the officials suggested it was too early for China’s leader, Xi Jinping, to speak to Ukraine’s president, Volodymyr Zelensky.
+![418b9886-b197-4604-bd95-db434bc1575e.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4aee3c27-9c2b-49c2-8f98-2d3d720240cb/418b9886-b197-4604-bd95-db434bc1575e.jpg)
 
-Many were thus surprised by the news that Mr Xi and Mr Zelensky spoke by phone on April 26th, their first exchange since the Russian invasion. What is more, the Chinese government announced that it would soon send a special representative to Ukraine and other countries to discuss “a political settlement of the Ukrainian crisis”.
+IT WAS one of those many inventions that never quite took off. In 1960, audiences watching the film “Scent of Mystery” got to experience the wonders of “Smell-O-Vision”. Mounted under the cinema seats, the system pumped out 30 different scents—from salty ocean breezes to whiffs of wine—at crucial moments in the plot. The system had its quirks. Those in the balcony complained that the smells reached them too late. Others found the scents to be too faint, or else irritatingly persistent. More novel than effective, Smell-O-Vision never really took root in Hollywood.
 
-Neither side provided much detail. China’s foreign ministry quoted Mr Xi as saying that dialogue was the only way forward. “There are no winners in a nuclear war,” he said. Mr Zelensky described their talk as “long and meaningful”. He said the call, and the appointment of a new Ukrainian ambassador to China, would give “powerful impetus” to bilateral ties. Russia, meanwhile, noted China’s readiness to try to start negotiations. But it added that Ukraine and its backers had “shown their ability to mess up any peace initiatives”.
+These days the cutting-edge of entertainment is video games and virtual reality, not films. Several groups are trying to bring scents to virtual worlds. In one paper published this week in *Nature Communications*, Xinge Yu at City University of Hong Kong and Yuhang Li at Beihang University describe two wearable “olfaction interfaces”. The first is the size of a plaster, and is affixed to the skin, like a fake moustache, under the user’s nose. The second, more capable version is a flexible face mask.
 
-So what explains China’s change of heart? Russia and Ukraine are no closer to peace talks. Nor has the battlefield shifted much. But the call follows a period of intense diplomacy focused on China’s approach to Ukraine. And it comes just a few days after China’s ambassador to France caused a diplomatic furore when he questioned the sovereignty of ex-Soviet states.
+Both rely on heating tiny tiles of paraffin wax that have been impregnated with various liquid perfumes. The smaller version of the system uses two such tiles; the bigger one has nine. The researchers claim that they can generate a scent, such as mint or green tea, in as little as 1.44 seconds. The nine generators on the mask can combine to produce hundreds of possible odours.
 
-China’s foreign ministry quickly disavowed those comments. For many in Europe and in former Soviet countries, however, the outburst provided further evidence that China is too close to Russia to act as a peacemaker in Ukraine. They were already sceptical of the peace plan that China proposed in February, as it echoes many of the Kremlin’s demands and does not seek a Russian withdrawal.
+Drs Li and Yu have been beaten to market by OVR, a startup based in Vermont. Its headset uses a system of refillable cartridges, each of which can make thousands of scents. The firm’s newest product, the “ION3”, will be released later this year, and can be tied into existing game-creation tools with minimal fuss.
 
-Such doubts intensified following Mr Xi’s visit to Moscow in March, when he pledged to expand co-operation just a few days after the International Criminal Court indicted Mr Putin for war crimes. America also alleged that China has been considering selling weapons to Russia, which European leaders say would cross a red line.
+Getting smells right could make virtual worlds more compelling. Odours are famously evocative. The part of the brain that processes them connects directly to parts associated with emotions and memory. But the science is tricky. Unlike colour or sound, where wavelengths and frequencies combine in predictable ways, smell is not so straightforward. Altering a single chemical bond can shift a scent from sweet to rancid. Whether smelly VR will do better than smelly films remains to be seen. But perhaps one day users will be able to stop, swipe and smell the virtual roses. ■
 
-China denies any such plans and rejects all criticism of its relations with Russia. But Chinese officials are increasingly conscious that Mr Xi’s position on Ukraine is undermining his efforts to persuade European governments to resist American pressure to “decouple” from China economically and to confront China more directly on security issues, including Taiwan.
-
-European leaders have been pressing Mr Xi to do more to end the war in Ukraine (even as they debate their longer-term China strategy). Emmanuel Macron, France’s president, and Ursula von der Leyen, president of the European Commission, were among those who on recent visits to China urged Mr Xi to speak to Mr Zelensky.
-
-None of that will have altered Mr Xi’s strategic calculus. His priority is China’s rivalry with America and he still sees Russia as a valuable source of energy, weapons and diplomatic support. He is determined to prevent Mr Putin from suffering a humiliating defeat that might lead to his being replaced by a pro-Western leader.
-
-“The fundamentals are the same,” says Alexander Gabuev of the Carnegie Russia Eurasia Centre in Berlin. He suggests that China delayed the Zelensky call over concerns about what Ukraine’s leader might say publicly, but then accelerated plans to help walk back the Chinese ambassador’s remarks and to “show that Macron and others who are enthusiastic about China’s diplomatic role are not mistaken”.
-
-That China has no intention to abandon or exert real pressure on Russia was made clear again in April when General Li Shangfu, China’s new defence minister, visited Moscow on his first trip abroad in that position. He told Mr Putin that Russia-China relations “go beyond the military-political alliances of the cold-war era”.
-
-Yet Mr Xi is determined to portray himself, especially in the global south, as the responsible leader of a great world power. And he still hopes to drive a wedge between America and Europe, a critical source of the investment and trade that China needs to revive its economy.
-
-Defusing the row surrounding its ambassador is unlikely to have been China’s main goal. But the timing helps, says Yun Sun of the Stimson Centre, a think-tank. “China doesn’t have realistic expectations that the war will end soon,” she says. “But it doesn’t mean China cannot exploit the opportunity to boost its influence and the goodwill it creates with Europe.” ■
-
-*Subscribers can sign up to [Drum Tower](https://www.economist.com/newsletters/drum-tower), our new weekly newsletter, to understand what the world makes of China—and what China makes of the world.*
+*Curious about the world? To enjoy our mind-expanding science coverage, sign up to [Simply Science](https://www.economist.com/newsletters/simply-science), our weekly subscriber-only newsletter.*
 
 ---
 
-This article was downloaded by **calibre** from https://www.economist.com/china/2023/04/26/at-last-xi-jinping-calls-volodymyr-zelensky
+This article was downloaded by **calibre** from https://www.economist.com/science-and-technology/2023/05/10/how-to-bring-scents-to-the-metaverse
 
 |
 

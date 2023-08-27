@@ -21,12 +21,12 @@ import numpy as np
 import cv2
 import pyautogui
 # import paddleocr
-from PIL import Image
+# from PIL import Image
 import time
 import pywinauto.mouse
-import ebooklib
-from ebooklib import epub
-from urllib import parse
+# import ebooklib
+# from ebooklib import epub
+# from urllib import parse
 import pyperclip
 import requests
 import re
@@ -540,7 +540,7 @@ class Economists:
         with open("passage.txt", 'w', encoding='utf-8') as file:
             file.truncate()
         print("检查clash是否关闭")
-        input("文档已经清空，请选中并复制全部文章，enter开始运行")
+        input("文档已经清空，请选中并复制本次要导入单词的notion中的文章全部，然后enter开始运行")
         while True:
             # 获取剪切板内容
             # time.sleep(5)
@@ -572,7 +572,9 @@ class Economists:
         with open("words_to_cambridge.txt", 'w',encoding='utf-8') as file:
             file.truncate()
         print("检查clash是否关闭")
-        print("文档已经清空，开始运行，可以开始选词")
+        print("文档已经清空，开始运行。\n"
+              "依次选中你要导入的生词或词组，然后复制：\n")
+        print("复制数字20即结束复制\n")
         words_clip = []
         while True:
             # 获取剪切板内容
@@ -607,6 +609,8 @@ class Economists:
         #     if word not in self.words and len(word) != 0:
         #         words.append(word)
         # 打开txt，进行修改，比如将动词还原等
+        print("即将打开包含选中的单词的txt，可手动将单词修改为原型，将词组修改为更容易查到的形式\n")
+        time.sleep(3)
         subprocess.run(['notepad.exe',"words_to_cambridge.txt"],check = True)
         with open("words_to_cambridge.txt","r") as file:
             words_txt = file.readlines()

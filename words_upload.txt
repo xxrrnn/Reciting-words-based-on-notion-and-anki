@@ -1,11 +1,79 @@
 -------------------- word 0 --------------------
-calculus
-calculus
+metaverse
+metaverse
 ===== translation0 =====
-an area of advanced mathematics in which continuously changing values are studied 
-微积分 
+the internet considered as an imaginary area without limits where you can meet people in virtual reality (= images and sounds, produced by a computer, that seem to represent a real place or situation) 
+元宇宙 
 >>>>> phrase 0 <<<<<
 ///// sentences 0 /////
-None of that will have altered Mr Xi’s strategic calculus.
+How to bring scents to the metaverse.
+
+
+-------------------- word 1 --------------------
+evocative
+evocative
+===== translation1 =====
+making you remember or imagine something pleasant 
+引起（愉快）回忆的；产生（美好）联想的；唤起（美好）感情的 
+>>>>> phrase 1 <<<<<
+///// sentences 1 /////
+VR enthusiasts turn their attentions to an evocative, but neglected, sense.
+
+Odours are famously evocative.
+
+
+-------------------- word 2 --------------------
+Mount
+mount
+===== translation2 =====
+to gradually increase, rise, or get bigger 
+增加；增长；上升 
+to get on a horse, bicycle, etc.. in order to ride 
+骑上（马、自行车等） 
+to go up or onto 
+登上 
+to organize and begin an activity or event 
+组织；发动；开展；举行 
+to fix something to a wall, in a frame, etc., so that it can be looked at or used 
+安放，安装；镶嵌；裱贴 
+to place someone on guard 
+设置（岗哨）；担任（警卫） 
+a horse 
+马 
+something, such as a piece of card, that you put something on to show it 
+底板，托板；装帧，衬托纸，框 
+used as part of the name of a mountain 
+（用于山名前）山，峰 
+>>>>> phrase 2 <<<<<
+mount guard (on/over sb)
+to guard someone
+守护，保卫（某人）
+///// sentences 2 /////
+Mounted under the cinema seats, the system pumped out 30 different scents—from salty ocean breezes to whiffs of wine—at crucial moments in the plot.
+
+
+-------------------- word 3 --------------------
+whiff
+whiff
+===== translation3 =====
+a slight smell, carried on a current of air 
+一阵气味，一股味道 
+>>>>> phrase 3 <<<<<
+a whiff of sth
+a slight sign of something
+一点点，些许
+///// sentences 3 /////
+Mounted under the cinema seats, the system pumped out 30 different scents—from salty ocean breezes to whiffs of wine—at crucial moments in the plot.
+
+
+-------------------- word 4 --------------------
+quirk
+quirk
+===== translation4 =====
+an unusual habit or part of someone's personality, or something that is strange and unexpected 
+怪癖；古怪之处 
+>>>>> phrase 4 <<<<<
+///// sentences 4 /////
+The system had its quirks.
 
 

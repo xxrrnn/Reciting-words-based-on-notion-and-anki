@@ -566,7 +566,7 @@ class Update_anki:
                           labels=['know all', 'know some', 'forget all'],
                           autopct='%.2f%%')
             # plt.legend(patches, [f"{label}: {size}" for label, size in zip(labels, sizes)], loc="upper left")
-            title = "Know All: {}    Know Some:{}    Forget All:{}".format(self.count_know_all, self.self.count_know_some,
+            title = "Know All: {}    Know Some:{}    Forget All:{}".format(self.count_know_all, self.count_know_some,
                                                                            self.count_forget_all)
             axs[0, 1].set_title(title)
 
@@ -585,7 +585,7 @@ class Update_anki:
             just_add = True
         else:
             dict = response[0]
-            checked_date = dt.strptime(dict['properties']["Last"]['date']['start'], '%Y-%m-%d')
+            checked_date = dt.strptime(dict['properties']["Checked Date"]['date']['start'], '%Y-%m-%d')
             today = date.today()
             if checked_date == today:
                 just_add = True
