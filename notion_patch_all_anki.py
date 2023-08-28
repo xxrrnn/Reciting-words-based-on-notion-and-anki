@@ -346,7 +346,8 @@ class Update_anki:
 
         for dict in response:
             count += 1
-            print(count/len(dict))
+            print(count/len(response))
+            print(count ,len(response))
             try:
                 word = dict['properties']['words']['title'][0]['plain_text']
             except:
@@ -578,6 +579,7 @@ class Update_anki:
 
 
     def checked_move_to_today(self):
+        print("开始导入today单词库")
         response = self.DataBase_item_query(self.today_query_id)
         # 判断是否有之前的内容，如果有就清空
         just_add = False
@@ -587,6 +589,7 @@ class Update_anki:
             dict = response[0]
             checked_date = dt.strptime(dict['properties']["Checked Date"]['date']['start'], '%Y-%m-%d')
             today = date.today()
+            checked_date = checked_date.date()
             if checked_date == today:
                 just_add = True
             else:
