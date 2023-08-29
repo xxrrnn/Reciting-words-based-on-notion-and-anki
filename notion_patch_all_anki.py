@@ -42,12 +42,12 @@ class Update_anki:
         self.today_query_id = config.get('database', 'today_query')  # 取database前边的
         self.today_database_id = config.get('database', 'today_database')  # 取database前边的
         self.word_level_dict = {}
-        self.word_next_dict = []
+        self.word_next_dict = {}
         self.count_know_all = 0
         self.count_know_some = 0
         self.count_forget_all = 0
         self.selection_dict = {"KnowAll": "green","KnowSome":"yellow", "ForgetAll":"red"}
-
+        self.date_dict = {}  # 用于release_tension
     def delete_page(self,page_id):
         body = {
             'archived': True
@@ -290,27 +290,27 @@ class Update_anki:
         elif level == '1':
             n = 2
         elif level == '2':
-            n = 2
+            n = 4
         elif level == '3':
             # n = 3
-            n = int(random.randint(3,5))
+            n = int(random.randint(6,8))
         elif level == '4':
             # n = 8
-            n = int(random.randint(6,9))
+            n = int(random.randint(13,16))
         elif level == '5':
             # n = 15
-            n = int(random.randint(13,17))
+            n = int(random.randint(28,32))
         elif level == '6':
             # n = 30
-            n = int(random.randint(28,32))
+            n = int(random.randint(60,68))
         elif level == '7':
             # n = 60
-            n = int(random.randint(55,60))
+            n = int(random.randint(125,131))
         elif level == '8':
             # n = 90
-            n = int(random.randint(58,93))
+            n = int(random.randint(252,260))
         elif level == '9':
-            n = 120
+            n = 365
         else:
             n = 1
             print("wrong level")
@@ -335,7 +335,7 @@ class Update_anki:
         if modified_datetime != current_datetime:
             with open("word_today.txt", "w") as file:
                 file.truncate()
-        self.word_next_dict = {}
+        # self.word_next_dict = {}
 
         colors = ["default","gray","brown","orange","yellow","green","blue","purple","pink","red"]
         all_page_id = []
@@ -343,7 +343,7 @@ class Update_anki:
         today = date.today()
         today_str = date.today().strftime('%Y-%m-%d')
 
-
+        word_date_id = {}
         for dict in response:
             count += 1
             print(count/len(response))
@@ -402,6 +402,10 @@ class Update_anki:
                     self.word_level_dict[next_level] = self.word_level_dict[next_level] + 1
                 except:
                     self.word_level_dict[next_level] = 1
+                if next_str in self.date_dict.keys():
+                    self.date_dict[date].append(dict)
+                else:
+                    self.date_dict[date] = [dict]
                 self.today["KnowAll"] = self.knowall_list
                 self.today["KnowSome"] = self.knowsome_list
                 self.today["ForgetAll"] = self.forgetall_list
@@ -505,10 +509,25 @@ class Update_anki:
         print(count)
 
 
-
-
         self.draw_pic()
         self.checked_move_to_today()
+
+        # 判断是否需要分配压力
+        categories_next = list(self.word_next_dict.keys())
+        values_next = list(self.word_next_dict.values())
+        need_to_release = False
+        tension_date = []
+        for num in range(len(values_next)):
+            if values_next[num] > 300:
+                tension_date.append(categories_next[num])
+                print("日期：" + categories_next[num] + " , 这天需要背的单词为",
+                      + str(values_next[num] + " 个，超过300个"))
+                need_to_release = True
+        want_to_release = ""
+        if need_to_release:
+            want_to_release = input("出现压力过大的日期，是否要分配压力，是打 1 ，不是可以直接 enter")
+        if want_to_release == "1":
+            self.release_the_tension(tension_date)
 
     def draw_pic(self):
         # # 显示图形
@@ -575,6 +594,9 @@ class Update_anki:
         plt.tight_layout(pad=2.0)  # 增加子图间的纵向距离
 
         plt.show()
+        today_str = date.today().strftime('%Y-%m-%d')
+        file_path = today_str + ".png"
+        plt.savefig(file_path)
 
 
 
@@ -602,11 +624,12 @@ class Update_anki:
         for selection in self.selection_dict.keys():
             checked_list = self.today[selection]
             for body in checked_list:
+                word_content = body["properties"]['words']['title'][0]['plain_text']
+                print(word_content)
                 body["parent"]["database_id"] = self.today_database_id
                 word_tag = body["properties"]['Tags']['select']['name']
                 word_color = body["properties"]['Tags']['select']['color']
                 title = body["properties"]['passage']['multi_select'][0]['name']
-                word_content = body["properties"]['words']['title'][0]['plain_text']
                 pronoun = body["properties"]['phonetic symbol']['rich_text'][0]['text']['content']
                 meaning = body["properties"]['meaning']['rich_text'][0]['text']['content']
                 today_str = date.today().strftime('%Y-%m-%d')
@@ -654,6 +677,21 @@ class Update_anki:
                 }
                 r = requests.post(url, json=p, headers=self.headers)
                 print(r.text)
+
+    def release_the_tension(self,tension_date):
+        print("先不做了，如果之后背单词真背不下去再写")
+        # for date in tension_date:
+        #     this_day_response = self.date_dict[date]
+        #     print(len(this_day_response))
+        #     count = -1
+        #     for dict in this_day_response:
+        #         count += 1
+        #         word_content = dict["properties"]['words']['title'][0]['plain_text']
+        #         print(word_content)
+        #         print(count,count/len(this_day_response))
+        #         level = dict["properties"]['Level']['select']["name"]
+
+
 
 
 
