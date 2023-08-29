@@ -327,7 +327,7 @@ class Update_anki:
     def patch_update(self):
         print("start get response")
         response = self.DataBase_item_query(self.query_id)
-        modified_time = os.path.getmtime("TestFiles\word_today.txt")
+        modified_time = os.path.getmtime("word_today.txt")
         modified_datetime = datetime.datetime.fromtimestamp(modified_time)
         modified_datetime = modified_datetime.date()
         # 获取当前日期
@@ -361,13 +361,13 @@ class Update_anki:
             #     pass
             # 如果选了
             if KnowAll or KnowSome or ForgetAll:
-                with open("word_today.txt","a",encoding="utf-8") as file:
-                    file.write(word + "\n")
                 checked_times += 1
                 print(word)
                 print(KnowAll, KnowSome, ForgetAll)
                 level = dict['properties']["Level"]['select']['name']
                 if KnowAll:
+                    with open("word_today.txt", "a", encoding="utf-8") as file:
+                        file.write(word + " |KnowAll""\n")
                     self.count_know_all += 1
                     self.knowall_list.append(dict)
                     next_level = str(int(level) + 1)
@@ -375,6 +375,8 @@ class Update_anki:
                         next_level = '9'
                     next_str = self.next_day_on_level(next_level)
                 elif KnowSome:
+                    with open("word_today.txt", "a", encoding="utf-8") as file:
+                        file.write(word + " |KnowSome""\n")
                     self.count_know_some += 1
                     self.knowsome_list.append(dict)
                     if int(level) >= 4:
@@ -387,6 +389,8 @@ class Update_anki:
                         next_level = str(int(level) )
                     next_str = self.next_day_on_level(next_level)
                 elif ForgetAll:
+                    with open("word_today.txt", "a", encoding="utf-8") as file:
+                        file.write(word + " |ForgetAll""\n")
                     self.count_forget_all += 1
                     self.forgetall_list.append(dict)
                     next_level = '0'
@@ -429,7 +433,7 @@ class Update_anki:
                     }
                 }
                 # must change
-                self.patch_one_data(data,page_id)
+                # self.patch_one_data(data,page_id)
 
             # 如果没选
             else:
@@ -590,7 +594,31 @@ class Update_anki:
                                                                            self.count_forget_all)
             axs[0, 1].set_title(title)
 
-        axs[1, 1].axis('off')
+        today_word_level_dict = {}
+        with open("word_today.txt","r",encoding="utf-8") as file:
+            today_word_levels = file.readlines()
+        for today_word_level in today_word_levels:
+            word_level = today_word_level.strip('\n')
+            word_level = word_level.split('|')
+            level = word_level[1]
+            if level not in today_word_level:
+                today_word_level_dict[level] = 0
+            else:
+                today_word_level_dict[level] += 1
+
+
+
+        if self.count_forget_all == 0 and self.count_know_some == 0 and self.count_forget_all == 0:
+            axs[1, 1].axis('off')
+        else:
+            axs[1, 1].pie(x=[self.count_know_all, self.count_know_some, self.count_forget_all],
+                          labels=['know all', 'know some', 'forget all'],
+                          autopct='%.2f%%')
+            # plt.legend(patches, [f"{label}: {size}" for label, size in zip(labels, sizes)], loc="upper left")
+            title = "Today all:  Know All: {}    Know Some:{}    Forget All:{}".format(self.count_know_all, self.count_know_some,
+                                                                           self.count_forget_all)
+            axs[1, 1].set_title(title)
+
         plt.tight_layout(pad=2.0)  # 增加子图间的纵向距离
         today_str = date.today().strftime('%Y-%m-%d')
         file_path = today_str + ".png"
