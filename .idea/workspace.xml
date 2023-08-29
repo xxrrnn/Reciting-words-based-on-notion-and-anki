@@ -8,8 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/基于notion的外刊阅读脚本.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/基于notion的外刊阅读脚本.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestFiles/notion_patch_all_anki.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/notion_patch_all_anki.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestFiles/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2023-08-29.png" beforeDir="false" afterPath="$PROJECT_DIR$/2023-08-29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Economist_anki.py" beforeDir="false" afterPath="$PROJECT_DIR$/Economist_anki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notion_patch_all_anki.py" beforeDir="false" afterPath="$PROJECT_DIR$/notion_patch_all_anki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_today.txt" beforeDir="false" afterPath="$PROJECT_DIR$/word_today.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/TestFiles/notion_patch_all_anki.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/token.ini" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -207,7 +210,7 @@
       <workItem from="1693057819399" duration="7791000" />
       <workItem from="1693068979949" duration="1205000" />
       <workItem from="1693295832294" duration="386000" />
-      <workItem from="1693296318352" duration="2542000" />
+      <workItem from="1693296318352" duration="628000" />
     </task>
     <task id="LOCAL-00001" summary="修改段落分句算法，增加通过剪切板识别文章的算法，再次简化流程">
       <option name="closed" value="true" />
@@ -289,23 +292,7 @@
       <option name="project" value="LOCAL" />
       <updated>1693296360157</updated>
     </task>
-    <task id="LOCAL-00011" summary="更新关闭vpn算法模式和绘图debug">
-      <option name="closed" value="true" />
-      <created>1693297271932</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1693297271932</updated>
-    </task>
-    <task id="LOCAL-00012" summary="更新关闭vpn算法模式和绘图debug">
-      <option name="closed" value="true" />
-      <created>1693297404597</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1693297404597</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,21 +348,5 @@
         <watch expression="result['properties']['🌏 Economist Reading']['relation']" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/notion$test.coverage" NAME="test Coverage Results" MODIFIED="1692964054729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$test_release_tension_dict.coverage" NAME="test_release_tension_dict Coverage Results" MODIFIED="1693291871924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$_solution.coverage" NAME="重复_solution Coverage Results" MODIFIED="1693281771718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$main.coverage" NAME="main Coverage Results" MODIFIED="1693296880744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notion$notion_api_patch.coverage" NAME="notion_api_patch Coverage Results" MODIFIED="1692983283256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$test_ordered_dict.coverage" NAME="test_ordered_dict Coverage Results" MODIFIED="1693109411250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$notion_relation_test.coverage" NAME="notion_relation_test Coverage Results" MODIFIED="1692963907305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$Economist_anki.coverage" NAME="Economist_anki Coverage Results" MODIFIED="1693155409543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notion$notion_patch_all_anki.coverage" NAME="notion_patch_all_anki Coverage Results" MODIFIED="1693281985759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$test_today.coverage" NAME="test_today Coverage Results" MODIFIED="1693124539623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$notion_api.coverage" NAME="notion_api Coverage Results" MODIFIED="1693122218322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$test_plt.coverage" NAME="test_plt Coverage Results" MODIFIED="1693079822277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$notion_patch_all_pronoun_voice_relation.coverage" NAME="notion_patch_all_pronoun_voice_relation Coverage Results" MODIFIED="1692978448787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$notion_patch_all_anki__1_.coverage" NAME="notion_patch_all_anki (1) Coverage Results" MODIFIED="1693295428454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

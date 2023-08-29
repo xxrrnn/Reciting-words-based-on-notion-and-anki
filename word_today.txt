@@ -1,0 +1,55 @@
+lawlessness |KnowAll
+frailty |KnowAll
+brace for |KnowAll
+coordinate |KnowAll
+refillable |KnowAll
+sanitisation |KnowSome
+brutality |KnowAll
+demographic dividend |KnowAll
+albeit |KnowAll
+spiky |KnowAll
+scam |KnowAll
+jockey for |KnowAll
+oppression |KnowAll
+cartridge |KnowAll
+responsive |KnowAll
+instill |KnowAll
+staged a coup to eject him |KnowAll
+supersonic |KnowAll
+showdown |KnowAll
+tick off from the list |KnowAll
+fixated |KnowAll
+texture |KnowAll
+hole up |KnowAll
+sap |KnowSome
+gloss over |KnowAll
+tarmac |KnowAll
+progress |KnowAll
+bother |KnowSome
+arid |KnowAll
+authority |KnowAll
+urban-heat-island effect |KnowAll
+bemuse |KnowSome
+omitting to mention |KnowAll
+farther afield |KnowAll
+puppet |KnowAll
+teetering |KnowAll
+air strikes |KnowAll
+earnestly |KnowAll
+red tape |KnowAll
+trio |KnowAll
+jamming tecnology |KnowAll
+engagingly |KnowAll
+boilerplate |KnowAll
+prickly |KnowSome
+flout |KnowSome
+proposition |ForgetAll
+dabble in |KnowSome
+fumble |KnowAll
+cautionary |KnowSome
+unscramble |KnowAll
+staffing |KnowAll
+pacify |KnowAll
+evict |ForgetAll
+tern |KnowSome
+pass as/for sth/sb |KnowSome

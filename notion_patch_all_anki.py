@@ -390,7 +390,7 @@ class Update_anki:
                     next_str = self.next_day_on_level(next_level)
                 elif ForgetAll:
                     with open("word_today.txt", "a", encoding="utf-8") as file:
-                        file.write(word + " |ForgetAll""\n")
+                        file.write(word + " |ForgetAll\n")
                     self.count_forget_all += 1
                     self.forgetall_list.append(dict)
                     next_level = '0'
@@ -433,7 +433,7 @@ class Update_anki:
                     }
                 }
                 # must change
-                # self.patch_one_data(data,page_id)
+                self.patch_one_data(data,page_id)
 
             # 如果没选
             else:
@@ -528,10 +528,10 @@ class Update_anki:
                       + str(values_next[num]) + " 个，超过300个")
                 need_to_release = True
         want_to_release = ""
-        if need_to_release:
-            want_to_release = input("出现压力过大的日期，是否要分配压力，是打 1 ，不是可以直接 enter")
-        if want_to_release == "1":
-            self.release_the_tension(tension_date)
+        # if need_to_release:
+        #     want_to_release = input("出现压力过大的日期，是否要分配压力，是打 1 ，不是可以直接 enter")
+        # if want_to_release == "1":
+        #     self.release_the_tension(tension_date)
 
     def draw_pic(self):
         # # 显示图形
@@ -594,29 +594,36 @@ class Update_anki:
                                                                            self.count_forget_all)
             axs[0, 1].set_title(title)
 
-        today_word_level_dict = {}
+        today_word_level_dict = {"KnowAll":0,"KnowSome":0,"ForgetAll":0}
         with open("word_today.txt","r",encoding="utf-8") as file:
             today_word_levels = file.readlines()
         for today_word_level in today_word_levels:
             word_level = today_word_level.strip('\n')
             word_level = word_level.split('|')
             level = word_level[1]
-            if level not in today_word_level:
-                today_word_level_dict[level] = 0
-            else:
-                today_word_level_dict[level] += 1
+            # try:
+            #     today_word_level_dict[level] += 1
+            # except:
+            #     today_word_level_dict[level] = 0
+            today_word_level_dict[level] += 1
 
 
 
-        if self.count_forget_all == 0 and self.count_know_some == 0 and self.count_forget_all == 0:
+
+        try:
+            length = len(today_word_level_dict.keys())
+        except:
+            axs[1, 1].axis('off')
+        if len(today_word_level_dict.keys()) ==0:
             axs[1, 1].axis('off')
         else:
-            axs[1, 1].pie(x=[self.count_know_all, self.count_know_some, self.count_forget_all],
+            axs[1, 1].pie(x=[today_word_level_dict["KnowAll"], today_word_level_dict["KnowSome"],
+                             today_word_level_dict["ForgetAll"]],
                           labels=['know all', 'know some', 'forget all'],
                           autopct='%.2f%%')
             # plt.legend(patches, [f"{label}: {size}" for label, size in zip(labels, sizes)], loc="upper left")
-            title = "Today all:  Know All: {}    Know Some:{}    Forget All:{}".format(self.count_know_all, self.count_know_some,
-                                                                           self.count_forget_all)
+            title = "Today all:  Know All: {}    Know Some:{}    Forget All:{}".format(today_word_level_dict["KnowAll"], today_word_level_dict["KnowSome"],
+                                                                           today_word_level_dict["ForgetAll"])
             axs[1, 1].set_title(title)
 
         plt.tight_layout(pad=2.0)  # 增加子图间的纵向距离

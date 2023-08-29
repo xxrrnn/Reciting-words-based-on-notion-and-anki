@@ -23,7 +23,7 @@ import pyautogui
 # import paddleocr
 # from PIL import Image
 import time
-import pywinauto.mouse
+# import pywinauto.mouse
 # import ebooklib
 # from ebooklib import epub
 # from urllib import parse
