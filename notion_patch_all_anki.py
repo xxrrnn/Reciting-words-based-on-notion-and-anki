@@ -520,7 +520,7 @@ class Update_anki:
         for num in range(len(values_next)):
             if values_next[num] > 300:
                 tension_date.append(categories_next[num])
-                print("日期：" + categories_next[num] + " , 这天需要背的单词为",
+                print("日期：" + categories_next[num] + " , 这天需要背的单词为"
                       + str(values_next[num]) + " 个，超过300个")
                 need_to_release = True
         want_to_release = ""
