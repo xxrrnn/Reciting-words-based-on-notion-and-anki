@@ -521,7 +521,7 @@ class Update_anki:
             if values_next[num] > 300:
                 tension_date.append(categories_next[num])
                 print("日期：" + categories_next[num] + " , 这天需要背的单词为",
-                      + str(values_next[num] + " 个，超过300个"))
+                      + str(values_next[num]) + " 个，超过300个")
                 need_to_release = True
         want_to_release = ""
         if need_to_release:
@@ -592,11 +592,11 @@ class Update_anki:
 
         axs[1, 1].axis('off')
         plt.tight_layout(pad=2.0)  # 增加子图间的纵向距离
-
-        plt.show()
         today_str = date.today().strftime('%Y-%m-%d')
         file_path = today_str + ".png"
         plt.savefig(file_path)
+        plt.show()
+
 
 
 

@@ -938,10 +938,13 @@ class Economists:
 
 
     def run(self):
-        try:
-            source_code = requests.get(self.guidURL + 'and', headers=self.headers).text
-        except:
-            self.setup()
+        while True:
+            try:
+                source_code = requests.get(self.guidURL + 'and', headers=self.headers).text
+                break
+            except:
+                input("无法爬虫，请关闭vpn；\n 关闭后请回车")
+            # self.setup()
         self.title = input("输入这次的文章标号：参考063：\n")
         selection = input("需要clip文章吗？ 不需要打0 \n")
         if selection != "0":
