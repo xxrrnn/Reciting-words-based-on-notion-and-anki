@@ -515,13 +515,13 @@ class Economists:
         # with open("filename.txt", "r", encoding=detected_encoding) as file:
 
         # with open("words.txt", "r", encoding="utf-8") as file:
-        with open("words.txt", "r", encoding=self.detected_encoding) as file:
+        with open("words.txt", "r", encoding="utf-8") as file:
             words_clip = file.readlines()
         for num in range(len(words_clip)):
             words_clip[num] = words_clip[num].replace('\n','')
 
 
-        with open("words_to_cambridge.txt", "r", encoding=self.detected_encoding) as file:
+        with open("words_to_cambridge.txt", "r", encoding="utf-8") as file:
             words_to_cambridge = file.readlines()
         for num in range(len(words_to_cambridge)):
             words_to_cambridge[num] = words_to_cambridge[num].replace('\n','')
@@ -539,7 +539,6 @@ class Economists:
         prev_clipboard_content = ''
         with open("passage.txt", 'w', encoding='utf-8') as file:
             file.truncate()
-        print("检查clash是否关闭")
         input("文档已经清空，请选中并复制本次要导入单词的notion中的文章全部，然后enter开始运行")
         while True:
             # 获取剪切板内容
@@ -636,6 +635,36 @@ class Economists:
         # 使用检测到的编码来打开文件
         self.detected_encoding = result["encoding"]
 
+    def web_insert_solution(self,sentence):
+        while True:
+            have_web = False
+            if "[" in sentence and ']' in sentence and "(" in sentence and ")" in sentence and "http" in sentence and 'jpg' not in sentence and "png" not in sentence:
+                have_web = True
+            if have_web == False:
+                return sentence
+            else:
+                print(sentence)
+                # [:1]:2(:3):4 先找](，再找前边的；前边的[可能不存在，那就取0
+                index_2 = 0
+                index_3 = 0
+                index_4 = 0
+                for num in range(len(sentence)-1):
+                    if sentence[num] == "]" and sentence[num+1] == "(":
+                        index_2 = num
+                        index_3 = num + 1
+                    if index_2 == index_3 - 1:
+                        if sentence[num] == ")":
+                            index_4 = num
+                            break
+                for num in range(index_2, -1, -1):
+                    if sentence[num] == "[":
+                        index_1 = num
+                        break
+                sentence = sentence[0:index_1] + sentence[index_1+1:index_2] + sentence[index_4+1:len(sentence)]
+                print(sentence)
+
+
+
 
 
 
@@ -707,7 +736,8 @@ class Economists:
             sentences_all[sen_num] = sentences_all[sen_num].replace('\n', '')
             sentences_all[sen_num] = sentences_all[sen_num].replace('\r', '')
             sentences_all[sen_num] = sentences_all[sen_num].strip('*# ')
-            sentences_all[sen_num] = re.sub(r'\((.*?)\)|\[([^\]]+)\]', lambda m: m.group(2) if m.group(2) else "", sentences_all[sen_num] )
+            sentences_all[sen_num] = self.web_insert_solution(sentences_all[sen_num])
+            # sentences_all[sen_num] = re.sub(r'\((.*?)\)|\[([^\]]+)\]', lambda m: m.group(2) if m.group(2) else "", sentences_all[sen_num] )
             # sentences_all[sen_num] = sentences_all[sen_num].strip('*')
             # sentences_all[sen_num] = sentences_all[sen_num].strip()
             # sentences_all[sen_num] = sentences_all[sen_num].strip('#')
@@ -951,7 +981,7 @@ class Economists:
             self.get_clip_passage()
         else:
             pass
-        selection = input("需要clip吗？ 不需要打0\n")
+        selection = input("需要clip单词吗？ 不需要打0\n")
         if selection == "0":
             self.get_words_txt()
         else:

@@ -1,356 +1,234 @@
--------------------- error word 0 --------------------
-mused on
+-------------------- word 0 --------------------
+dab
+dab
+===== translation0 =====
+to touch something with quick light touches, or to put a substance on something with quick light touches 
+轻触，轻碰；（轻轻地）擦，涂抹 
+a small amount of a substance, or a light touch 
+少许，一点；轻触；轻点 
+abbreviation fordigital audio broadcasting  
+数位音频传输（digital audio broadcasting的缩写） 
+>>>>> phrase 0 <<<<<
 ///// sentences 0 /////
-BILL BURNS, the director of the CIA, recently mused on what fate might await Yevgeny Prigozhin, the mercenary leader who mounted a short-lived mutiny in Russia in June.
+A LITTLE BOY, face covered in red and white paint (and a dab of ketchup) screams with delight when England equalise with Colombia in their quarter-final match.
 
 
 -------------------- word 1 --------------------
-mutiny
-mutiny
+equalise
+equalize
 ===== translation1 =====
-an occasion when a group of people, especially soldiers or sailors, refuses to obey orders and/or attempts to take control from people in authority 
-（尤指士兵或船员的）反叛，哗变，暴动 
-to take part in a mutiny 
-反叛，叛变；哗变 
+to make things or people equal 
+使相等；使均等；使平等 
+to get the point in a game or competition that makes your score the same as that of the other team or player 
+打成平局，扳平比分 
 >>>>> phrase 1 <<<<<
 ///// sentences 1 /////
-BILL BURNS, the director of the CIA, recently mused on what fate might await Yevgeny Prigozhin, the mercenary leader who mounted a short-lived mutiny in Russia in June.
-
-“In my experience Putin is the ultimate apostle of payback so I would be surprised if Prigozhin escapes further retribution.” On August 23rd, precisely two months after that mutiny, Mr Prigozhin’s jet plunged to the ground
-
-General Surovikin was closely associated with Mr Prigozhin and had come under suspicion of aiding the mutiny or having foreknowledge of it.
-
-Russian prosecutors, who promptly shut down an investigation into Mr Prigozhin’s mutiny after he accepted a deal to go into exile in Belarus, were quick to open an investigation into a violation of “air traffic and safety rules”.
+A LITTLE BOY, face covered in red and white paint (and a dab of ketchup) screams with delight when England equalise with Colombia in their quarter-final match.
 
 
 -------------------- error word 2 --------------------
-a dish best served cold
+rubbing shoulders with
 ///// sentences 2 /////
-Vladimir Putin, Russia’s president, “is generally someone who thinks that revenge is a dish best served cold,” he said.
+Your correspondent is rubbing shoulders with England fans in white and red, Colombian ones in yellow and Australians giddy from their team’s earlier victory over France.
 
 
 -------------------- word 3 --------------------
-apostle
-apostle
+giddy
+giddy
 ===== translation3 =====
-someone who strongly supports a particular belief or political movement 
-（信仰或政治运动的）倡导者，鼓吹者，先驱 
+→ dizzy  
+（同 dizzy） 
+feeling silly, happy, and excited and showing this in your behaviour 
+飘飘然的 
 >>>>> phrase 3 <<<<<
-the Apostles
-the group of early Christians who travelled to different places telling people about Jesus Christ
-基督的十二使徒
 ///// sentences 3 /////
-“In my experience Putin is the ultimate apostle of payback so I would be surprised if Prigozhin escapes further retribution.” On August 23rd, precisely two months after that mutiny, Mr Prigozhin’s jet plunged to the ground
+Your correspondent is rubbing shoulders with England fans in white and red, Colombian ones in yellow and Australians giddy from their team’s earlier victory over France.
 
 
--------------------- word 4 --------------------
-payback
-payback
-===== translation4 =====
-an advantage received from something, especially the profit from a financial investment 
-回报，收益 
-something bad that is done to you because of something bad that you have done previously 
-（因为过去的错失而不得不经受目前的遭遇）偿还 
->>>>> phrase 4 <<<<<
+-------------------- error word 4 --------------------
+TV viewership
 ///// sentences 4 /////
-“In my experience Putin is the ultimate apostle of payback so I would be surprised if Prigozhin escapes further retribution.” On August 23rd, precisely two months after that mutiny, Mr Prigozhin’s jet plunged to the ground
+Attendance at the tournament is over 1.8m, up from 2015’s record of 1.4m. TV viewership across all matches is set to pass 2bn, double the previous high point
 
 
 -------------------- word 5 --------------------
-retribution
-retribution
+advert
+advert
 ===== translation5 =====
-deserved and severe punishment 
-严惩；应得的惩罚；报应 
+an advertisement 
+一则广告 
 >>>>> phrase 5 <<<<<
 ///// sentences 5 /////
-“In my experience Putin is the ultimate apostle of payback so I would be surprised if Prigozhin escapes further retribution.” On August 23rd, precisely two months after that mutiny, Mr Prigozhin’s jet plunged to the ground
-
-Notably, the crash came on a day of wider retribution.
-
-
--------------------- word 6 --------------------
-plunged
-plunge
-===== translation6 =====
-to (cause someone or something to) move or fall suddenly and often a long way forward, down, or into something 
-（使）（某人或某物）骤然移动，骤然下降 
-to become lower in value or level very suddenly and quickly 
-（价值或程度）暴跌，骤降 
-a sudden movement or fall forward, down, or into something 
-跳入；下跌；落下 
-a sudden and large fall in value or level 
-暴跌，骤降 
->>>>> phrase 6 <<<<<
-///// sentences 6 /////
-“In my experience Putin is the ultimate apostle of payback so I would be surprised if Prigozhin escapes further retribution.” On August 23rd, precisely two months after that mutiny, Mr Prigozhin’s jet plunged to the ground
+One striking advert tries to dispel the idea that the women’s game is less skilful.
 
 
 -------------------- word 7 --------------------
-incline to
-incline to/towards sth
+trickery
+trickery
 ===== translation7 =====
-to think that a belief or opinion is probably correct 
-倾向于认为；倾向于赞同 
+the activity of using tricks to deceive or cheat people 
+欺骗，欺诈 
 >>>>> phrase 7 <<<<<
 ///// sentences 7 /////
-One possibility, though few online commenters seemed inclined to believe it, is that it was an accident.
+Later, the digital trickery is revealed: viewers have actually been watching the women’s team.
 
 
 -------------------- word 8 --------------------
-jumpy
-jumpy
+persist
+persist
 ===== translation8 =====
-nervous and worried, especially because you are frightened or guilty 
-提心吊胆的；胆战心惊的；紧张不安的 
+If an unpleasant feeling or situation persists, it continues to exist. 
+持续；存留 
+to try to do or continue doing something in a determined but often unreasonable way 
+坚持不懈；执意 
 >>>>> phrase 8 <<<<<
 ///// sentences 8 /////
-Local air-defences may thus have been jumpy; in 2020 Iran shot down one of its own civilian airliners in Tehran during a period of high alert.
+Those differences persist even among the most athletic members of each sex.
 
 
--------------------- word 9 --------------------
-irate
-irate
-===== translation9 =====
-very angry 
-极其愤怒的，大怒的 
->>>>> phrase 9 <<<<<
+-------------------- error word 9 --------------------
+kick a 623-gram basketball-sized sphere around
 ///// sentences 9 /////
-A senior source in Ukrainian intelligence said several figures in Russia were enraged enough to want Mr Prigozhin dead, including Sergei Shoigu, Russia’s defence minister, a frequent target of Mr Prigozhin’s irate video messages over the summer.
+Put another way, say the researchers, expecting women to play with a men’s ball is a bit like asking men to kick a 623-gram basketball-sized sphere around.
 
 
 -------------------- error word 10 --------------------
-spymaster
+rough-and-ready
 ///// sentences 10 /////
-“There’s not much that happens in Russia that Putin’s not behind.” Mr Burns was not the only spymaster to have seen trouble coming Mr Prigozhin’s way.
+Admittedly, the maths are rough-and-ready.
 
 
 -------------------- word 11 --------------------
-mutineer
-mutineer
+discuses
+discus
 ===== translation11 =====
-someone who takes part in a mutiny 
-反叛者，叛变者 
+a heavy plate-shaped object that is thrown as part of a sports event 
+铁饼 
 >>>>> phrase 11 <<<<<
+the discus
+the event or sport in which a discus is thrown as far as possible
+掷铁饼；掷铁饼项目
 ///// sentences 11 /////
-In an interview in June, Kyrylo Budanov, the chief of HUR , claimed the FSB, Russia’s security service, had been tasked to assassinate the mutineer.
+In athletics, women put lighter shots, throw lighter discuses and leap over lower hurdles than men do.
 
 
 -------------------- word 12 --------------------
-demotion
-demotion
+hurdle
+hurdle
 ===== translation12 =====
-a reduction in rank or position 
-降级；降职 
+a frame or fence for jumping over in a race 
+（跨栏比赛中的）栏架 
+a problem that you have to deal with before you can make progress 
+障碍，难题 
+to run in a race in which there are hurdles to be jumped over, or to jump over something while running 
+参加跨栏比赛；跨过 
 >>>>> phrase 12 <<<<<
+hurdles
+a race in which people or horses jump over hurdles
+跨栏比赛
 ///// sentences 12 /////
-Earlier on August 23rd General Sergei Surovikin, who had served as commander of Russian forces in Ukraine until demotion in January, was relieved as commander of Russia’s air and space forces.
+In athletics, women put lighter shots, throw lighter discuses and leap over lower hurdles than men do.
 
 
 -------------------- word 13 --------------------
-relieve
-relieve
+Rugby
+rugby
 ===== translation13 =====
-to make an unpleasant feeling, such as pain or worry, less strong 
-缓解，减轻，解除（疼痛或担忧）；使宽心，使宽慰 
-to improve an unpleasant situation 
-缓和，缓解（令人不快的局势） 
-to provide relief for a bad situation or for people in need 
-救济；救援；救助 
-to take the place of someone and continue doing their job or duties 
-接替；换…的班；替下 
-to free a place that has been surrounded by an enemy army by military force 
-将（某地从敌人的围困中）解围；解救 
+a sport where two teams try to score points by carrying an oval ball across a particular line or kicking it over and between an H-shaped set of posts 
+橄榄球 
 >>>>> phrase 13 <<<<<
-relieve yourself
-polite word forurinate 
-撒尿，排尿（urinate 的礼貌性说法）
 ///// sentences 13 /////
-Earlier on August 23rd General Sergei Surovikin, who had served as commander of Russian forces in Ukraine until demotion in January, was relieved as commander of Russia’s air and space forces.
+World Rugby, the international governing body for rugby union, is planning tests of a ball sized for women’s smaller hands.
 
 
 -------------------- word 14 --------------------
-foreknowledge
-foreknowledge
+biomechanics
+biomechanics
 ===== translation14 =====
-knowledge of an event before it happens 
-预知，事先知道 
+the physical forces that affect human and animal movement, or the study of these forces  
+生物力学 
 >>>>> phrase 14 <<<<<
 ///// sentences 14 /////
-General Surovikin was closely associated with Mr Prigozhin and had come under suspicion of aiding the mutiny or having foreknowledge of it.
+In the past, women’s football boots were derived from shoes designed for a man’s weight, foot size and biomechanics.
 
 
--------------------- error word 15 --------------------
-shoved aside
+-------------------- word 15 --------------------
+arch
+arch
+===== translation15 =====
+a structure, consisting of a curved top on two supports, that holds the weight of something above it 
+拱；拱形结构；拱门（或窗、顶、洞等） 
+something that has the shape of an arch, often used for decoration 
+（常用作装饰的）拱形，拱形物 
+the raised curve on the bottom of your foot 
+足弓，足背 
+any organ or part of the body that is curved in shape 
+弓（身体中曲线形或弧形的结构） 
+to make the shape of an arch 
+（使）拱起；（使）成拱形 
+showing that you think it is amusing that you know more about something than someone else does 
+淘气的；调皮的 
+most important 
+主要的；最重要的 
+greater or especially worse than others of the same type 
+极度的；为首的；（尤指）极恶劣的 
+>>>>> phrase 15 <<<<<
 ///// sentences 15 /////
-Wagner forces had been shoved aside after they led the conquest of Bakhmut in May.
+A firm called Ida Sports sells a boot that is wider around the toes, narrower at the heel and gives more support round the arch, with shorter and more plentiful studs.
 
 
 -------------------- word 16 --------------------
-functionary
-functionary
+studs
+stud
 ===== translation16 =====
-a person who has official duties, especially in a government or political party 
-（尤指政府机关或政党的）工作人员，公务员 
+a group of animals, especially high-quality horses, kept for breeding 
+种畜；（尤指）良种种马 
+a man who is considered to be attractive and skilled sexually 
+风流男子，四处留情的男人 
+a small nail or piece of metal, with a large, rounded top, that is attached to the surface of something, usually for decoration 
+（通常作装饰的）饰钉，嵌钉 
+a small piece of metal jewellery that is put through a part of your body such as your ear or nose 
+钉状首饰；耳钉；鼻插 
+any of the small, pointed objects that stick out from the bottom of some boots and shoes used in particular sports, for example football 
+（尤指足球鞋的）鞋钉 
+a fastener made from two small flat parts joined together by a short bar, used for clothing, especially in the past to fix collars onto shirts 
+（尤指旧时的）领扣 
+a small piece of metal, many of which are attached to special tyres used for driving in the snow 
+（通常作装饰的）饰钉，嵌钉 
 >>>>> phrase 16 <<<<<
+put (out) to stud
+kept for breeding
+留作种畜；留作种马
+studs showing/up
+with the studs of your football boots pointing at a player's leg when you tackle them
+（足球）在铲球时把鞋钉对着对方球员的腿
 ///// sentences 16 /////
-Wagner is not the only mercenary firm on the continent, and African leaders in need of muscle will not much care whether Russian troops answer to Mr Prigozhin or another Kremlin functionary.
+A firm called Ida Sports sells a boot that is wider around the toes, narrower at the heel and gives more support round the arch, with shorter and more plentiful studs.
 
 
 -------------------- word 17 --------------------
-ripple
-ripple
+incidence
+incidence
 ===== translation17 =====
-a small wave on the surface of water 
-涟漪；微波；细浪 
-a sound or feeling that spreads through a person or group of people, gradually increasing and then becoming smaller 
-（声音的）传播起伏；（感情的）逐渐扩散 
-plain ice cream with thin lines of other flavours in it 
-彩条冰激凌 
-to (cause to) move in small waves 
-（使）起涟漪；（使）如波浪般起伏 
+an event, or the rate at which something happens 
+事件；（事件的）发生率 
 >>>>> phrase 17 <<<<<
 ///// sentences 17 /////
-The biggest ripples will be those inside Russia.
+Among other benefits, one hope is that this might reduce the incidence of knee injuries, to which women seem more susceptible.
 
 
 -------------------- word 18 --------------------
-vengeful
-vengeful
+susceptible
+susceptible
 ===== translation18 =====
-expressing a strong wish to punish someone who has harmed you or your family or friends 
-图谋报复的；意图复仇的 
+easily influenced or harmed by something 
+易受影响的，易受伤害的 
+used to describe someone who is easily emotionally influenced 
+易受感动的，感情丰富的，多情的 
+(especially of an idea or statement) able to be understood, proved, explained, etc. in a particular way 
+（尤指想法或陈述）能被理解（或证明、解释）的 
 >>>>> phrase 18 <<<<<
 ///// sentences 18 /////
-If Mr Prigozhin was killed on Mr Putin’s orders, it would reinforce the president’s image as a vengeful strongman willing to dispense with procedure and law.
-
-
--------------------- word 19 --------------------
-dispense with
-dispense with sth/sb
-===== translation19 =====
-to get rid of or stop using something or someone that you do not need 
-免除；废止；省去；不再使用 
->>>>> phrase 19 <<<<<
-///// sentences 19 /////
-If Mr Prigozhin was killed on Mr Putin’s orders, it would reinforce the president’s image as a vengeful strongman willing to dispense with procedure and law.
-
-
--------------------- word 20 --------------------
-memorable
-memorable
-===== translation20 =====
-likely to be remembered or worth remembering 
-难忘的；值得纪念的 
->>>>> phrase 20 <<<<<
-///// sentences 20 /////
-He first caught the imagination of the Russian public as Russia’s president with a memorable pledge to “catch Chechen rebels on the toilet” and “wipe them out in the outhouse”.
-
-
--------------------- word 22 --------------------
-outhouse
-outhouse
-===== translation22 =====
-a small building joined to or near to a larger one 
-（与大建筑物相连或相近的）附属建筑，外围建筑 
-a toilet in an outbuilding 
-户外厕所 
->>>>> phrase 22 <<<<<
-///// sentences 22 /////
-He first caught the imagination of the Russian public as Russia’s president with a memorable pledge to “catch Chechen rebels on the toilet” and “wipe them out in the outhouse”.
-
-
--------------------- word 23 --------------------
-radioactive
-radioactive
-===== translation23 =====
-having or producing the energy that comes from the breaking up of atoms 
-具有放射性的；有辐射性的 
->>>>> phrase 23 <<<<<
-///// sentences 23 /////
-Over the following years, his enemies suffered a range of increasingly exotic methods of attack and assassination—from a radioactive isotope slipped in tea to nerve agent smeared on door handles and underpants—designed to cow would-be opponents.
-
-
--------------------- word 24 --------------------
-isotope
-isotope
-===== translation24 =====
-a form of an atom that has a different atomic weight from other forms of the same atom but the same chemical structure 
-同位素 
->>>>> phrase 24 <<<<<
-///// sentences 24 /////
-Over the following years, his enemies suffered a range of increasingly exotic methods of attack and assassination—from a radioactive isotope slipped in tea to nerve agent smeared on door handles and underpants—designed to cow would-be opponents.
-
-
--------------------- word 25 --------------------
-nerve agent
-nerve agent
-===== translation25 =====
-a poisonous substance that damages the nervous system of the body, used as a weapon 
-（用作武器的）神经毒剂 
->>>>> phrase 25 <<<<<
-///// sentences 25 /////
-Over the following years, his enemies suffered a range of increasingly exotic methods of attack and assassination—from a radioactive isotope slipped in tea to nerve agent smeared on door handles and underpants—designed to cow would-be opponents.
-
-
--------------------- word 26 --------------------
-smear
-smear
-===== translation26 =====
-to spread a liquid or a thick substance over a surface 
-涂抹（黏腻的东西） 
-to publicly accuse someone of something unpleasant, unreasonable, or unlikely to be true in order to harm their reputation 
-诽谤，污蔑 
-a dirty mark made by spreading a liquid or a thick substance over a surface 
-（将某种液体或稠厚物质涂在表面上形成的）污点 
-an attempt to harm someone's reputation by publicly accusing them of something that is unpleasant, unreasonable, or unlikely to be true 
-诽谤，污蔑 
-a medical test in which cells from a woman's cervix (= entrance to the womb) are removed and examined to discover if there is any disease 
-（宫颈）涂片测试 
->>>>> phrase 26 <<<<<
-///// sentences 26 /////
-Over the following years, his enemies suffered a range of increasingly exotic methods of attack and assassination—from a radioactive isotope slipped in tea to nerve agent smeared on door handles and underpants—designed to cow would-be opponents.
-
-
--------------------- error word 27 --------------------
-underpants
-///// sentences 27 /////
-Over the following years, his enemies suffered a range of increasingly exotic methods of attack and assassination—from a radioactive isotope slipped in tea to nerve agent smeared on door handles and underpants—designed to cow would-be opponents.
-
-
--------------------- word 29 --------------------
-mafia
-mafia
-===== translation29 =====
-a close group of people who are involved in similar activities and who help and protect each other, sometimes to the disadvantage of others 
-团伙，帮派，小集团 
->>>>> phrase 29 <<<<<
-the Mafia
-a criminal organization that began in Sicily and is active in Italy and the US
-黑手党（起源于意大利西西里的犯罪组织，现活跃于意大利和美国）
-///// sentences 29 /////
-Yet these methods have also undermined the notion that Russia is a regular state, exposing Mr Putin’s regime as a mafia-like enterprise driven by personal whim and blood feuds.
-
-
--------------------- word 30 --------------------
-mood
-mood
-===== translation30 =====
-the way you feel at a particular time 
-心境，心情，情绪；精神状态 
->>>>> phrase 30 <<<<<
-///// sentences 30 /////
-“The people who gave the order do not understand the mood in the army and morale at all.
-
-
--------------------- word 31 --------------------
-prosecutor
-prosecutor
-===== translation31 =====
-a legal official who accuses someone of committing a crime, especially in a law court 
-检察官；公诉人 
->>>>> phrase 31 <<<<<
-///// sentences 31 /////
-Russian prosecutors, who promptly shut down an investigation into Mr Prigozhin’s mutiny after he accepted a deal to go into exile in Belarus, were quick to open an investigation into a violation of “air traffic and safety rules”.
+Among other benefits, one hope is that this might reduce the incidence of knee injuries, to which women seem more susceptible.
 
 
