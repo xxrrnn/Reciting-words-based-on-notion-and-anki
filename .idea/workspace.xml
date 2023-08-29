@@ -30,43 +30,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;xxrrnn&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="443d0456-aa6e-4ac8-8b32-54b3a493d717" />
-        <option name="url" value="git@github.com:xxrrnn/Public_notion_anki_economist.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/TestFiles/notion_patch_all_anki.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2UNnXSNP306WOuhRCWpKuWodwRC" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -88,7 +67,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.Economist_anki">
     <configuration name="Economist_anki" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="基于notion的外刊阅读脚本" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,7 +90,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="重复_solution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="基于notion的外刊阅读脚本" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="notion_api_patch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="基于notion的外刊阅读脚本" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,29 +124,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/重复_solution.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="基于notion的外刊阅读脚本" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/notion_api_patch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,7 +155,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_release_tension_dict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="notion_patch_all_pronoun_voice_relation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="基于notion的外刊阅读脚本" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -190,7 +168,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/test_release_tension_dict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/notion_patch_all_pronoun_voice_relation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,13 +177,78 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="基于notion的外刊阅读脚本" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestFiles" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="基于notion的外刊阅读脚本" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="基于notion的外刊阅读脚本" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="基于notion的外刊阅读脚本" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.test_release_tension_dict" />
-        <item itemvalue="Python.notion_patch_all_anki" />
-        <item itemvalue="Python.重复_solution" />
         <item itemvalue="Python.Economist_anki" />
+        <item itemvalue="Python.notion_patch_all_anki" />
+        <item itemvalue="Python.notion_api_patch" />
+        <item itemvalue="Python.notion_patch_all_pronoun_voice_relation" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -223,13 +266,7 @@
       <workItem from="1692945224957" duration="12063000" />
       <workItem from="1693025734979" duration="5401000" />
       <workItem from="1693057819399" duration="7791000" />
-      <workItem from="1693068979949" duration="5083000" />
-      <workItem from="1693106884417" duration="1925000" />
-      <workItem from="1693121743133" duration="22932000" />
-      <workItem from="1693218508203" duration="2172000" />
-      <workItem from="1693227300001" duration="629000" />
-      <workItem from="1693275170090" duration="622000" />
-      <workItem from="1693281067968" duration="8739000" />
+      <workItem from="1693068979949" duration="1205000" />
     </task>
     <task id="LOCAL-00001" summary="修改段落分句算法，增加通过剪切板识别文章的算法，再次简化流程">
       <option name="closed" value="true" />
@@ -279,63 +316,7 @@
       <option name="project" value="LOCAL" />
       <updated>1693047686615</updated>
     </task>
-    <task id="LOCAL-00007" summary="debug获得句子的算法，增加了区分爬虫单词和原文单词的算法">
-      <option name="closed" value="true" />
-      <created>1693074103685</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1693074103686</updated>
-    </task>
-    <task id="LOCAL-00008" summary="增加today单词库算法">
-      <option name="closed" value="true" />
-      <created>1693137312540</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1693137312540</updated>
-    </task>
-    <task id="LOCAL-00009" summary="完整开源第一次">
-      <option name="closed" value="true" />
-      <created>1693144571618</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1693144571618</updated>
-    </task>
-    <task id="LOCAL-00010" summary="完整开源第一次">
-      <option name="closed" value="true" />
-      <created>1693144853595</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1693144853595</updated>
-    </task>
-    <task id="LOCAL-00011" summary="sentences又debug">
-      <option name="closed" value="true" />
-      <created>1693152434708</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1693152434708</updated>
-    </task>
-    <task id="LOCAL-00012" summary="sentences又debug">
-      <option name="closed" value="true" />
-      <created>1693156530118</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1693156530118</updated>
-    </task>
-    <task id="LOCAL-00013" summary="debug了一下显示的问题">
-      <option name="closed" value="true" />
-      <created>1693227326584</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1693227326585</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,17 +334,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="修改段落分句算法，增加通过剪切板识别文章的算法，再次简化流程" />
     <MESSAGE value="修改检查选中修改下次查看日期的算法" />
     <MESSAGE value="修改notion_patch_all_anki，增加绘制统计图的函数" />
     <MESSAGE value="debug获得句子的算法" />
-    <MESSAGE value="debug获得句子的算法，增加了区分爬虫单词和原文单词的算法" />
-    <MESSAGE value="增加today单词库算法" />
-    <MESSAGE value="完整开源第一次" />
-    <MESSAGE value="sentences又debug" />
-    <MESSAGE value="debug了一下显示的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug了一下显示的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug获得句子的算法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -372,6 +347,11 @@
           <url>file://$PROJECT_DIR$/TestFiles/get_clip_passage.py</url>
           <line>4</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TestFiles/notion_api.py</url>
+          <line>218</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TestFiles/notion_relation_test.py</url>
@@ -383,21 +363,6 @@
           <line>6</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/TestFiles/notion_api.py</url>
-          <line>230</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/TestFiles/test_today.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/TestFiles/test_today.py</url>
-          <line>66</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -405,21 +370,5 @@
         <watch expression="result['properties']['🌏 Economist Reading']['relation']" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/notion$test.coverage" NAME="test Coverage Results" MODIFIED="1692964054729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$test_release_tension_dict.coverage" NAME="test_release_tension_dict Coverage Results" MODIFIED="1693291871924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$_solution.coverage" NAME="重复_solution Coverage Results" MODIFIED="1693281771718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$main.coverage" NAME="main Coverage Results" MODIFIED="1693294048876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notion$notion_api_patch.coverage" NAME="notion_api_patch Coverage Results" MODIFIED="1692983283256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$test_ordered_dict.coverage" NAME="test_ordered_dict Coverage Results" MODIFIED="1693109411250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$notion_relation_test.coverage" NAME="notion_relation_test Coverage Results" MODIFIED="1692963907305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$Economist_anki.coverage" NAME="Economist_anki Coverage Results" MODIFIED="1693155409543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notion$notion_patch_all_anki.coverage" NAME="notion_patch_all_anki Coverage Results" MODIFIED="1693281985759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$test_today.coverage" NAME="test_today Coverage Results" MODIFIED="1693124539623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$notion_api.coverage" NAME="notion_api Coverage Results" MODIFIED="1693122218322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$test_plt.coverage" NAME="test_plt Coverage Results" MODIFIED="1693079822277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$notion_patch_all_pronoun_voice_relation.coverage" NAME="notion_patch_all_pronoun_voice_relation Coverage Results" MODIFIED="1692978448787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$notion_patch_all_anki__1_.coverage" NAME="notion_patch_all_anki (1) Coverage Results" MODIFIED="1693142676612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
