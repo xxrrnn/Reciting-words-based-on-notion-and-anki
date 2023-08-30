@@ -965,6 +965,8 @@ class Economists:
                 headers=self.notion_headers,
             )
             print(r.text)
+        subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
+
 
 
     def run(self):

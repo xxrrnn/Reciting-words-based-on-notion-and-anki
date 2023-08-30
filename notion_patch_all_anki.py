@@ -537,6 +537,7 @@ class Update_anki:
         # # 显示图形
         # plt.show()
         # plt.figure()
+        # plt.figure(figsize=(6, 6))  # 调整图的大小
         categories = list(self.word_level_dict.keys())
         values = list(self.word_level_dict.values())
 
@@ -555,7 +556,7 @@ class Update_anki:
         # plt.figure(figsize=(6, 6))  # 调整图的大小
 
         # 开始绘图
-        fig, axs = plt.subplots(2, 2, figsize=(10, 8))
+        fig, axs = plt.subplots(2, 2, figsize=(8, 6))
         bars1 = axs[0, 0].bar(range(len(categories_level)), values_level, color=colors)
         axs[0, 0].set_title('Level Bar Chart')
         axs[0, 0].set_label('Levels')
@@ -656,7 +657,7 @@ class Update_anki:
             self.DataBase_item_delete(response)
 
         #清空后post今天看到的单词
-        for selection in self.selection_dict.keys():
+        for selection in self.today.keys():
             checked_list = self.today[selection]
             for body in checked_list:
                 word_content = body["properties"]['words']['title'][0]['plain_text']

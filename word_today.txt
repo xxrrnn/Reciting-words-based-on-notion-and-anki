@@ -53,3 +53,26 @@ pacify |KnowAll
 evict |ForgetAll
 tern |KnowSome
 pass as/for sth/sb |KnowSome
+disavow |KnowSome
+decouple |KnowAll
+drive a wedge between America and Europe |KnowAll
+affectionately |KnowSome
+Yet by the time King died many considered him yesterday’s man |KnowAll
+of yore |KnowAll
+commanding |ForgetAll
+smugness |ForgetAll
+renovation |KnowAll
+fetish |KnowSome
+non-starter |KnowAll
+moniker |ForgetAll
+head off sth |KnowSome
+ensconce |KnowAll
+comfortably |KnowAll
+conformist |KnowAll
+crunchiness |KnowAll
+all nonsense |KnowAll
+under little illusion about |KnowAll
+dizzying |KnowAll
+mercury |KnowAll
+maturation |KnowAll
+apologia |KnowSome
