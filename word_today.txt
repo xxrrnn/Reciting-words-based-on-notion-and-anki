@@ -1,78 +1,275 @@
-lawlessness |KnowAll
-frailty |KnowAll
-brace for |KnowAll
-coordinate |KnowAll
-refillable |KnowAll
-sanitisation |KnowSome
-brutality |KnowAll
-demographic dividend |KnowAll
-albeit |KnowAll
-spiky |KnowAll
-scam |KnowAll
-jockey for |KnowAll
-oppression |KnowAll
-cartridge |KnowAll
-responsive |KnowAll
-instill |KnowAll
-staged a coup to eject him |KnowAll
-supersonic |KnowAll
-showdown |KnowAll
-tick off from the list |KnowAll
-fixated |KnowAll
-texture |KnowAll
-hole up |KnowAll
-sap |KnowSome
-gloss over |KnowAll
-tarmac |KnowAll
-progress |KnowAll
-bother |KnowSome
-arid |KnowAll
-authority |KnowAll
-urban-heat-island effect |KnowAll
-bemuse |KnowSome
-omitting to mention |KnowAll
-farther afield |KnowAll
-puppet |KnowAll
-teetering |KnowAll
-air strikes |KnowAll
-earnestly |KnowAll
-red tape |KnowAll
-trio |KnowAll
-jamming tecnology |KnowAll
-engagingly |KnowAll
-boilerplate |KnowAll
-prickly |KnowSome
-flout |KnowSome
-proposition |ForgetAll
-dabble in |KnowSome
-fumble |KnowAll
-cautionary |KnowSome
-unscramble |KnowAll
-staffing |KnowAll
-pacify |KnowAll
-evict |ForgetAll
-tern |KnowSome
-pass as/for sth/sb |KnowSome
-disavow |KnowSome
-decouple |KnowAll
-drive a wedge between America and Europe |KnowAll
-affectionately |KnowSome
-Yet by the time King died many considered him yesterday’s man |KnowAll
-of yore |KnowAll
-commanding |ForgetAll
-smugness |ForgetAll
-renovation |KnowAll
+megafauna |KnowSome
+TV viewership |KnowAll
+kick a 623-gram basketball-sized sphere around |KnowAll
+hurdle |KnowAll
+rugby |KnowAll
+biomechanics |KnowAll
+susceptible |KnowAll
+demon |KnowAll
+solicitous |KnowAll
+carry no more weight than |KnowAll
+skeletal |KnowAll
+unravel |KnowAll
+sledgehammer |KnowAll
+fuss |KnowSome
+gust |ForgetAll
+bequeath |KnowAll
+ploy |KnowAll
+dystopian |KnowAll
+lackey |KnowSome
+connive |KnowAll
+grumpy |KnowSome
+flinch |ForgetAll
+take sb aback |KnowAll
+lament |KnowSome
+sham |ForgetAll
+smugness |KnowSome
+factoid |KnowSome
+bode |KnowSome
+flick |KnowAll
+dictate |KnowAll
+pantry |KnowAll
+dull |KnowSome
+moniker |KnowAll
+position |KnowAll
+insurgent |KnowSome
+extricate (oneself from) |ForgetAll
+homoerotic |KnowAll
+drizzle |KnowSome
+recklessly |KnowSome
+rustle |KnowAll
+cub |KnowAll
+belie |KnowAll
+recount |KnowSome
+incursion |KnowAll
+craze |KnowSome
+tweak |KnowSome
+obnoxious |KnowSome
+stance |KnowAll
+transmission lines |KnowAll
+defang |ForgetAll
+machination |KnowSome
+provisional |ForgetAll
+dungeon |KnowSome
+hector |KnowSome
+the ark |KnowAll
+biodiversity |KnowAll
+cockroach |KnowAll
+wasp |ForgetAll
+sterilize |KnowAll
+larva |KnowAll
+institutionalize |KnowAll
+confab |KnowAll
+standalone |KnowAll
+annal |KnowAll
+cement |KnowAll
+laying out their shared interests |KnowAll
+bicker |KnowAll
+destroyer |KnowAll
+played down the incident |KnowAll
+dispose |KnowAll
+persist |KnowSome
+retribution |ForgetAll
+jumpy |KnowSome
+relieve |KnowSome
+functionary |ForgetAll
+outhouse |KnowSome
+radioactive |KnowAll
+smear |KnowAll
+mafia |ForgetAll
+furore |KnowSome
+despot |KnowSome
+the gulag |KnowAll
+stockpile |KnowAll
+yacht |ForgetAll
+be shorn of sth |KnowSome
+candid |KnowAll
+errant |KnowSome
+predatory |KnowAll
+hike tariffs on |KnowAll
+drag on |KnowAll
+schism |KnowAll
+ostensibly |KnowAll
+burnish |KnowAll
+conceivably |KnowAll
+plausible |KnowAll
+succeed |KnowAll
+grotesque |KnowSome
+quirk |KnowAll
+nicety |ForgetAll
+makeshift |ForgetAll
+stratospheric |KnowAll
+underwhelming |KnowAll
+bastion |KnowAll
+blunder |KnowAll
+cut deals |KnowAll
+livid |KnowAll
+autonomous |KnowAll
+bucking a long trend towards greater global peace |KnowAll
+hubris |ForgetAll
+chortle |ForgetAll
+sever |KnowAll
+accession |KnowAll
+conservatory |KnowAll
+flunkey |KnowSome
+faltering |KnowAll
+be under no illusion |KnowAll
+heist |ForgetAll
+recruit |KnowAll
+step down from |KnowAll
+shatter |KnowSome
+conflagration |ForgetAll
+patentable |KnowAll
+salivate over |ForgetAll
+melodic |KnowAll
+consortium |KnowAll
+burn through sth |KnowAll
+sagging |KnowAll
+lend your name to sth |KnowSome
+courtesy |KnowAll
+spiral |KnowSome
+clove |ForgetAll
+vignette |ForgetAll
+de jure |KnowSome
+moot |ForgetAll
+splurge |ForgetAll
+cringeworthy |KnowAll
+bromide |KnowSome
+suffocating |KnowAll
 fetish |KnowSome
-non-starter |KnowAll
-moniker |ForgetAll
-head off sth |KnowSome
-ensconce |KnowAll
-comfortably |KnowAll
-conformist |KnowAll
-crunchiness |KnowAll
-all nonsense |KnowAll
-under little illusion about |KnowAll
-dizzying |KnowAll
-mercury |KnowAll
-maturation |KnowAll
-apologia |KnowSome
+weary |KnowAll
+fallout |KnowAll
+crack |KnowSome
+obnoxiousness |KnowAll
+patron saint |KnowSome
+(is) adamant (that) |KnowAll
+balcony |KnowAll
+peer out |KnowAll
+traumatise |KnowAll
+(rumours) swirl (on social media) |KnowSome
+incumbent |KnowAll
+entrant (to market) |KnowAll
+amnesty |KnowAll
+strain |KnowAll
+undercover |KnowAll
+fraught |KnowAll
+eye-wateringly |KnowAll
+pull off |KnowSome
+encapsulate |KnowSome
+come across |KnowSome
+proposition |KnowAll
+vendor |KnowAll
+oft-used |KnowAll
+shred |KnowAll
+hearing |KnowAll
+warmongering |KnowSome
+dabble in |ForgetAll
+precedence |KnowAll
+take precedence over |KnowAll
+paper over sth |KnowAll
+deterrence |KnowAll
+be ill-disposed towards sb |KnowAll
+naught |KnowAll
+trickery |KnowSome
+arch |KnowAll
+stud |KnowAll
+mused on |KnowAll
+mutiny |KnowAll
+ripple |KnowAll
+isotope |KnowAll
+calculus |KnowAll
+disavow |KnowSome
+goodwill |KnowSome
+seclusion |KnowAll
+wipe out |KnowAll
+edict |KnowAll
+squat |KnowAll
+bonanza |KnowAll
+reverence |KnowAll
+creeping |KnowAll
+philandered |KnowAll
+pastor |KnowAll
+reassuring |KnowAll
+alienated |KnowSome
+compatriot |KnowAll
+nationalization |KnowAll
+gradualism |KnowAll
+spell trouble for a teacher |KnowAll
+bung |KnowAll
+cautionary |KnowAll
+pineapple’s crown |KnowAll
+at pace |KnowAll
+paraffin |KnowAll
+in plain sight |KnowAll
+inspection |KnowAll
+acolyte |KnowAll
+edge someone/something out |KnowAll
+grey-zone tactic |KnowAll
+restock |KnowAll
+take sth by storm |KnowAll
+pomological |KnowAll
+loot |KnowAll
+bloodstained |KnowAll
+keep abreast of |KnowAll
+have all but |KnowAll
+esoteric |KnowAll
+infest |KnowAll
+on the altars of |KnowAll
+Reuters |KnowAll
+collective |KnowAll
+scrape away |KnowAll
+ludicrously |KnowAll
+constituency |KnowSome
+during a record-breaking run of daily maximum temperatures above 43°C |KnowSome
+skewed |KnowAll
+commissioner |KnowAll
+authenticity |KnowAll
+commando |KnowSome
+graft |KnowAll
+shoddy |KnowAll
+whim |KnowAll
+51-good sentences |KnowAll
+sultanate |KnowAll
+pending |KnowSome
+nationalist grievance |KnowAll
+can be seen everywhere but in the sth |KnowAll
+circumscribe |KnowSome
+remorseless |KnowSome
+clueless |KnowSome
+initiative |KnowSome
+gum up |KnowAll
+mint |KnowAll
+debris |KnowSome
+52-good sentences |KnowAll
+puncture |KnowAll
+commanding |ForgetAll
+billboard |KnowAll
+stump up (sth) |ForgetAll
+construe sth as sth |KnowAll
+kudos |KnowAll
+loathe |KnowAll
+demonise |KnowSome
+bank-credit |KnowAll
+launch a quick strike |KnowAll
+pose a challenge to |KnowAll
+descendant |KnowSome
+take no account of |KnowAll
+comic |KnowSome
+appointment |KnowAll
+zoom |KnowAll
+ambient |KnowAll
+went to press |KnowAll
+left behind a time-bomb |KnowAll
+write-downs |KnowAll
+crush |KnowAll
+rage |KnowAll
+hunker down |KnowSome
+blunt |KnowAll
+malaise |KnowSome
+whereby |KnowAll
+take a turn at |KnowAll
+premium |KnowAll
+drudgery |KnowAll
+conscription |KnowAll
+pass as/for sth/sb |KnowSome
+morph into |KnowAll

@@ -560,7 +560,7 @@ class Economists:
                 break
             # 每隔一秒钟检查一次剪切板内容
             time.sleep(1)
-        subprocess.run(['notepad.exe', "passage.txt"], check=True)
+        # subprocess.run(['notepad.exe', "passage.txt"], check=True)
 
     def get_clip(self):
         pyperclip.copy('')
@@ -648,7 +648,8 @@ class Economists:
                 index_2 = 0
                 index_3 = 0
                 index_4 = 0
-                for num in range(len(sentence)-1):
+                # for num in range(len(sentence)-1):
+                for num in range(len(sentence)):
                     if sentence[num] == "]" and sentence[num+1] == "(":
                         index_2 = num
                         index_3 = num + 1
@@ -965,7 +966,10 @@ class Economists:
                 headers=self.notion_headers,
             )
             print(r.text)
-        subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
+        with open("words_repeat.txt","r",encoding="utf-8") as file:
+            a = file.readlines()
+        if len(a) != 0:
+            subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
 
 
 
@@ -1202,8 +1206,10 @@ class Economists:
         if selection != "0":
             self.repeat_patch()
             print("End, 恭喜你精读了一篇文章，这是您看的第" + str(self.passage_num) + "篇")
+            print("Rest at the end, not in the middle.")
         else:
             print("End, 恭喜你精读了一篇文章，这是您看的第" + str(self.passage_num) + "篇")
+            print("Rest at the end, not in the middle.")
 
         # with open('vocabularies.data', 'wb') as file:
         #     pickle.dump(self.my_dict, file)

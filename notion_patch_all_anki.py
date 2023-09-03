@@ -54,7 +54,7 @@ class Update_anki:
         }
         url = 'https://api.notion.com/v1/pages/' + page_id
         notion = requests.patch(url, headers=self.headers, json=body)
-
+        print(notion)
         return 0
     def DataBase_item_delete(self,response):
         print("start deleting")
@@ -492,8 +492,11 @@ class Update_anki:
                         # print(r.text)
 
                 else:
-                    level = dict['properties']["Level"]['select']['name']
-                    next = self.next_day_on_level(level)
+                    try:
+                        level = dict['properties']["Level"]['select']['name']
+                        next = self.next_day_on_level(level)
+                    except:
+                        next = "0"
                     data = {
                         "parent": {"type": "database_id", "database_id": self.database_id},
                         'properties': {
@@ -556,7 +559,7 @@ class Update_anki:
         # plt.figure(figsize=(6, 6))  # 调整图的大小
 
         # 开始绘图
-        fig, axs = plt.subplots(2, 2, figsize=(8, 6))
+        fig, axs = plt.subplots(2, 2, figsize=(10, 6))
         bars1 = axs[0, 0].bar(range(len(categories_level)), values_level, color=colors)
         axs[0, 0].set_title('Level Bar Chart')
         axs[0, 0].set_label('Levels')
@@ -640,21 +643,19 @@ class Update_anki:
         print("开始导入today单词库")
         response = self.DataBase_item_query(self.today_query_id)
         # 判断是否有之前的内容，如果有就清空
-        just_add = False
+        # just_add = False
         if len(response) == 0:
-            just_add = True
+            pass
         else:
-            dict = response[0]
-            checked_date = dt.strptime(dict['properties']["Checked Date"]['date']['start'], '%Y-%m-%d')
-            today = date.today()
-            checked_date = checked_date.date()
-            if checked_date == today:
-                just_add = True
-            else:
-                just_add = False
+            for dict in response:
+                checked_date = dt.strptime(dict['properties']["Checked Date"]['date']['start'], '%Y-%m-%d')
+                today = date.today()
+                checked_date = checked_date.date()
+                if checked_date != today:
+                    self.delete_page(dict["id"])
         # 不是今天且表格不空的话就清空
-        if just_add != True and len(response) != 0:
-            self.DataBase_item_delete(response)
+        # if just_add != True and len(response) != 0:
+        #     self.DataBase_item_delete(response)
 
         #清空后post今天看到的单词
         for selection in self.today.keys():

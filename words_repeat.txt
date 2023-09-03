@@ -1,12 +1,12 @@
--------------------- word 6 --------------------
-ostensibly
-ostensibly
-https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/u/usl/usl30/usl30252.mp3
-===== translation6 =====
-in a way that appears or claims to be one thing when it is really something else 
-表面上 
->>>>> phrase 6 <<<<<
-///// sentences 6 /////
-It shows a series of impressive highlights, ostensibly featuring members of the French men’s squad.
+-------------------- word 8 --------------------
+prosaic
+prosaic
+https://dictionary.cambridge.org/media/english-chinese-simplified/us_pron/p/pro/prosa/prosaic.mp3
+===== translation8 =====
+without interest, imagination, and excitement 
+乏味的；平淡无奇的；缺乏想象力的 
+>>>>> phrase 8 <<<<<
+///// sentences 8 /////
+They vary from the delight that megafauna provide those visiting a safari park to the more prosaic: pollinators fertilising crops; earthworms keeping the soil healthy.
 
 

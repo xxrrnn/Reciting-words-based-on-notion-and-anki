@@ -1,234 +1,291 @@
 -------------------- word 0 --------------------
-dab
-dab
+patriarch
+patriarch
 ===== translation0 =====
-to touch something with quick light touches, or to put a substance on something with quick light touches 
-轻触，轻碰；（轻轻地）擦，涂抹 
-a small amount of a substance, or a light touch 
-少许，一点；轻触；轻点 
-abbreviation fordigital audio broadcasting  
-数位音频传输（digital audio broadcasting的缩写） 
+a bishop in certain Eastern Churches 
+（基督教某些东派教会的）牧首，最高级主教，教长 
+the male leader of a family 
+（男性）家长，族长 
 >>>>> phrase 0 <<<<<
 ///// sentences 0 /////
-A LITTLE BOY, face covered in red and white paint (and a dab of ketchup) screams with delight when England equalise with Colombia in their quarter-final match.
+“OF FOWLS AFTER their kind,” the Lord said to Noah, “and of cattle after their kind, of every creeping thing of the Earth after his kind, two of every sort shall come unto thee.” Co-operation from the animal kingdom helped make the biblical patriarch history’s greatest conservationist, saving every land-based animal, including humans, from a wave of divine extinction
+
+The patriarch was able to fit a breeding pair of each of the 5.6m or so terrestrial species onto his 300 cubits-long ark.
 
 
--------------------- word 1 --------------------
-equalise
-equalize
-===== translation1 =====
-to make things or people equal 
-使相等；使均等；使平等 
-to get the point in a game or competition that makes your score the same as that of the other team or player 
-打成平局，扳平比分 
->>>>> phrase 1 <<<<<
+-------------------- error word 1 --------------------
+cubits
 ///// sentences 1 /////
-A LITTLE BOY, face covered in red and white paint (and a dab of ketchup) screams with delight when England equalise with Colombia in their quarter-final match.
+The patriarch was able to fit a breeding pair of each of the 5.6m or so terrestrial species onto his 300 cubits-long ark.
 
 
--------------------- error word 2 --------------------
-rubbing shoulders with
+-------------------- word 2 --------------------
+ark
+the ark
+===== translation2 =====
+(in the Bible) a large wooden ship built by Noah in order to save his family and a male and female of every type of animal when the world was covered by a flood 
+（《圣经》中的）挪亚方舟 
+>>>>> phrase 2 <<<<<
+the Ark of the Covenant
+(in the Bible) a wooden box that contained the writings of Jewish law, and that represented to the people of Israel the idea of God being present and leading them
+（《圣经》中的）约柜
 ///// sentences 2 /////
-Your correspondent is rubbing shoulders with England fans in white and red, Colombian ones in yellow and Australians giddy from their team’s earlier victory over France.
+Which animals should a modern-day Noah put in his ark?.
+
+The patriarch was able to fit a breeding pair of each of the 5.6m or so terrestrial species onto his 300 cubits-long ark.
+
+Despite their poor reputation, vultures might therefore earn a place on a resource-constrained ark.
+
+The selection for the ark should try to preserve as much of this information as possible, even if the animals themselves do not do much for human welfare.
+
+That led to what some conservationists might consider a repugnant conclusion: counterintuintively, the best way to preserve biodiversity is for the resource-constrained ark to pick a single species and squeeze in as many as possible.
+
+Noah might be best to fill the ark with resilient cockroaches instead, ensuring that at least one creature makes it through the flood.
+
+Were Noah to have filled his ark with cockroaches—or pandas, for that matter—a single virus could have wiped out the lot.
 
 
 -------------------- word 3 --------------------
-giddy
-giddy
+species
+species
 ===== translation3 =====
-→ dizzy  
-（同 dizzy） 
-feeling silly, happy, and excited and showing this in your behaviour 
-飘飘然的 
+a set of animals or plants in which the members have similar characteristics to each other and can breed with each other 
+（动植物的）种，物种 
 >>>>> phrase 3 <<<<<
 ///// sentences 3 /////
-Your correspondent is rubbing shoulders with England fans in white and red, Colombian ones in yellow and Australians giddy from their team’s earlier victory over France.
+The patriarch was able to fit a breeding pair of each of the 5.6m or so terrestrial species onto his 300 cubits-long ark.
+
+A forthcoming paper by Eyal Frank of the University of Chicago and Anant Sudarshan of the University of Warwick looks at the economic benefits of “keystone species”.
+
+That led to what some conservationists might consider a repugnant conclusion: counterintuintively, the best way to preserve biodiversity is for the resource-constrained ark to pick a single species and squeeze in as many as possible.
+
+Trying to keep two species alive, and failing, means losing everything.
+
+The real-world implication of this is that using conservation funds on highly endangered species risks throwing good money after bad.
+
+Some scientists have suggested releasing genetically modified, sterilised versions of the insects that would get rid of the species altogether; others warn that doing so could have unforeseen consequences by eradicating both a pollinator and a food source for other animals.
+
+Genetic range reduces the vulnerability of any individual part of an ecosystem to pests and diseases, helping avoid catastrophe if a species vital for human survival goes extinct.
 
 
--------------------- error word 4 --------------------
-TV viewership
+-------------------- word 4 --------------------
+terrestrial
+terrestrial
+===== translation4 =====
+relating to the earth 
+地球的；与地球有关的 
+(of a planet) similar to Earth 
+（星球）类似地球的 
+(of animals) living on the land rather than in the water or air 
+（动物）陆生的，陆栖的 
+Terrestrial television channels are broadcast from stations on the ground and do not use satellites. 
+（电视频道）陆地上的，地面上的（与卫星相对而言） 
+>>>>> phrase 4 <<<<<
 ///// sentences 4 /////
-Attendance at the tournament is over 1.8m, up from 2015’s record of 1.4m. TV viewership across all matches is set to pass 2bn, double the previous high point
+The patriarch was able to fit a breeding pair of each of the 5.6m or so terrestrial species onto his 300 cubits-long ark.
 
 
 -------------------- word 5 --------------------
-advert
-advert
+biodiversity
+biodiversity
 ===== translation5 =====
-an advertisement 
-一则广告 
+the number and types of plants and animals that exist in a particular area or in the world generally, or the problem of protecting this 
+生物多样性 
 >>>>> phrase 5 <<<<<
 ///// sentences 5 /////
-One striking advert tries to dispel the idea that the women’s game is less skilful.
+Weitzman’s goal, beyond biblical interpretation, was to create an economic theory of conservation, calculating a strategy that a rational conservationist could follow to maximise both human welfare and natural biodiversity.
+
+The second part of the calculation places a direct value on biodiversity.
+
+Weitzman applies the same logic to animals: biodiversity has both an aesthetic value and an informational one, with content embedded in the genetics of animals.
+
+That led to what some conservationists might consider a repugnant conclusion: counterintuintively, the best way to preserve biodiversity is for the resource-constrained ark to pick a single species and squeeze in as many as possible.
+
+To reach that counterintuitive conclusion, Weitzman assumed that people ought to value biodiversity for its own sake.
+
+Even when valuing animals solely on their benefits to humanity, biodiversity still has something to offer: insurance.
+
+The same may be true of biodiversity.
+
+
+-------------------- error word 6 --------------------
+megafauna
+///// sentences 6 /////
+They vary from the delight that megafauna provide those visiting a safari park to the more prosaic: pollinators fertilising crops; earthworms keeping the soil healthy.
 
 
 -------------------- word 7 --------------------
-trickery
-trickery
+safari
+safari
 ===== translation7 =====
-the activity of using tricks to deceive or cheat people 
-欺骗，欺诈 
+an organized journey to look at, or sometimes hunt, wild animals, especially in Africa 
+（尤指在非洲进行的）观察野生动物之行，游猎 
 >>>>> phrase 7 <<<<<
 ///// sentences 7 /////
-Later, the digital trickery is revealed: viewers have actually been watching the women’s team.
+They vary from the delight that megafauna provide those visiting a safari park to the more prosaic: pollinators fertilising crops; earthworms keeping the soil healthy.
 
 
--------------------- word 8 --------------------
-persist
-persist
-===== translation8 =====
-If an unpleasant feeling or situation persists, it continues to exist. 
-持续；存留 
-to try to do or continue doing something in a determined but often unreasonable way 
-坚持不懈；执意 
->>>>> phrase 8 <<<<<
-///// sentences 8 /////
-Those differences persist even among the most athletic members of each sex.
-
-
--------------------- error word 9 --------------------
-kick a 623-gram basketball-sized sphere around
+-------------------- word 9 --------------------
+pollinator
+pollinator
+===== translation9 =====
+something, such as an insect, that carries pollen from one plant or part of a plant to another 
+传粉昆虫；传粉媒介 
+>>>>> phrase 9 <<<<<
 ///// sentences 9 /////
-Put another way, say the researchers, expecting women to play with a men’s ball is a bit like asking men to kick a 623-gram basketball-sized sphere around.
+They vary from the delight that megafauna provide those visiting a safari park to the more prosaic: pollinators fertilising crops; earthworms keeping the soil healthy.
 
 
--------------------- error word 10 --------------------
-rough-and-ready
+-------------------- word 10 --------------------
+vultures
+vulture
+===== translation10 =====
+a large bird with almost no feathers on its head or neck, that eats the flesh of dead animals 
+秃鹫；兀鹫 
+a person or organization that is eager to win an advantage from other people's difficulties or problems 
+趁火打劫的人（或机构）；乘人之危的人（或机构） 
+>>>>> phrase 10 <<<<<
 ///// sentences 10 /////
-Admittedly, the maths are rough-and-ready.
+They find that the accidental poisoning of vultures in India led to a dramatic increase in human mortality, with more than 100,000 additional deaths in an average year, as the birds no longer devoured waterway-poisoning carrion (see Graphic detail).
+
+Despite their poor reputation, vultures might therefore earn a place on a resource-constrained ark.
 
 
 -------------------- word 11 --------------------
-discuses
-discus
+carrion
+carrion
 ===== translation11 =====
-a heavy plate-shaped object that is thrown as part of a sports event 
-铁饼 
+dead or decaying flesh 
+腐尸；腐肉 
 >>>>> phrase 11 <<<<<
-the discus
-the event or sport in which a discus is thrown as far as possible
-掷铁饼；掷铁饼项目
 ///// sentences 11 /////
-In athletics, women put lighter shots, throw lighter discuses and leap over lower hurdles than men do.
+They find that the accidental poisoning of vultures in India led to a dramatic increase in human mortality, with more than 100,000 additional deaths in an average year, as the birds no longer devoured waterway-poisoning carrion (see Graphic detail).
 
 
 -------------------- word 12 --------------------
-hurdle
-hurdle
+scroll
+scroll
 ===== translation12 =====
-a frame or fence for jumping over in a race 
-（跨栏比赛中的）栏架 
-a problem that you have to deal with before you can make progress 
-障碍，难题 
-to run in a race in which there are hurdles to be jumped over, or to jump over something while running 
-参加跨栏比赛；跨过 
+a long roll of paper or similar material with usually official writing on it 
+长卷纸，卷轴 
+a decoration that looks like a roll of paper 
+涡卷形装饰 
+to move text or other information on a computer screen in order to see a different part of it 
+滚动；滚屏 
 >>>>> phrase 12 <<<<<
-hurdles
-a race in which people or horses jump over hurdles
-跨栏比赛
 ///// sentences 12 /////
-In athletics, women put lighter shots, throw lighter discuses and leap over lower hurdles than men do.
+All the scrolls might be valuable, but many have information on them that is in other libraries.
 
 
 -------------------- word 13 --------------------
-Rugby
-rugby
+repugnant
+repugnant
 ===== translation13 =====
-a sport where two teams try to score points by carrying an oval ball across a particular line or kicking it over and between an H-shaped set of posts 
-橄榄球 
+If behaviour or beliefs, etc. are repugnant, they are very unpleasant, causing a feeling of disgust. 
+令人厌恶的；令人反感的 
 >>>>> phrase 13 <<<<<
 ///// sentences 13 /////
-World Rugby, the international governing body for rugby union, is planning tests of a ball sized for women’s smaller hands.
+That led to what some conservationists might consider a repugnant conclusion: counterintuintively, the best way to preserve biodiversity is for the resource-constrained ark to pick a single species and squeeze in as many as possible.
 
 
--------------------- word 14 --------------------
-biomechanics
-biomechanics
-===== translation14 =====
-the physical forces that affect human and animal movement, or the study of these forces  
-生物力学 
->>>>> phrase 14 <<<<<
+-------------------- error word 14 --------------------
+counterintuintively
 ///// sentences 14 /////
-In the past, women’s football boots were derived from shoes designed for a man’s weight, foot size and biomechanics.
+That led to what some conservationists might consider a repugnant conclusion: counterintuintively, the best way to preserve biodiversity is for the resource-constrained ark to pick a single species and squeeze in as many as possible.
 
 
 -------------------- word 15 --------------------
-arch
-arch
+cockroaches
+cockroach
 ===== translation15 =====
-a structure, consisting of a curved top on two supports, that holds the weight of something above it 
-拱；拱形结构；拱门（或窗、顶、洞等） 
-something that has the shape of an arch, often used for decoration 
-（常用作装饰的）拱形，拱形物 
-the raised curve on the bottom of your foot 
-足弓，足背 
-any organ or part of the body that is curved in shape 
-弓（身体中曲线形或弧形的结构） 
-to make the shape of an arch 
-（使）拱起；（使）成拱形 
-showing that you think it is amusing that you know more about something than someone else does 
-淘气的；调皮的 
-most important 
-主要的；最重要的 
-greater or especially worse than others of the same type 
-极度的；为首的；（尤指）极恶劣的 
+a flat, brown or black insect sometimes found in the home 
+蟑螂 
 >>>>> phrase 15 <<<<<
 ///// sentences 15 /////
-A firm called Ida Sports sells a boot that is wider around the toes, narrower at the heel and gives more support round the arch, with shorter and more plentiful studs.
+Noah might be best to fill the ark with resilient cockroaches instead, ensuring that at least one creature makes it through the flood.
+
+Were Noah to have filled his ark with cockroaches—or pandas, for that matter—a single virus could have wiped out the lot.
 
 
 -------------------- word 16 --------------------
-studs
-stud
+wasps
+wasp
 ===== translation16 =====
-a group of animals, especially high-quality horses, kept for breeding 
-种畜；（尤指）良种种马 
-a man who is considered to be attractive and skilled sexually 
-风流男子，四处留情的男人 
-a small nail or piece of metal, with a large, rounded top, that is attached to the surface of something, usually for decoration 
-（通常作装饰的）饰钉，嵌钉 
-a small piece of metal jewellery that is put through a part of your body such as your ear or nose 
-钉状首饰；耳钉；鼻插 
-any of the small, pointed objects that stick out from the bottom of some boots and shoes used in particular sports, for example football 
-（尤指足球鞋的）鞋钉 
-a fastener made from two small flat parts joined together by a short bar, used for clothing, especially in the past to fix collars onto shirts 
-（尤指旧时的）领扣 
-a small piece of metal, many of which are attached to special tyres used for driving in the snow 
-（通常作装饰的）饰钉，嵌钉 
+a flying insect, often black and yellow, that can sting (= produce a small, painful skin injury) 
+黄蜂，胡蜂 
+abbreviation for White Anglo-Saxon Protestant: a white American whose family originally came from northern Europe, and is therefore part of a group often considered as having the most influence and the most money in American society 
+祖先为盎格鲁－撒克逊新教徒的白种人（White Anglo-Saxon Protestant的缩写） 
 >>>>> phrase 16 <<<<<
-put (out) to stud
-kept for breeding
-留作种畜；留作种马
-studs showing/up
-with the studs of your football boots pointing at a player's leg when you tackle them
-（足球）在铲球时把鞋钉对着对方球员的腿
 ///// sentences 16 /////
-A firm called Ida Sports sells a boot that is wider around the toes, narrower at the heel and gives more support round the arch, with shorter and more plentiful studs.
+Stinging wasps are one candidate, but the picnic irritants play a vital role, eating other pests and pollinating flowers.
 
 
 -------------------- word 17 --------------------
-incidence
-incidence
+irritants
+irritant
 ===== translation17 =====
-an event, or the rate at which something happens 
-事件；（事件的）发生率 
+something that causes trouble or makes you annoyed 
+令人烦恼的事物；造成麻烦的事物 
+a substance that makes part of your body sore or painful 
+刺激物 
 >>>>> phrase 17 <<<<<
 ///// sentences 17 /////
-Among other benefits, one hope is that this might reduce the incidence of knee injuries, to which women seem more susceptible.
+Stinging wasps are one candidate, but the picnic irritants play a vital role, eating other pests and pollinating flowers.
 
 
 -------------------- word 18 --------------------
-susceptible
-susceptible
+picnic
+picnic
 ===== translation18 =====
-easily influenced or harmed by something 
-易受影响的，易受伤害的 
-used to describe someone who is easily emotionally influenced 
-易受感动的，感情丰富的，多情的 
-(especially of an idea or statement) able to be understood, proved, explained, etc. in a particular way 
-（尤指想法或陈述）能被理解（或证明、解释）的 
+an occasion when you have an informal meal of sandwiches, etc. outside, or the food itself 
+野餐；供野餐吃的食品 
+to have a picnic somewhere 
+去野餐 
 >>>>> phrase 18 <<<<<
 ///// sentences 18 /////
-Among other benefits, one hope is that this might reduce the incidence of knee injuries, to which women seem more susceptible.
+Stinging wasps are one candidate, but the picnic irritants play a vital role, eating other pests and pollinating flowers.
+
+
+-------------------- word 19 --------------------
+sterilised
+sterilize
+===== translation19 =====
+to perform a medical operation on someone in order to make them unable to have children 
+为…做绝育手术，使绝育 
+to make something completely clean and free from bacteria 
+为…消毒，使无菌 
+>>>>> phrase 19 <<<<<
+///// sentences 19 /////
+Some scientists have suggested releasing genetically modified, sterilised versions of the insects that would get rid of the species altogether; others warn that doing so could have unforeseen consequences by eradicating both a pollinator and a food source for other animals.
+
+Every week the US Department of Agriculture (USDA) and Panamanian government drop sterilised screwworms, a parasitic flesh-eating fly larva that feeds on livestock, out of a plane on the Panama-Colombia border in order to stop the creatures from breeding.
+
+
+-------------------- error word 20 --------------------
+screwworms
+///// sentences 20 /////
+Every week the US Department of Agriculture (USDA) and Panamanian government drop sterilised screwworms, a parasitic flesh-eating fly larva that feeds on livestock, out of a plane on the Panama-Colombia border in order to stop the creatures from breeding.
+
+
+-------------------- word 21 --------------------
+larva
+larva
+===== translation21 =====
+a form of an insect or an animal such as a frog that has left its egg but is not yet completely developed 
+幼体，幼虫 
+>>>>> phrase 21 <<<<<
+///// sentences 21 /////
+Every week the US Department of Agriculture (USDA) and Panamanian government drop sterilised screwworms, a parasitic flesh-eating fly larva that feeds on livestock, out of a plane on the Panama-Colombia border in order to stop the creatures from breeding.
+
+
+-------------------- word 22 --------------------
+irreversible
+irreversible
+===== translation22 =====
+not possible to change; impossible to return to a previous condition 
+不可改变的，不可逆转的 
+>>>>> phrase 22 <<<<<
+///// sentences 22 /////
+Deliberate extinctions are irreversible and reduce humanity’s options, so should be used sparingly.
 
 
