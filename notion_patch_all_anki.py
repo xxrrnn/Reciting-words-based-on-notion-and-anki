@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import os
 from collections import OrderedDict
 from datetime import datetime as dt
-
+from datetime import timedelta
 
 # short https://www.notion.so/58951b5a29544562a93fd0c1f5d7112f?v=316bed45c314462c84dca09b30578cea&pvs=4
 # query_id = "58951b5a29544562a93fd0c1f5d7112f"
@@ -48,6 +48,7 @@ class Update_anki:
         self.count_forget_all = 0
         self.selection_dict = {"KnowAll": "green","KnowSome":"yellow", "ForgetAll":"red"}
         self.date_dict = {}  # 用于release_tension
+        self.tomorrow = True
     def delete_page(self,page_id):
         body = {
             'archived': True
@@ -73,7 +74,7 @@ class Update_anki:
         S_0 = res_notion.json()
         res_travel = S_0['results']
         if_continue = len(res_travel)
-        print(len(res_travel))
+        # print(len(res_travel))
         if if_continue > 0:
             while if_continue % 100 == 0:
                 body = {
@@ -325,14 +326,23 @@ class Update_anki:
         print(r.text)
 
     def patch_update(self):
+        # 获取当前日期和时间
+        current_datetime = dt.now()
+        # 计算当日凌晨4点的时间
+        today_4am = current_datetime.replace(hour=4, minute=0, second=0, microsecond=0)
+        if current_datetime < today_4am:
+            print("现在是"+str(current_datetime)+"还没有到凌晨4点")
+            self.tomorrow = False
+        else:
+            print("现在是"+str(current_datetime)+"已经超过凌晨四点")
+            self.tomorrow = True
         print("start get response")
         response = self.DataBase_item_query(self.query_id)
-        modified_time = os.path.getmtime("word_today.txt")
-        modified_datetime = datetime.datetime.fromtimestamp(modified_time)
-        modified_datetime = modified_datetime.date()
+        # modified_time = os.path.getmtime("word_today.txt")
+        # modified_datetime = datetime.datetime.fromtimestamp(modified_time)
+        # modified_datetime = modified_datetime.date()
         # 获取当前日期
-        current_datetime = datetime.datetime.now().date()
-        if modified_datetime != current_datetime:
+        if self.tomorrow:
             with open("word_today.txt", "w") as file:
                 file.truncate()
         # self.word_next_dict = {}
@@ -647,12 +657,16 @@ class Update_anki:
         if len(response) == 0:
             pass
         else:
-            for dict in response:
-                checked_date = dt.strptime(dict['properties']["Checked Date"]['date']['start'], '%Y-%m-%d')
-                today = date.today()
-                checked_date = checked_date.date()
-                if checked_date != today:
-                    self.delete_page(dict["id"])
+            if self.tomorrow:
+                print("晚于凌晨4点，清空前日单词")
+                for dict in response:
+                    checked_date = dt.strptime(dict['properties']["Checked Date"]['date']['start'], '%Y-%m-%d')
+                    today = date.today()
+                    checked_date = checked_date.date()
+                    if checked_date != today:
+                        self.delete_page(dict["id"])
+            else:
+                print("早于凌晨4点，不清空前日单词")
         # 不是今天且表格不空的话就清空
         # if just_add != True and len(response) != 0:
         #     self.DataBase_item_delete(response)
@@ -689,10 +703,10 @@ class Update_anki:
                          # "Next": {"date": {"start": next_str}},
                          "voice": {"url": voice_url},
                          "Level": {"select": {"name": "0", "color": "default"}},
-                         "KnowAll": {"checkbox": False},
-                         "KnowSome": {"checkbox": False},
-                         "ForgetAll": {"checkbox": False},
-                         "Checked Times": {"number": 0},
+                         # "KnowAll": {"checkbox": False},
+                         # "KnowSome": {"checkbox": False},
+                         # "ForgetAll": {"checkbox": False},
+                         # "Checked Times": {"number": 0},
                          "🌏 Economist Reading": {
                              "relation": [
                                  {

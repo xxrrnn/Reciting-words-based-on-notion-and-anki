@@ -75,7 +75,9 @@ class Economists:
         # self.my_dict_new = {}
         self.passage_id = {}
         self.passage_num = 0
-        self.state = "new"
+        # self.state = "new"
+        # self.passage = ""
+        # self.all_words_in_passage_set = set()
 
     def find_middle_sentence_with_phrase(sentence_list, target_phrase):
         # 将目标词组转换为小写，以忽略大小写的差异
@@ -397,70 +399,70 @@ class Economists:
         # return translation, phrase_translation
 
     # 实例方法
-    def notion_scrap(self): # 词组和单词区分的任务难以完成，改用调用剪切版的方式获得单词信息
-        print("开始执行")
-        time.sleep(5)
-        pos = []
-        scores = []
-        while(True):
-            #截屏并读取
-            im1 = pyautogui.screenshot('pictures/my_screenshot.png')
-            img = cv2.imread("pictures/my_screenshot.png")
-            # 转到HSV
-            hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-            # 设置阈值
-            # l_blue = np.array([[0, 43, 46]])
-            # h_blue = np.array([25, 255, 255])
-
-            l_blue = np.array([5, 50, 50])  # 橙色的下限
-            h_blue = np.array([15, 255, 255])  # 橙色的上限
-            # 构建掩模
-            mask = cv2.inRange(hsv, l_blue, h_blue)
-            # 进行位运算
-            res = cv2.bitwise_and(img, img, mask=mask)
-            cv2.imwrite("pictures/result.png", res)
-            # 开始ocr
-            # 模型路径下必须含有model和params文件，如果没有，现在可以自动下载了，不过是最简单的模型
-            # use_gpu 如果paddle是GPU版本请设置为 True
-            ocr = paddleocr.PaddleOCR(use_angle_cls=True, use_gpu=False)
-            img_path = "pictures/result.png"  # 这个是自己的图片，自行放置在代码目录下修改名称
-            result = ocr.ocr(img_path, cls=True)
-
-            img_res = cv2.imread("pictures/result.png")
-            height_img, width_img, _ = img_res.shape
-            # print(height_img, width_img)
-            for lines in result:
-                for line in lines:
-                    print("pos", line[0])
-                    pos.append(line[0])
-                    print("word + scores", line[1])
-                    #要解决词组识别率比单词低的情况
-                    if ' ' in line[1][0]:
-                        if line[1][1] >= 0.93:
-                            self.words.append(line[1][0])
-                    else:
-                        if line[1][1] >= 0.93:
-                            self.words.append(line[1][0])
-
-                    # scores.append(line[1][1])
-            #获得了word,再次截屏，如果变化没超过阈值，就认为
-            if 'This article was downloaded' in self.words:
-                new_words = list(filter(lambda x: x != 'This article was downloaded', self.words))
-                # print(new_words)
-                # print("new_words",len(new_words),new_words)
-
-                # 处理识别出空格的单词
-                for num in range(len(new_words)):
-                    new_words[num] = new_words[num].strip()
-                self.words = list(set(new_words))
-                print("words",len(self.words),self.words)
-                # cv2.imshow("res",img_res)
-                # cv2.waitKey()
-                break
-            pyautogui.click(800,800, clicks=1, interval=0.25)
-            pywinauto.mouse.scroll((800,300),-2) #(1100,300)是初始坐标，1000是滑动距离（可负）
-        return self.words
-        pass
+    # def notion_scrap(self): # 词组和单词区分的任务难以完成，改用调用剪切版的方式获得单词信息
+    #     print("开始执行")
+    #     time.sleep(5)
+    #     pos = []
+    #     scores = []
+    #     while(True):
+    #         #截屏并读取
+    #         im1 = pyautogui.screenshot('pictures/my_screenshot.png')
+    #         img = cv2.imread("pictures/my_screenshot.png")
+    #         # 转到HSV
+    #         hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    #         # 设置阈值
+    #         # l_blue = np.array([[0, 43, 46]])
+    #         # h_blue = np.array([25, 255, 255])
+    #
+    #         l_blue = np.array([5, 50, 50])  # 橙色的下限
+    #         h_blue = np.array([15, 255, 255])  # 橙色的上限
+    #         # 构建掩模
+    #         mask = cv2.inRange(hsv, l_blue, h_blue)
+    #         # 进行位运算
+    #         res = cv2.bitwise_and(img, img, mask=mask)
+    #         cv2.imwrite("pictures/result.png", res)
+    #         # 开始ocr
+    #         # 模型路径下必须含有model和params文件，如果没有，现在可以自动下载了，不过是最简单的模型
+    #         # use_gpu 如果paddle是GPU版本请设置为 True
+    #         ocr = paddleocr.PaddleOCR(use_angle_cls=True, use_gpu=False)
+    #         img_path = "pictures/result.png"  # 这个是自己的图片，自行放置在代码目录下修改名称
+    #         result = ocr.ocr(img_path, cls=True)
+    #
+    #         img_res = cv2.imread("pictures/result.png")
+    #         height_img, width_img, _ = img_res.shape
+    #         # print(height_img, width_img)
+    #         for lines in result:
+    #             for line in lines:
+    #                 print("pos", line[0])
+    #                 pos.append(line[0])
+    #                 print("word + scores", line[1])
+    #                 #要解决词组识别率比单词低的情况
+    #                 if ' ' in line[1][0]:
+    #                     if line[1][1] >= 0.93:
+    #                         self.words.append(line[1][0])
+    #                 else:
+    #                     if line[1][1] >= 0.93:
+    #                         self.words.append(line[1][0])
+    #
+    #                 # scores.append(line[1][1])
+    #         #获得了word,再次截屏，如果变化没超过阈值，就认为
+    #         if 'This article was downloaded' in self.words:
+    #             new_words = list(filter(lambda x: x != 'This article was downloaded', self.words))
+    #             # print(new_words)
+    #             # print("new_words",len(new_words),new_words)
+    #
+    #             # 处理识别出空格的单词
+    #             for num in range(len(new_words)):
+    #                 new_words[num] = new_words[num].strip()
+    #             self.words = list(set(new_words))
+    #             print("words",len(self.words),self.words)
+    #             # cv2.imshow("res",img_res)
+    #             # cv2.waitKey()
+    #             break
+    #         pyautogui.click(800,800, clicks=1, interval=0.25)
+    #         pywinauto.mouse.scroll((800,300),-2) #(1100,300)是初始坐标，1000是滑动距离（可负）
+    #     return self.words
+    #     pass
     def new_dict(self):
         url_notion_block = 'https://api.notion.com/v1/databases/' + self.database_id + '/query'
         res_notion = requests.post(url_notion_block, headers=self.notion_headers)
@@ -677,6 +679,8 @@ class Economists:
 
         # with open("passage.txt", "r", encoding='utf-8') as bookFile:
         #     paragraphs = bookFile.readlines()
+        with open("passage.txt", "rb") as file:
+            self.passage = file.readlines()
         lines = []
         # copy notion to txt, use this
         with open("passage.txt", "rb") as file:
@@ -748,7 +752,6 @@ class Economists:
             # a = sentences_all[sen_num]
         for word_num in range(len(self.words)):
             sentences_contain_word = []
-
             current_word = self.words[word_num].lower()
             # if word_num == 5:
             #     print("main")
@@ -771,8 +774,6 @@ class Economists:
                                 # else:
                                 #     self.sentences.append(sentence + '.')
             else:
-                # if find_true_sentence:
-                #     break
                 for sentence in sentences_all:
                     sentence_lower = sentence.lower()
                     sentence_lower = re.sub(r'[^\w\s]', '', sentence_lower)
@@ -971,16 +972,26 @@ class Economists:
         if len(a) != 0:
             subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
 
+    # def words_in_passage_patch(self):
+    #     with open('vocabularies.data', 'rb') as file:
+    #         self.my_dict = pickle.load(file)
+    #     words_in_dict = self.my_dict.keys()
+    #     self.words = []
+    #     for word in words_in_dict:
+    #         if " " in word:
+    #             if word in self.passage:
+    #                 self.words.append(word)
+    #         else:
+    #             if word in
+
+
+
+
+
+
 
 
     def run(self):
-        while True:
-            try:
-                source_code = requests.get(self.guidURL + 'and', headers=self.headers).text
-                break
-            except:
-                input("无法爬虫，请关闭vpn；\n 关闭后请回车")
-            # self.setup()
         self.title = input("输入这次的文章标号：参考063：\n")
         selection = input("需要clip文章吗？ 不需要打0 \n")
         if selection != "0":
@@ -993,8 +1004,9 @@ class Economists:
         else:
             self.get_clip()
         print(len(self.words),self.words)
-        input("check it 按回车开始爬虫\n")
+        print("开始提取例句")
         self.get_sentences()
+        input("check it 按回车开始爬虫\n")
         origin_pronoun_voice,translations, error_words = self.get_cambridge()
         if len(self.words) != len(self.sentences):
             print("word",len(self.words),"sentences",len(self.sentences))
@@ -1105,7 +1117,7 @@ class Economists:
                         word_pronoun = current_translation[1][1]
                         voiceUrl = current_translation[1][2]
                         up_pronoun.append(word_pronoun)
-                        print("voiceUrl",voiceUrl)
+                        # print("voiceUrl",voiceUrl)
                         up_voiceUrl.append(voiceUrl)
                         # file.write(word_pronoun + "\n")
                         try:
@@ -1168,7 +1180,7 @@ class Economists:
                         up_voiceUrl.append(" ")
 
         if chongfu_num + len(up_meaning) == len(self.words):
-            input("都对应上了，可以enter")
+            input("都对应上了，准备上传notion，可以enter")
         subprocess.run(['notepad.exe',"words_upload.txt"],check = True)
         subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
         # input("检查result.txt，如果没有问题就enter")
@@ -1201,15 +1213,19 @@ class Economists:
         # for word in self.words:
         #     if word not in self.my_dict:
         #         self.my_dict.append(word)
+        print("repeat_patch: 准备更新重复的单词的tag和relation ")
+        self.repeat_patch()
+        # selection = input("是否更新全部出现在这篇文章中的单词的标签和例句，不是选0\n")
+        # if selection != "0":
+        #     print("words_in_passage_patch: 准备更新全部dict中存在于文章中的单词标签和relation，并输出例句")
+        #     self.words_in_passage_patch()
+        # else:
+        #     pass
+        print("new_dict: 开始保存本地单词和单词id")
         self.new_dict()
-        selection = input("准备更新重复的单词的tag和relation ")
-        if selection != "0":
-            self.repeat_patch()
-            print("End, 恭喜你精读了一篇文章，这是您看的第" + str(self.passage_num) + "篇")
-            print("Rest at the end, not in the middle.")
-        else:
-            print("End, 恭喜你精读了一篇文章，这是您看的第" + str(self.passage_num) + "篇")
-            print("Rest at the end, not in the middle.")
+
+        print("End, 恭喜你精读了一篇文章，这是您看的第" + str(self.passage_num) + "篇")
+        print("Rest at the end, not in the middle.")
 
         # with open('vocabularies.data', 'wb') as file:
         #     pickle.dump(self.my_dict, file)

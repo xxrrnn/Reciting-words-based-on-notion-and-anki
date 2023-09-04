@@ -1,291 +1,297 @@
 -------------------- word 0 --------------------
-patriarch
-patriarch
+browbeat
+browbeat
 ===== translation0 =====
-a bishop in certain Eastern Churches 
-（基督教某些东派教会的）牧首，最高级主教，教长 
-the male leader of a family 
-（男性）家长，族长 
+to try to force someone to do something by threatening them or persuading them forcefully and unfairly 
+威吓；吓唬 
 >>>>> phrase 0 <<<<<
 ///// sentences 0 /////
-“OF FOWLS AFTER their kind,” the Lord said to Noah, “and of cattle after their kind, of every creeping thing of the Earth after his kind, two of every sort shall come unto thee.” Co-operation from the animal kingdom helped make the biblical patriarch history’s greatest conservationist, saving every land-based animal, including humans, from a wave of divine extinction
-
-The patriarch was able to fit a breeding pair of each of the 5.6m or so terrestrial species onto his 300 cubits-long ark.
+The most popular shows, which consist of a studio host and supporters of the Hindu-nationalist prime minister jointly browbeating his critics, used to be devoted to domestic issues.
 
 
--------------------- error word 1 --------------------
-cubits
+-------------------- word 1 --------------------
+Emirate
+emirate
+===== translation1 =====
+a country or state ruled by an emir 
+酋长国 
+>>>>> phrase 1 <<<<<
 ///// sentences 1 /////
-The patriarch was able to fit a breeding pair of each of the 5.6m or so terrestrial species onto his 300 cubits-long ark.
+Mr Modi has also given the channels a lot to discuss; a visit to France and the United Arab Emirates in July was his 72nd foreign outing.
 
 
 -------------------- word 2 --------------------
-ark
-the ark
+festoon
+festoon
 ===== translation2 =====
-(in the Bible) a large wooden ship built by Noah in order to save his family and a male and female of every type of animal when the world was covered by a flood 
-（《圣经》中的）挪亚方舟 
+to decorate a room or other place for a special occasion by hanging coloured paper, lights, or flowers around it, especially in curves 
+给…饰以花彩；结彩于 
+a decorative chain made of coloured paper, flowers, etc. hung in a curve between two points 
+（彩纸、花等做成的）花彩 
 >>>>> phrase 2 <<<<<
-the Ark of the Covenant
-(in the Bible) a wooden box that contained the writings of Jewish law, and that represented to the people of Israel the idea of God being present and leading them
-（《圣经》中的）约柜
 ///// sentences 2 /////
-Which animals should a modern-day Noah put in his ark?.
-
-The patriarch was able to fit a breeding pair of each of the 5.6m or so terrestrial species onto his 300 cubits-long ark.
-
-Despite their poor reputation, vultures might therefore earn a place on a resource-constrained ark.
-
-The selection for the ark should try to preserve as much of this information as possible, even if the animals themselves do not do much for human welfare.
-
-That led to what some conservationists might consider a repugnant conclusion: counterintuintively, the best way to preserve biodiversity is for the resource-constrained ark to pick a single species and squeeze in as many as possible.
-
-Noah might be best to fill the ark with resilient cockroaches instead, ensuring that at least one creature makes it through the flood.
-
-Were Noah to have filled his ark with cockroaches—or pandas, for that matter—a single virus could have wiped out the lot.
-
-
--------------------- word 3 --------------------
-species
-species
-===== translation3 =====
-a set of animals or plants in which the members have similar characteristics to each other and can breed with each other 
-（动植物的）种，物种 
->>>>> phrase 3 <<<<<
-///// sentences 3 /////
-The patriarch was able to fit a breeding pair of each of the 5.6m or so terrestrial species onto his 300 cubits-long ark.
-
-A forthcoming paper by Eyal Frank of the University of Chicago and Anant Sudarshan of the University of Warwick looks at the economic benefits of “keystone species”.
-
-That led to what some conservationists might consider a repugnant conclusion: counterintuintively, the best way to preserve biodiversity is for the resource-constrained ark to pick a single species and squeeze in as many as possible.
-
-Trying to keep two species alive, and failing, means losing everything.
-
-The real-world implication of this is that using conservation funds on highly endangered species risks throwing good money after bad.
-
-Some scientists have suggested releasing genetically modified, sterilised versions of the insects that would get rid of the species altogether; others warn that doing so could have unforeseen consequences by eradicating both a pollinator and a food source for other animals.
-
-Genetic range reduces the vulnerability of any individual part of an ecosystem to pests and diseases, helping avoid catastrophe if a species vital for human survival goes extinct.
+Meetings have been scheduled in over 30 cities, all of which are now festooned with G20 paraphernalia.
 
 
 -------------------- word 4 --------------------
-terrestrial
-terrestrial
+broadsheet
+broadsheet
 ===== translation4 =====
-relating to the earth 
-地球的；与地球有关的 
-(of a planet) similar to Earth 
-（星球）类似地球的 
-(of animals) living on the land rather than in the water or air 
-（动物）陆生的，陆栖的 
-Terrestrial television channels are broadcast from stations on the ground and do not use satellites. 
-（电视频道）陆地上的，地面上的（与卫星相对而言） 
+a newspaper that is printed on large sheets of paper, or an advertisement printed on a large sheet of paper 
+大幅报纸；大幅广告 
 >>>>> phrase 4 <<<<<
 ///// sentences 4 /////
-The patriarch was able to fit a breeding pair of each of the 5.6m or so terrestrial species onto his 300 cubits-long ark.
+There are probably fewer Indian foreign correspondents today than two decades ago, notes Sanjaya Baru, a former editor of the *Business Standard*, a broadsheet.
 
 
--------------------- word 5 --------------------
-biodiversity
-biodiversity
-===== translation5 =====
-the number and types of plants and animals that exist in a particular area or in the world generally, or the problem of protecting this 
-生物多样性 
->>>>> phrase 5 <<<<<
+-------------------- error word 5 --------------------
+hyperpartisan
 ///// sentences 5 /////
-Weitzman’s goal, beyond biblical interpretation, was to create an economic theory of conservation, calculating a strategy that a rational conservationist could follow to maximise both human welfare and natural biodiversity.
-
-The second part of the calculation places a direct value on biodiversity.
-
-Weitzman applies the same logic to animals: biodiversity has both an aesthetic value and an informational one, with content embedded in the genetics of animals.
-
-That led to what some conservationists might consider a repugnant conclusion: counterintuintively, the best way to preserve biodiversity is for the resource-constrained ark to pick a single species and squeeze in as many as possible.
-
-To reach that counterintuitive conclusion, Weitzman assumed that people ought to value biodiversity for its own sake.
-
-Even when valuing animals solely on their benefits to humanity, biodiversity still has something to offer: insurance.
-
-The same may be true of biodiversity.
+The new media focus on India’s role in the world tends to be hyperpartisan, nationalistic and often stunningly ill-informed.
 
 
--------------------- error word 6 --------------------
-megafauna
+-------------------- word 6 --------------------
+ill-informed
+ill-informed
+===== translation6 =====
+knowing less than you should about a particular subject 
+消息闭塞的；了解不够的 
+>>>>> phrase 6 <<<<<
 ///// sentences 6 /////
-They vary from the delight that megafauna provide those visiting a safari park to the more prosaic: pollinators fertilising crops; earthworms keeping the soil healthy.
+The new media focus on India’s role in the world tends to be hyperpartisan, nationalistic and often stunningly ill-informed.
 
 
 -------------------- word 7 --------------------
-safari
-safari
+seize on
+seize on/upon sth
 ===== translation7 =====
-an organized journey to look at, or sometimes hunt, wild animals, especially in Africa 
-（尤指在非洲进行的）观察野生动物之行，游猎 
+to use, accept, or take advantage of something quickly or enthusiastically 
+抓住；揪住；大加利用 
 >>>>> phrase 7 <<<<<
 ///// sentences 7 /////
-They vary from the delight that megafauna provide those visiting a safari park to the more prosaic: pollinators fertilising crops; earthworms keeping the soil healthy.
+This represents a business opportunity that Subhash Chandra, a media magnate, has seized on.
+
+
+-------------------- word 8 --------------------
+bash
+bash
+===== translation8 =====
+to hit hard 
+猛撞；猛击 
+to criticize someone severely 
+严厉批评，猛烈抨击 
+a party 
+聚会 
+a hit 
+猛击；痛打 
+>>>>> phrase 8 <<<<<
+have a bash
+to try to do something you have not done before
+试试看
+///// sentences 8 /////
+Both on WION and at her new home, Network18, Ms Sharma relentlessly bashes China and Pakistan.
 
 
 -------------------- word 9 --------------------
-pollinator
-pollinator
+castigate
+castigate
 ===== translation9 =====
-something, such as an insect, that carries pollen from one plant or part of a plant to another 
-传粉昆虫；传粉媒介 
+to criticize someone or something severely 
+严厉指责；斥责 
 >>>>> phrase 9 <<<<<
 ///// sentences 9 /////
-They vary from the delight that megafauna provide those visiting a safari park to the more prosaic: pollinators fertilising crops; earthworms keeping the soil healthy.
+Yet she also castigates the West, with which India has cordial relations.
 
 
 -------------------- word 10 --------------------
-vultures
-vulture
+cordial
+cordial
 ===== translation10 =====
-a large bird with almost no feathers on its head or neck, that eats the flesh of dead animals 
-秃鹫；兀鹫 
-a person or organization that is eager to win an advantage from other people's difficulties or problems 
-趁火打劫的人（或机构）；乘人之危的人（或机构） 
+friendly, but formal and polite 
+友好的，热诚的，诚挚的 
+(of a feeling, especially dislike) strong 
+（指感情，尤指厌恶感）强烈的 
+a sweet drink made from fruit, to which water is usually added 
+（通常加水后饮用的）甜果汁饮料 
+→ liqueur  
+烈性甜酒 
 >>>>> phrase 10 <<<<<
 ///// sentences 10 /////
-They find that the accidental poisoning of vultures in India led to a dramatic increase in human mortality, with more than 100,000 additional deaths in an average year, as the birds no longer devoured waterway-poisoning carrion (see Graphic detail).
-
-Despite their poor reputation, vultures might therefore earn a place on a resource-constrained ark.
+Yet she also castigates the West, with which India has cordial relations.
 
 
 -------------------- word 11 --------------------
-carrion
-carrion
+taunt
+taunt
 ===== translation11 =====
-dead or decaying flesh 
-腐尸；腐肉 
+to intentionally annoy and upset someone by making unkind remarks to them, laughing unkindly, etc. 
+嘲笑；讥讽；嘲弄 
 >>>>> phrase 11 <<<<<
 ///// sentences 11 /////
-They find that the accidental poisoning of vultures in India led to a dramatic increase in human mortality, with more than 100,000 additional deaths in an average year, as the birds no longer devoured waterway-poisoning carrion (see Graphic detail).
+Europe is taunted as weak, irrelevant, dependent on America and suffering from a “colonial mindset”.
 
 
 -------------------- word 12 --------------------
-scroll
-scroll
+irrelevant
+irrelevant
 ===== translation12 =====
-a long roll of paper or similar material with usually official writing on it 
-长卷纸，卷轴 
-a decoration that looks like a roll of paper 
-涡卷形装饰 
-to move text or other information on a computer screen in order to see a different part of it 
-滚动；滚屏 
+not related to what is being discussed or considered and therefore not important 
+不相关的，不切题的 
 >>>>> phrase 12 <<<<<
 ///// sentences 12 /////
-All the scrolls might be valuable, but many have information on them that is in other libraries.
+Europe is taunted as weak, irrelevant, dependent on America and suffering from a “colonial mindset”.
 
 
--------------------- word 13 --------------------
-repugnant
-repugnant
-===== translation13 =====
-If behaviour or beliefs, etc. are repugnant, they are very unpleasant, causing a feeling of disgust. 
-令人厌恶的；令人反感的 
->>>>> phrase 13 <<<<<
+-------------------- error word 13 --------------------
+colonial mindset
 ///// sentences 13 /////
-That led to what some conservationists might consider a repugnant conclusion: counterintuintively, the best way to preserve biodiversity is for the resource-constrained ark to pick a single species and squeeze in as many as possible.
+Europe is taunted as weak, irrelevant, dependent on America and suffering from a “colonial mindset”.
 
 
--------------------- error word 14 --------------------
-counterintuintively
+-------------------- word 14 --------------------
+dysfunctional
+dysfunctional
+===== translation14 =====
+not behaving or working normally 
+失调的，失常的 
+>>>>> phrase 14 <<<<<
 ///// sentences 14 /////
-That led to what some conservationists might consider a repugnant conclusion: counterintuintively, the best way to preserve biodiversity is for the resource-constrained ark to pick a single species and squeeze in as many as possible.
+America is a violent, racist, dysfunctional place, an ageing and irresponsible imperial power.
 
 
 -------------------- word 15 --------------------
-cockroaches
-cockroach
+Mindful
+mindful
 ===== translation15 =====
-a flat, brown or black insect sometimes found in the home 
-蟑螂 
+careful not to forget about something 
+记着的；留神的；注意的；小心的 
+deliberately aware of your body, mind, and feelings in the present moment, in order to create a feeling of calm 
+察觉的；正念的 
 >>>>> phrase 15 <<<<<
 ///// sentences 15 /////
-Noah might be best to fill the ark with resilient cockroaches instead, ensuring that at least one creature makes it through the flood.
-
-Were Noah to have filled his ark with cockroaches—or pandas, for that matter—a single virus could have wiped out the lot.
+Mindful of the criticism India often draws, especially for Mr Modi’s Muslim-bashing and creeping authoritarianism, Ms Sharma and other pro-Modi pundits insist that India’s behaviour and its problems are no worse than any other country’s.
 
 
 -------------------- word 16 --------------------
-wasps
-wasp
+Bridling
+bridle
 ===== translation16 =====
-a flying insect, often black and yellow, that can sting (= produce a small, painful skin injury) 
-黄蜂，胡蜂 
-abbreviation for White Anglo-Saxon Protestant: a white American whose family originally came from northern Europe, and is therefore part of a group often considered as having the most influence and the most money in American society 
-祖先为盎格鲁－撒克逊新教徒的白种人（White Anglo-Saxon Protestant的缩写） 
+a set of leather straps that are put around a horse's head to allow its rider to control it 
+马笼头；马勒 
+to show sudden anger 
+动怒，发火 
+to put a bridle on a horse or similar animal 
+给（马或其他类似动物）装上马勒 
 >>>>> phrase 16 <<<<<
 ///// sentences 16 /////
-Stinging wasps are one candidate, but the picnic irritants play a vital role, eating other pests and pollinating flowers.
+Bridling at lectures by hypocritical foreign powers is a longstanding feature of Indian diplomacy.
 
 
 -------------------- word 17 --------------------
-irritants
-irritant
+hypocritical
+hypocritical
 ===== translation17 =====
-something that causes trouble or makes you annoyed 
-令人烦恼的事物；造成麻烦的事物 
-a substance that makes part of your body sore or painful 
-刺激物 
+saying that you have particular moral beliefs but behaving in a way that shows these are not sincere 
+虚伪的；伪善的 
 >>>>> phrase 17 <<<<<
 ///// sentences 17 /////
-Stinging wasps are one candidate, but the picnic irritants play a vital role, eating other pests and pollinating flowers.
+Bridling at lectures by hypocritical foreign powers is a longstanding feature of Indian diplomacy.
 
 
 -------------------- word 18 --------------------
-picnic
-picnic
+conspiracy
+conspiracy
 ===== translation18 =====
-an occasion when you have an informal meal of sandwiches, etc. outside, or the food itself 
-野餐；供野餐吃的食品 
-to have a picnic somewhere 
-去野餐 
+the activity of secretly planning with other people to do something bad or illegal 
+阴谋；密谋；谋划 
 >>>>> phrase 18 <<<<<
+conspiracy of silence
+a general agreement to keep silent about a subject for the purpose of keeping it secret
+保持缄默的密约
 ///// sentences 18 /////
-Stinging wasps are one candidate, but the picnic irritants play a vital role, eating other pests and pollinating flowers.
+Such coverage has two aims, says Manisha Pande of Newslaundry, a media-watching website: to position Mr Modi as a global leader who has put India on the map, and to promote the theory that there is a global conspiracy to keep India down.
 
 
 -------------------- word 19 --------------------
-sterilised
-sterilize
+anchor
+anchor
 ===== translation19 =====
-to perform a medical operation on someone in order to make them unable to have children 
-为…做绝育手术，使绝育 
-to make something completely clean and free from bacteria 
-为…消毒，使无菌 
+a heavy metal object, usually shaped like a cross with curved arms, on a strong rope or chain, that is dropped from a boat into the water to prevent the boat from moving away 
+锚 
+someone or something that gives support when needed 
+可以依靠的人（或物）；精神支柱；靠山 
+an anchorman US  or anchorwoman US  
+（广播、电视节目的）主持人 
+to lower an anchor into the water in order to stop a boat from moving away 
+抛锚，下锚 
+to make something or someone stay in one position by fastening him, her, or it firmly 
+把…系住（或扎牢）；使稳固，使固定 
+to act as the anchorman or anchorwoman of a programme 
+主持，担任（节目的）主持人 
 >>>>> phrase 19 <<<<<
 ///// sentences 19 /////
-Some scientists have suggested releasing genetically modified, sterilised versions of the insects that would get rid of the species altogether; others warn that doing so could have unforeseen consequences by eradicating both a pollinator and a food source for other animals.
-
-Every week the US Department of Agriculture (USDA) and Panamanian government drop sterilised screwworms, a parasitic flesh-eating fly larva that feeds on livestock, out of a plane on the Panama-Colombia border in order to stop the creatures from breeding.
+“Coverage is driven by the fact that most TV news anchors are propagandists for the current government.
 
 
--------------------- error word 20 --------------------
-screwworms
+-------------------- word 20 --------------------
+propagandist
+propagandist
+===== translation20 =====
+someone who creates or spreads propaganda 
+宣传者；鼓吹者 
+>>>>> phrase 20 <<<<<
 ///// sentences 20 /////
-Every week the US Department of Agriculture (USDA) and Panamanian government drop sterilised screwworms, a parasitic flesh-eating fly larva that feeds on livestock, out of a plane on the Panama-Colombia border in order to stop the creatures from breeding.
+“Coverage is driven by the fact that most TV news anchors are propagandists for the current government.
+
+By letting his propagandists drum up hostility to the world, he is laying a trap for himself.
 
 
--------------------- word 21 --------------------
-larva
-larva
-===== translation21 =====
-a form of an insect or an animal such as a frog that has left its egg but is not yet completely developed 
-幼体，幼虫 
->>>>> phrase 21 <<<<<
+-------------------- error word 21 --------------------
+at odds with
 ///// sentences 21 /////
-Every week the US Department of Agriculture (USDA) and Panamanian government drop sterilised screwworms, a parasitic flesh-eating fly larva that feeds on livestock, out of a plane on the Panama-Colombia border in order to stop the creatures from breeding.
+That is at odds with Mr Modi’s aim to deepen ties with the West.
 
 
 -------------------- word 22 --------------------
-irreversible
-irreversible
+tamp down
+tamp down
 ===== translation22 =====
-not possible to change; impossible to return to a previous condition 
-不可改变的，不可逆转的 
 >>>>> phrase 22 <<<<<
 ///// sentences 22 /////
-Deliberate extinctions are irreversible and reduce humanity’s options, so should be used sparingly.
+China has recently sought to tamp down its aggressive “wolf-warrior diplomacy” rhetoric.
+
+
+-------------------- word 23 --------------------
+rhetoric
+rhetoric
+===== translation23 =====
+speech or writing intended to be effective and influence people 
+雄辩言辞；煽动性语言 
+the study of the ways of using language effectively 
+修辞（学）；雄辩（术） 
+clever language that sounds good but is not sincere or has no real meaning 
+浮夸之词 
+>>>>> phrase 23 <<<<<
+///// sentences 23 /////
+China has recently sought to tamp down its aggressive “wolf-warrior diplomacy” rhetoric.
+
+
+-------------------- word 24 --------------------
+mire
+mire
+===== translation24 =====
+an area of deep, wet, sticky earth 
+泥潭；沼泽；泥沼 
+an unpleasant situation that is difficult to escape 
+困境 
+>>>>> phrase 24 <<<<<
+///// sentences 24 /////
+But its social media remain mired in nationalism.
+
+
+-------------------- error word 25 --------------------
+laying a trap for
+///// sentences 25 /////
+By letting his propagandists drum up hostility to the world, he is laying a trap for himself.
 
 

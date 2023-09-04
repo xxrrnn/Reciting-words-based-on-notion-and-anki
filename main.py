@@ -1,8 +1,17 @@
 from Economist_anki import Economists
 from notion_patch_all_anki import Update_anki
-
+import requests
 
 if __name__ == "__main__":
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0'}
+    guidURL = 'https://dictionary.cambridge.org/dictionary/english-chinese-simplified/'
+    while True:
+        try:
+            source_code = requests.get(guidURL + 'and', headers=headers).text
+            break
+        except:
+            input("无法爬虫，请关闭vpn!\n关闭后请回车")
+        # self.setup()
     print("这是一个基于notion、python、anki、文章的背单词项目\n"
           "在运行前请确认一下几件事：\n"
           "1. 根据readme.md，获得notion的api接口、必要的python包等\n"
