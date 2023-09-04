@@ -76,8 +76,8 @@ class Economists:
         self.passage_id = {}
         self.passage_num = 0
         # self.state = "new"
-        # self.passage = ""
-        # self.all_words_in_passage_set = set()
+        self.passage = ""
+        self.all_words_in_passage_set = set()
 
     def find_middle_sentence_with_phrase(sentence_list, target_phrase):
         # 将目标词组转换为小写，以忽略大小写的差异
