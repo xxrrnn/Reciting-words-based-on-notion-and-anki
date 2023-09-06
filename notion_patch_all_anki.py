@@ -338,11 +338,11 @@ class Update_anki:
             self.tomorrow = True
         print("start get response")
         response = self.DataBase_item_query(self.query_id)
-        # modified_time = os.path.getmtime("word_today.txt")
-        # modified_datetime = datetime.datetime.fromtimestamp(modified_time)
-        # modified_datetime = modified_datetime.date()
+        modified_time = os.path.getmtime("word_today.txt")
+        modified_datetime = datetime.datetime.fromtimestamp(modified_time)
+        modified_datetime = modified_datetime.date()
         # 获取当前日期
-        if self.tomorrow:
+        if modified_datetime != dt.today().date():
             with open("word_today.txt", "w") as file:
                 file.truncate()
         # self.word_next_dict = {}
