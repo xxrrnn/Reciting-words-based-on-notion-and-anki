@@ -375,7 +375,9 @@ class Update_anki:
                 print(word)
                 print(KnowAll, KnowSome, ForgetAll)
                 level = dict['properties']["Level"]['select']['name']
+                word_selection = ""
                 if KnowAll:
+                    word_selection = 'KnowAll'
                     with open("word_today.txt", "a", encoding="utf-8") as file:
                         file.write(word + " |KnowAll""\n")
                     self.count_know_all += 1
@@ -385,6 +387,7 @@ class Update_anki:
                         next_level = '9'
                     next_str = self.next_day_on_level(next_level)
                 elif KnowSome:
+                    word_selection = 'KnowSome'
                     with open("word_today.txt", "a", encoding="utf-8") as file:
                         file.write(word + " |KnowSome""\n")
                     self.count_know_some += 1
@@ -399,6 +402,7 @@ class Update_anki:
                         next_level = str(int(level) )
                     next_str = self.next_day_on_level(next_level)
                 elif ForgetAll:
+                    word_selection = 'ForgetAll'
                     with open("word_today.txt", "a", encoding="utf-8") as file:
                         file.write(word + " |ForgetAll\n")
                     self.count_forget_all += 1
@@ -420,9 +424,9 @@ class Update_anki:
                     self.date_dict[date].append(dict)
                 else:
                     self.date_dict[date] = [dict]
-                self.today["KnowAll"] = self.knowall_list
-                self.today["KnowSome"] = self.knowsome_list
-                self.today["ForgetAll"] = self.forgetall_list
+                # self.today["KnowAll"] = self.knowall_list
+                # self.today["KnowSome"] = self.knowsome_list
+                # self.today["ForgetAll"] = self.forgetall_list
 
                 data = {
                     "parent": {"type": "database_id", "database_id": self.database_id},
@@ -444,6 +448,7 @@ class Update_anki:
                 }
                 # must change
                 self.patch_one_data(data,page_id)
+                self.checked_move_to_today(dict,word_selection)
 
             # 如果没选
             else:
@@ -463,9 +468,12 @@ class Update_anki:
 
                 if next != None:
                     second_time = datetime.datetime.strptime(next, "%Y-%m-%d").date()
-                    last_time = datetime.datetime.strptime(last, "%Y-%m-%d").date()
+                    # second_time_hour = datetime.datetime.strptime(next, "%Y-%m-%d")
+                    # last_time = datetime.datetime.strptime(last, "%Y-%m-%d")
+                    # 获取当前日期和时间
+                    today = dt.now().date()
                     late = False
-                    if second_time < today:
+                    if second_time < today and self.tomorrow:
                         late = True
                     else:
                         try:
@@ -473,7 +481,8 @@ class Update_anki:
                         except:
                             self.word_next_dict[str(second_time)] = 1
                     if late:
-                        d_day = [0,1,2,3]
+                        print(word + "  late")
+                        d_day = [1,2]
                         n = random.sample(d_day, len(d_day))[0]
                         next_str = (date.today() + timedelta(days=n)).strftime('%Y-%m-%d')
                         data = {
@@ -499,7 +508,6 @@ class Update_anki:
                             self.word_next_dict[next_str] = self.word_next_dict[next_str] + 1
                         except:
                             self.word_next_dict[next_str] = 1
-                        # print(r.text)
 
                 else:
                     try:
@@ -525,10 +533,8 @@ class Update_anki:
                 pass
         print(count)
 
-
         self.draw_pic()
-        self.checked_move_to_today()
-
+        self.today_delete_before()
         # 判断是否需要分配压力
         categories_next = list(self.word_next_dict.keys())
         values_next = list(self.word_next_dict.values())
@@ -574,13 +580,13 @@ class Update_anki:
         axs[0, 0].set_title('Level Bar Chart')
         axs[0, 0].set_label('Levels')
         axs[0, 0].set_ylabel('Word Amount')
-        axs[0, 0].set_xticks(range(len(categories_level)), categories_level, rotation=45, ha='right')
+        axs[0, 0].set_xticks(range(len(categories_level)), categories_level, ha='right')
         axs[0, 0].grid(True, axis='y', linestyle='--', alpha=0.7)
 
         for bar in bars1:
             axs[0, 0].text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())),
                            ha='center',
-                           va='bottom')
+                           va='bottom',fontsize=6)
 
         # 创建下方的子图
         bars2 = axs[1, 0].bar(range(len(categories_next)), values_next, color=colors, alpha=0.7)
@@ -588,12 +594,13 @@ class Update_anki:
         axs[1, 0].set_xlabel('Next Day')
         axs[1, 0].set_ylabel('Word Amount')
         axs[1, 0].set_xticks(range(len(categories_next)), categories_next, rotation=45, ha='right')
+        axs[1, 0].tick_params(axis='x', labelsize=8)  # 设置x轴刻度标签的字体大小为8
         axs[1, 0].grid(True, axis='y', linestyle='--', alpha=0.7)
 
         for bar in bars2:
             axs[1, 0].text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())),
                            ha='center',
-                           va='bottom')
+                           va='bottom',fontsize=6)
 
         my_dpi = 96
         # plt.figure(figsize=(480/my_dpi,480/my_dpi), dpi=my_dpi)
@@ -620,10 +627,6 @@ class Update_anki:
             # except:
             #     today_word_level_dict[level] = 0
             today_word_level_dict[level] += 1
-
-
-
-
         try:
             length = len(today_word_level_dict.keys())
         except:
@@ -644,13 +647,71 @@ class Update_anki:
         today_str = date.today().strftime('%Y-%m-%d')
         file_path = today_str + ".png"
         plt.savefig(file_path)
-        plt.show()
+        plt.show(block=True)
 
 
 
+    def checked_move_to_today(self, body, selection):
+        # #清空后post今天看到的单词
+        # for selection in self.today.keys():
+        #     checked_list = self.today[selection]
+        #     for body in checked_list:
+        word_content = body["properties"]['words']['title'][0]['plain_text']
+        print("正在导入 " + word_content+ " 到today单词库中")
+        body["parent"]["database_id"] = self.today_database_id
+        word_tag = body["properties"]['Tags']['select']['name']
+        word_color = body["properties"]['Tags']['select']['color']
+        title = body["properties"]['passage']['multi_select'][0]['name']
+        pronoun = body["properties"]['phonetic symbol']['rich_text'][0]['text']['content']
+        meaning = body["properties"]['meaning']['rich_text'][0]['text']['content']
+        today_str = date.today().strftime('%Y-%m-%d')
+        # next_str = body["properties"]['Next']['date']['start']
+        voice_url = body["properties"]['voice']['url']
+        passage_id = body["properties"]['🌏 Economist Reading']['relation'][0]['id']
+        # today_str = body["properties"]['words']['title'][0]['plain_text']
 
-    def checked_move_to_today(self):
-        print("开始导入today单词库")
+        p = {
+            "parent": {"database_id": self.today_query_id},
+            # "properties":body["properties"]
+             "properties": {
+                 "Tags": {"select": {"name": word_tag, "color": word_color}},
+                 "words": {"title": [{"type": "text", "text": {"content": word_content}}]},
+                 "passage": {"multi_select": [{"name": title}]},
+                 "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": pronoun}}]},
+                 "meaning": {
+                     "rich_text": [{"type": "text", "text": {"content": meaning}}]},
+                 "Checked Date": {"date": {"start": today_str}},
+                 # "Next": {"date": {"start": next_str}},
+                 "voice": {"url": voice_url},
+                 "Level": {"select": {"name": "0", "color": "default"}},
+                 # "KnowAll": {"checkbox": False},
+                 # "KnowSome": {"checkbox": False},
+                 # "ForgetAll": {"checkbox": False},
+                 # "Checked Times": {"number": 0},
+                 "🌏 Economist Reading": {
+                     "relation": [
+                         {
+                             "id": passage_id
+                         }
+                     ]
+                 },
+                 "Selection":{
+                     "select":{"name":selection,"color":self.selection_dict[selection]}
+                 }
+             },
+         }
+
+        url = "https://api.notion.com/v1/pages"
+        headers = {
+            "Notion-Version": "2022-06-28",
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + self.token
+        }
+        r = requests.post(url, json=p, headers=self.headers)
+        print(r.text)
+        print("导入" + word_content + " 到today，完成")
+
+    def today_delete_before(self):
         response = self.DataBase_item_query(self.today_query_id)
         # 判断是否有之前的内容，如果有就清空
         # just_add = False
@@ -667,67 +728,6 @@ class Update_anki:
                         self.delete_page(dict["id"])
             else:
                 print("早于凌晨4点，不清空前日单词")
-        # 不是今天且表格不空的话就清空
-        # if just_add != True and len(response) != 0:
-        #     self.DataBase_item_delete(response)
-
-        #清空后post今天看到的单词
-        for selection in self.today.keys():
-            checked_list = self.today[selection]
-            for body in checked_list:
-                word_content = body["properties"]['words']['title'][0]['plain_text']
-                print(word_content)
-                body["parent"]["database_id"] = self.today_database_id
-                word_tag = body["properties"]['Tags']['select']['name']
-                word_color = body["properties"]['Tags']['select']['color']
-                title = body["properties"]['passage']['multi_select'][0]['name']
-                pronoun = body["properties"]['phonetic symbol']['rich_text'][0]['text']['content']
-                meaning = body["properties"]['meaning']['rich_text'][0]['text']['content']
-                today_str = date.today().strftime('%Y-%m-%d')
-                # next_str = body["properties"]['Next']['date']['start']
-                voice_url = body["properties"]['voice']['url']
-                passage_id = body["properties"]['🌏 Economist Reading']['relation'][0]['id']
-                # today_str = body["properties"]['words']['title'][0]['plain_text']
-
-                p = {
-                    "parent": {"database_id": self.today_query_id},
-                    # "properties":body["properties"]
-                     "properties": {
-                         "Tags": {"select": {"name": word_tag, "color": word_color}},
-                         "words": {"title": [{"type": "text", "text": {"content": word_content}}]},
-                         "passage": {"multi_select": [{"name": title}]},
-                         "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": pronoun}}]},
-                         "meaning": {
-                             "rich_text": [{"type": "text", "text": {"content": meaning}}]},
-                         "Checked Date": {"date": {"start": today_str}},
-                         # "Next": {"date": {"start": next_str}},
-                         "voice": {"url": voice_url},
-                         "Level": {"select": {"name": "0", "color": "default"}},
-                         # "KnowAll": {"checkbox": False},
-                         # "KnowSome": {"checkbox": False},
-                         # "ForgetAll": {"checkbox": False},
-                         # "Checked Times": {"number": 0},
-                         "🌏 Economist Reading": {
-                             "relation": [
-                                 {
-                                     "id": passage_id
-                                 }
-                             ]
-                         },
-                         "Selection":{
-                             "select":{"name":selection,"color":self.selection_dict[selection]}
-                         }
-                     },
-                 }
-
-                url = "https://api.notion.com/v1/pages"
-                headers = {
-                    "Notion-Version": "2022-06-28",
-                    "Content-Type": "application/json",
-                    "Authorization": "Bearer " + self.token
-                }
-                r = requests.post(url, json=p, headers=self.headers)
-                print(r.text)
 
     def release_the_tension(self,tension_date):
         print("先不做了，如果之后背单词真背不下去再写")
@@ -751,12 +751,15 @@ class Update_anki:
 if __name__ == "__main__":
     # print(next_day_on_level("8"))
 
-    # print("start getting response")
+    # print
+    # https://www.notion.so/56b03c71d936493ab95a789cee835112?v=08662e1ef850458bb90b333d1f56fa60&pvs=4
     a = Update_anki()
-    # response = a.DataBase_item_query()
+    response = a.DataBase_item_query("56b03c71d936493ab95a789cee835112")
+    a.DataBase_item_delete(response)
+
     # response = None
     print("start updating")
-    a.patch_update()
+    # a.patch_update()
 
 
 

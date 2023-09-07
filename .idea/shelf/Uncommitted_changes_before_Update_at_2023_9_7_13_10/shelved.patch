@@ -1,0 +1,850 @@
+Index: word_today.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>disavow |KnowSome\r\naffectionately |KnowSome\r\nsuasion |KnowAll\r\ntranquillize |KnowAll\r\ndivide-and-rule tactics |KnowAll\r\ngoer |KnowAll\r\nin the wake of |KnowAll\r\nmojo |KnowAll\r\nbackbone |KnowAll\r\nvisionary |KnowSome\r\njust one catch |KnowAll\r\nstay put |KnowAll\r\nliving proof of |KnowAll\r\nnarcotics |KnowAll\r\nentrenched |KnowAll\r\nsimplistic |KnowAll\r\nslide towards |KnowAll\r\ndandy |KnowSome\r\nimmense |KnowAll\r\nreplete |KnowAll\r\nballistic |KnowAll\r\nstand-off |KnowAll\r\nshell out |KnowSome\r\nget/gain the upper hand |KnowAll\r\nshipment |KnowAll\r\nmind-blowing |KnowAll\r\nfinicky |KnowAll\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/word_today.txt b/word_today.txt
+--- a/word_today.txt	(revision 3e03d0e8f896eae518b97a2036fbd0bf987790f1)
++++ b/word_today.txt	(date 1694051312647)
+@@ -1,27 +1,280 @@
+-disavow |KnowSome
+-affectionately |KnowSome
+-suasion |KnowAll
+-tranquillize |KnowAll
+-divide-and-rule tactics |KnowAll
+-goer |KnowAll
+-in the wake of |KnowAll
+-mojo |KnowAll
+-backbone |KnowAll
+-visionary |KnowSome
+-just one catch |KnowAll
+-stay put |KnowAll
+-living proof of |KnowAll
+-narcotics |KnowAll
+-entrenched |KnowAll
+-simplistic |KnowAll
+-slide towards |KnowAll
+-dandy |KnowSome
+-immense |KnowAll
+-replete |KnowAll
+-ballistic |KnowAll
+-stand-off |KnowAll
+-shell out |KnowSome
+-get/gain the upper hand |KnowAll
+-shipment |KnowAll
+-mind-blowing |KnowAll
+-finicky |KnowAll
++browbeat |ForgetAll
++emirate |ForgetAll
++festoon |KnowAll
++broadsheet |KnowAll
++hyperpartisan |KnowAll
++seize on/upon sth |KnowSome
++castigate |KnowAll
++cordial |KnowAll
++taunt |ForgetAll
++irrelevant |KnowAll
++colonial mindset |KnowAll
++mindful |KnowSome
++bridle |ForgetAll
++hypocritical |ForgetAll
++conspiracy |KnowAll
++anchor |KnowAll
++propagandist |KnowAll
++at odds with |KnowSome
++tamp down |KnowSome
++rhetoric |KnowSome
++patriarch |KnowAll
++terrestrial |KnowAll
++repugnant |ForgetAll
++irritant |ForgetAll
++dry up |KnowAll
++gripe |ForgetAll
++wither |KnowSome
++dab |KnowAll
++advert |KnowAll
++apostle |KnowAll
++payback |KnowSome
++retribution |KnowSome
++mutineer |KnowAll
++demotion |ForgetAll
++functionary |KnowAll
++vengeful |KnowAll
++mafia |KnowSome
++furore |ForgetAll
++indict |ForgetAll
++tetchy |ForgetAll
++germophobic |KnowAll
++meagre |ForgetAll
++annihilation |KnowAll
++be shorn of sth |ForgetAll
++wobble |KnowSome
++bristles with allusions |KnowAll
++grotesque |KnowAll
++lore |KnowAll
++crony |ForgetAll
++nihilistic |ForgetAll
++motley |KnowAll
++hutch |ForgetAll
++detritus |ForgetAll
++erratically |ForgetAll
++incidental |KnowAll
++chortle |KnowAll
++exhortation |KnowSome
++exhortation |KnowSome
++tutelage |KnowAll
++heist |ForgetAll
++bogus |KnowAll
++plunder |KnowAll
++prosaic |ForgetAll
++ghastly |KnowSome
++slather |KnowAll
++swashbuckling |ForgetAll
++ludicrous |KnowSome
++fuss |KnowAll
++gust |KnowSome
++commanding |ForgetAll
++spoiler |KnowAll
++clove |KnowAll
++vignette |KnowSome
++crackle |ForgetAll
++flinch |ForgetAll
++lament |KnowAll
++sham |ForgetAll
++splurge |KnowAll
++poppy |KnowSome
++moribund |KnowSome
++renovation |KnowSome
++fetish |KnowAll
++dull |KnowAll
++co-ordination |KnowAll
++blemish |ForgetAll
++extricate (oneself from) |KnowSome
++crack |ForgetAll
++Sneak attack |KnowAll
++engagingly |KnowAll
++wistful |KnowSome
++prickly |KnowAll
++complementarity |KnowAll
++flout |ForgetAll
++defang |KnowSome
++makeover |KnowAll
++ill-informed |KnowAll
++bash |KnowAll
++mire |KnowAll
++lay a trap for |KnowAll
++megafauna |KnowAll
++dysfunctional |KnowAll
++pollinator |KnowAll
++vulture |KnowAll
++scroll |KnowAll
++irreversible |KnowAll
++lifeline |KnowAll
++airliner |KnowAll
++concerted |KnowAll
++emanate |KnowAll
++perception |KnowAll
++veracity |KnowAll
++keep in check |KnowAll
++helm |KnowAll
++albeit |KnowAll
++edge away |KnowAll
++debt-forgiveness/ restructurings |KnowAll
++scam |KnowAll
++uphold |KnowSome
++poster |KnowAll
++Unsurprisingly, the value of onshore stocks held by foreigners had fallen by December to $3.2trn yuan ($470m), about 4% of the total mainland market capitalisation—and down from 4.3% a year earlier, according to the most recent official data. |KnowAll
++evocative |KnowAll
++tarmac |KnowAll
++score |KnowAll
++rancid |KnowAll
++quaint |KnowAll
++nostalgic |KnowAll
++sap |KnowSome
++head off sth |KnowAll
++pen-portrait |KnowAll
++spin-off |KnowAll
++indigestible |KnowAll
++proposition |KnowAll
++urban-heat-island effect |KnowAll
++prohibitively |KnowAll
++scrap |KnowAll
++omitting to mention |KnowAll
++freak |KnowAll
++cloak |KnowAll
++tabloid |KnowSome
++big-hearted |KnowAll
++screwworm |KnowAll
++soundscape |KnowAll
++dandy |KnowAll
++rancorous |KnowAll
++incite |KnowAll
++wasp |KnowAll
++standalone |KnowAll
++bicker |KnowAll
++be ill-disposed towards sb |KnowAll
++hurdle |KnowAll
++rugby |KnowAll
++biomechanics |KnowAll
++jumpy |KnowAll
++relieve |KnowAll
++the gulag |KnowAll
++multifaceted |KnowSome
++outsource |KnowAll
++unmanned |KnowAll
++scion |KnowAll
++be at loggerheads (with sb) |KnowAll
++hegemonic |KnowAll
++esoteric |KnowAll
++are displaced by |KnowAll
++traction |KnowAll
++skewed |KnowAll
++skeletal |KnowAll
++preoccupation |KnowAll
++stringent |KnowAll
++sagging |KnowAll
++back down |KnowSome
++provocateur |KnowAll
++apologia |KnowSome
++dhows |KnowAll
++podcast |KnowAll
++extortion |KnowAll
++demilitarise |KnowSome
++illusion |KnowAll
++dungeon |KnowAll
++destroyer |KnowAll
++deterrence |KnowAll
++TV viewership |KnowAll
++arch |KnowAll
++piped water |KnowAll
++reparation |KnowAll
++be under sb's spell |KnowAll
++tick sth off |KnowAll
++exploit |KnowSome
++iconoclast |KnowAll
++revere |KnowAll
++set their sights on |KnowAll
++conformist |KnowAll
++loathe |KnowSome
++dabble in |KnowAll
++give rise to |KnowAll
++bridgehead |KnowAll
++democratise |KnowAll
++solicitous |KnowAll
++luminary |KnowAll
++protégé |KnowSome
++high-profile |KnowAll
++piecemeal |KnowAll
++compelling |KnowAll
++surveillance |KnowAll
++invoke |KnowAll
++at odds with |KnowAll
++commentary |KnowAll
++erudite |KnowSome
++bolster |KnowAll
++scholar-turned-beggar |KnowAll
++scale up |KnowAll
++institutionalize |KnowAll
++naught |KnowAll
++stud |KnowAll
++lace with |KnowAll
++incline to/towards sth |KnowAll
++mood |KnowAll
++exterminate |KnowAll
++hermit |KnowSome
++reticence |KnowAll
++defer to |KnowAll
++recentralise |KnowAll
++readiness |KnowAll
++detonate |KnowAll
++prioritize |KnowAll
++political stripes |KnowAll
++thorny |KnowAll
++trilogy |KnowAll
++seminarian |KnowAll
++impending |KnowSome
++paraffin |KnowAll
++hike tariffs on |KnowAll
++metaverse |KnowAll
++assume office |KnowAll
++grumble |KnowAll
++reef |KnowAll
++restock |KnowAll
++adorable |KnowAll
++indispensable |KnowAll
++grilled |KnowAll
++inverted commas |KnowAll
++traitorous |KnowAll
++constellation |KnowAll
++custodian |KnowAll
++hub |KnowSome
++crony |KnowAll
++run-up |KnowAll
++chemical bond |KnowAll
++nihilistic |KnowSome
++tack on |KnowAll
++torture |KnowAll
++forge |KnowAll
++dismayingly |KnowSome
++detritus |KnowAll
++perplex |KnowAll
++heyday |KnowAll
++operational |KnowAll
++stockpile |KnowAll
++miniaturization |KnowAll
++roadblock |KnowAll
++yacht |KnowAll
++draft more cannon fodder |KnowAll
++rounds of |KnowAll
++be shorn of sth |KnowAll
++bungled |ForgetAll
++prophetic |KnowSome
++reserve |KnowAll
++affectionately |KnowAll
++stern |KnowSome
++oratory |KnowAll
++enthral |KnowAll
++Baptist |KnowAll
++God/Christ almighty! |KnowAll
++trot |KnowAll
++In a clear bid to |KnowAll
++eureka |KnowAll
++near-peer |KnowAll
++concession |KnowSome
++flesh |KnowAll
++shell out |KnowAll
++power cut |KnowAll
+Index: notion_patch_all_anki.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import requests\r\nimport re\r\nfrom bs4 import BeautifulSoup\r\nimport random\r\nfrom datetime import timedelta, date\r\nimport datetime\r\nimport configparser\r\nimport matplotlib.pyplot as plt\r\nimport os\r\nfrom collections import OrderedDict\r\nfrom datetime import datetime as dt\r\nfrom datetime import timedelta\r\n\r\n# short https://www.notion.so/58951b5a29544562a93fd0c1f5d7112f?v=316bed45c314462c84dca09b30578cea&pvs=4\r\n# query_id = \"58951b5a29544562a93fd0c1f5d7112f\"\r\n# database_id = \"316bed45c314462c84dca09b30578cea\"\r\n# https://www.notion.so/4d044f4888104a4c89fbe30487f0198f?v=49f70ebd825a4c85a2a13b9ea10180b8&pvs=4\r\n\r\n\r\n\r\n\r\n# query_id = \"4d044f4888104a4c89fbe30487f0198f\"\r\n# database_id = \"49f70ebd825a4c85a2a13b9ea10180b8\"\r\nguidURL = 'https://dictionary.cambridge.org/dictionary/english-chinese-simplified/'\r\nguidURL_en = 'https://dictionary.cambridge.org/us/dictionary/english/'\r\nclass Update_anki:\r\n    def __init__(self):\r\n        config = configparser.ConfigParser()\r\n        config.read('token.ini')\r\n        self.token = config.get('token', 'id')\r\n        self.database_id = config.get('database', 'anki_database')  # 取database前边的\r\n        self.query_id = config.get('database', 'anki_query')  # 取database前边的\r\n        self.headers = headers = {\r\n        \"Authorization\": \"Bearer \" + self.token,\r\n        \"accept\": \"application/json\",\r\n        \"Notion-Version\": \"2022-06-28\"  # Notion版本号\r\n    }\r\n        self.today = {}\r\n        self.knowall_list = []\r\n        self.knowsome_list = []\r\n        self.forgetall_list = []\r\n        self.today_query_id = config.get('database', 'today_query')  # 取database前边的\r\n        self.today_database_id = config.get('database', 'today_database')  # 取database前边的\r\n        self.word_level_dict = {}\r\n        self.word_next_dict = {}\r\n        self.count_know_all = 0\r\n        self.count_know_some = 0\r\n        self.count_forget_all = 0\r\n        self.selection_dict = {\"KnowAll\": \"green\",\"KnowSome\":\"yellow\", \"ForgetAll\":\"red\"}\r\n        self.date_dict = {}  # 用于release_tension\r\n        self.tomorrow = True\r\n    def delete_page(self,page_id):\r\n        body = {\r\n            'archived': True\r\n        }\r\n        url = 'https://api.notion.com/v1/pages/' + page_id\r\n        notion = requests.patch(url, headers=self.headers, json=body)\r\n        print(notion)\r\n        return 0\r\n    def DataBase_item_delete(self,response):\r\n        print(\"start deleting\")\r\n        count = 0\r\n        for dict in response:\r\n            count += 1\r\n            id = dict['id']\r\n            print(count / len(response), dict['properties']['words']['title'][0]['plain_text'])\r\n            self.delete_page(id)\r\n\r\n\r\n    def DataBase_item_query(self,query_database_id):\r\n        # query_database_id = self.query_id\r\n        url_notion_block = 'https://api.notion.com/v1/databases/'+query_database_id+'/query'\r\n        res_notion = requests.post(url_notion_block,headers=self.headers)\r\n        S_0 = res_notion.json()\r\n        res_travel = S_0['results']\r\n        if_continue = len(res_travel)\r\n        # print(len(res_travel))\r\n        if if_continue > 0:\r\n            while if_continue % 100 == 0:\r\n                body = {\r\n                    'start_cursor' : res_travel[-1]['id']\r\n                }\r\n                res_notion_plus = requests.post(url_notion_block,headers=self.headers,json = body)\r\n                S_0plus = res_notion_plus.json()\r\n                res_travel_plus = S_0plus['results']\r\n                for i in res_travel_plus:\r\n                    if i['id'] == res_travel[-1]['id']:\r\n                        continue\r\n                    res_travel.append(i)\r\n                if_continue = len(res_travel_plus)\r\n        return res_travel\r\n\r\n    def get_cambridge_soup(self,word_to_search):\r\n        current_guideUrl = guidURL\r\n        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0'}\r\n        url = current_guideUrl + word_to_search\r\n        source_code = requests.get(url, headers=headers).text\r\n        soup = BeautifulSoup(source_code, 'html.parser')\r\n        is_chinese_soup = True\r\n        if len(soup.find_all(class_='def ddef_d db')) != 0:\r\n            return soup,is_chinese_soup\r\n        else:\r\n            is_chinese_soup = False\r\n            current_guideUrl = guidURL_en\r\n            url = current_guideUrl + word_to_search\r\n            source_code = requests.get(url, headers=headers).text\r\n            soup = BeautifulSoup(source_code, 'html.parser')\r\n            if len(soup.find_all(class_='def ddef_d db')) == 0:\r\n                return [],is_chinese_soup\r\n            else:\r\n                return soup,is_chinese_soup\r\n\r\n    def get_cambridge_origin_pronoun_voice(self,soup, flag = 1):\r\n        if len(soup) == 0:\r\n            return None,None,None\r\n        # 原词行获取\r\n        #<span class=\"hw dhw\">normalize</span>\r\n        # origin_spans = soup.find_all(class_='hw dhw')\r\n        origin_spans = soup.find_all(class_='tb ttn')\r\n        if len(origin_spans) != 0:\r\n            for origin_span in origin_spans:\r\n                origin_pattern = r'>(.*?)<'\r\n                origin = re.findall(origin_pattern, str(origin_spans))\r\n                if origin != None:\r\n                    break\r\n        else:\r\n            return None,None,None\r\n        # print(origin[0])\r\n        # 音标获取\r\n        # <span class=\"ipa dipa lpr-2 lpl-1\">ˈnaɪ.sə.ti</span>\r\n        pronoun_spans = soup.find_all(class_='ipa dipa lpr-2 lpl-1')\r\n        # print(pronoun_spans)\r\n        # for pronoun_span in pronoun_spans:\r\n        pronoun_pattern = r'>(.*?)<'\r\n        pronoun_gets = re.findall(pronoun_pattern, str(pronoun_spans))\r\n        pronounciation = \"\"\r\n        for pronoun_get in pronoun_gets:\r\n            if '/' in pronoun_get or pronoun_get[len(pronoun_get)-1] == '/' or len(pronoun_get) == 0:\r\n                continue\r\n            pronounciation = '/' + pronoun_get + '/'\r\n            break\r\n        # print(pronounciation)\r\n\r\n        # voice网址获取\r\n        voice_spans = soup.find_all('source', type='audio/mpeg')\r\n        # print(\"voice_up_spans\",voice_up_spans)\r\n        pattern = re.compile(r'src=\"([^\"]+\\.mp3)\"')\r\n        url_voice = \"\"\r\n        for voice_span in voice_spans:\r\n            match = pattern.search(str(voice_span))\r\n            if match:\r\n                extracted_voice = match.group(1)\r\n                if \"us_pron\" in extracted_voice:\r\n                    url_voice = \"https://dictionary.cambridge.org\" + extracted_voice\r\n                    break\r\n                    pass\r\n        # print(url_voice)\r\n        return origin[0], pronounciation, url_voice\r\n\r\n\r\n    # def notion_words_patch(page_id,origin, pronoun, url_voice):\r\n    def notion_words_patch(self,page_id,level):\r\n        print(level)\r\n        colors = [\"default\",\"gray\",\"brown\",\"orange\",\"yellow\",\"green\",\"blue\",\"purple\",\"pink\",\"red\"]\r\n        data = {\r\n            \"parent\": {\"type\": \"database_id\", \"database_id\": \"49f70ebd825a4c85a2a13b9ea10180b8\"},\r\n            'properties': {\r\n                \"Level\": {\"select\": {\"name\": level, \"color\": colors[int(level)]}},\r\n                # \"words\": {\"title\": [{\"type\": \"text\", \"text\": {\"content\": origin}}]},\r\n                # \"phonetic symbol\": {\"rich_text\": [{\"type\": \"text\", \"text\": {\"content\": pronoun}}]},\r\n                # \"voice\": {\"url\": url_voice},\r\n                # \"Date Wrong\": {\"date\": {\"start\": \"2023-11-21\"}},\r\n                # '移動方式': {'rich_text': [{\"text\": {\"content\": move}}]},\r\n            }\r\n        }\r\n        r = requests.patch(\r\n            \"https://api.notion.com/v1/pages/{}\".format(page_id),\r\n            json=data,\r\n            headers=self.headers,\r\n        )\r\n        print(r.text)\r\n\r\n    def patch_all_pronoun_and_voice(self,response):\r\n        all_page_id = []\r\n        all_words = []\r\n        count = 0\r\n        for dict in response:\r\n            all_page_id.append(dict['id'])\r\n        for dict in response:\r\n            try:\r\n                if dict['properties']['passage']['multi_select'][0]['name'] != -1:\r\n                    # print(dict['properties']['words']['title'][0]['plain_text'])\r\n                    all_words.append(dict['properties']['words']['title'][0]['plain_text'])\r\n                    count += 1\r\n            except:\r\n                print(dict)\r\n        for word_num in range(len(all_words)):\r\n            word = all_words[word_num]\r\n            page_id = all_page_id[word_num]\r\n            print(word)\r\n            print(word_num / count, count)\r\n            soup,is_chinese = self.get_cambridge_soup(word)\r\n            origin, pronounciation, url_voice = self.get_cambridge_origin_pronoun_voice(soup)\r\n            if origin == None:\r\n                origin = word\r\n            if pronounciation == None:\r\n                pronounciation = \"\"\r\n            if url_voice == None:\r\n                url_voice = \"\"\r\n            self.notion_words_patch(page_id ,origin,pronounciation,url_voice)\r\n        pass\r\n    def patch_all_level(self,response):\r\n        levels = []\r\n        all_page_id = []\r\n        count = 0\r\n        for dict in response:\r\n            all_page_id.append(dict['id'])\r\n        for dict in response:\r\n            con = True\r\n            for num in range(6,0,-1):\r\n                checkbox = 'Checkbox ' + str(num)\r\n                if dict['properties'][checkbox]['checkbox'] == True:\r\n                    levels.append(str(num))\r\n                    count += 1\r\n                    con = False\r\n                    break\r\n            if con:\r\n                levels.append('0')\r\n\r\n        print(levels)\r\n        for num in range(len(all_page_id)):\r\n            page_id = all_page_id[num]\r\n            level = levels[num]\r\n            self.notion_words_patch(page_id,level)\r\n\r\n\r\n\r\n\r\n    def get_day_of_day(self,n=0):\r\n        '''''\r\n        if n>=0,date is larger than today\r\n        if n<0,date is less than today\r\n        date format = \"YYYY-MM-DD\"\r\n        '''\r\n        if (n < 0):\r\n            n = abs(n)\r\n            # formatted_date = current_date.strftime('%Y-%m-%d')\r\n            return (date.today() - timedelta(days=n)).strftime('%Y-%m-%d')\r\n        else:\r\n            return (date.today() + timedelta(days=n)).strftime('%Y-%m-%d')\r\n\r\n    def patch_all_date(self,response):\r\n        dates = []\r\n        all_page_id = []\r\n        count = 0\r\n        d_day = [0,1,2,3,4,5,6,7]\r\n        for dict in response:\r\n            all_page_id.append(dict['id'])\r\n            count += 1\r\n        for i in range(len(all_page_id)):\r\n            day = random.sample(d_day, len(d_day))[0]\r\n            dates.append(self.get_day_of_day(day))\r\n\r\n        print(dates)\r\n        for i in range(len(all_page_id)):\r\n            print(i,i/count)\r\n            date = dates[i]\r\n            page_id = all_page_id[i]\r\n            data = {\r\n                \"parent\": {\"type\": \"database_id\", \"database_id\": self.database_id},\r\n                'properties': {\r\n                    \"Last\": {\"date\": {\"start\": date}},\r\n                    # \"Level\": {\"select\": {\"name\": level, \"color\": colors[int(level)]}},\r\n                    # \"words\": {\"title\": [{\"type\": \"text\", \"text\": {\"content\": origin}}]},\r\n                    # \"phonetic symbol\": {\"rich_text\": [{\"type\": \"text\", \"text\": {\"content\": pronoun}}]},\r\n                    # \"voice\": {\"url\": url_voice},\r\n                    # \"Date Wrong\": {\"date\": {\"start\": \"2023-11-21\"}},\r\n                    # '移動方式': {'rich_text': [{\"text\": {\"content\": move}}]},\r\n                }\r\n            }\r\n            r = requests.patch(\r\n                \"https://api.notion.com/v1/pages/{}\".format(page_id),\r\n                json=data,\r\n                headers=self.headers,\r\n            )\r\n            print(r.text)\r\n\r\n    def next_day_on_level(self,level):\r\n        if level == '0':\r\n            n = 1\r\n        elif level == '1':\r\n            n = 2\r\n        elif level == '2':\r\n            n = 4\r\n        elif level == '3':\r\n            # n = 3\r\n            n = int(random.randint(6,8))\r\n        elif level == '4':\r\n            # n = 8\r\n            n = int(random.randint(13,16))\r\n        elif level == '5':\r\n            # n = 15\r\n            n = int(random.randint(28,32))\r\n        elif level == '6':\r\n            # n = 30\r\n            n = int(random.randint(60,68))\r\n        elif level == '7':\r\n            # n = 60\r\n            n = int(random.randint(125,131))\r\n        elif level == '8':\r\n            # n = 90\r\n            n = int(random.randint(252,260))\r\n        elif level == '9':\r\n            n = 365\r\n        else:\r\n            n = 1\r\n            print(\"wrong level\")\r\n        return (date.today() + timedelta(days=n)).strftime('%Y-%m-%d')\r\n\r\n    def patch_one_data(self, data, page_id):\r\n        r = requests.patch(\r\n            \"https://api.notion.com/v1/pages/{}\".format(page_id),\r\n            json=data,\r\n            headers=self.headers,\r\n        )\r\n        print(r.text)\r\n\r\n    def patch_update(self):\r\n        # 获取当前日期和时间\r\n        current_datetime = dt.now()\r\n        # 计算当日凌晨4点的时间\r\n        today_4am = current_datetime.replace(hour=4, minute=0, second=0, microsecond=0)\r\n        if current_datetime < today_4am:\r\n            print(\"现在是\"+str(current_datetime)+\"还没有到凌晨4点\")\r\n            self.tomorrow = False\r\n        else:\r\n            print(\"现在是\"+str(current_datetime)+\"已经超过凌晨四点\")\r\n            self.tomorrow = True\r\n        print(\"start get response\")\r\n        response = self.DataBase_item_query(self.query_id)\r\n        modified_time = os.path.getmtime(\"word_today.txt\")\r\n        modified_datetime = datetime.datetime.fromtimestamp(modified_time)\r\n        modified_datetime = modified_datetime.date()\r\n        # 获取当前日期\r\n        if modified_datetime != dt.today().date():\r\n            with open(\"word_today.txt\", \"w\") as file:\r\n                file.truncate()\r\n        # self.word_next_dict = {}\r\n\r\n        colors = [\"default\",\"gray\",\"brown\",\"orange\",\"yellow\",\"green\",\"blue\",\"purple\",\"pink\",\"red\"]\r\n        all_page_id = []\r\n        count = 0\r\n        today = date.today()\r\n        today_str = date.today().strftime('%Y-%m-%d')\r\n\r\n        word_date_id = {}\r\n        for dict in response:\r\n            count += 1\r\n            print(count/len(response))\r\n            print(count ,len(response))\r\n            try:\r\n                word = dict['properties']['words']['title'][0]['plain_text']\r\n            except:\r\n                word = \"xxxxxxxx\"\r\n            page_id = dict['id']\r\n            KnowAll = dict['properties'][\"KnowAll\"]['checkbox']\r\n            KnowSome = dict['properties'][\"KnowSome\"]['checkbox']\r\n            ForgetAll = dict['properties'][\"ForgetAll\"]['checkbox']\r\n            checked_times = dict['properties'][\"Checked Times\"]['number']\r\n            # if word == \"jello\":\r\n            #     pass\r\n            # 如果选了\r\n            if KnowAll or KnowSome or ForgetAll:\r\n                checked_times += 1\r\n                print(word)\r\n                print(KnowAll, KnowSome, ForgetAll)\r\n                level = dict['properties'][\"Level\"]['select']['name']\r\n                if KnowAll:\r\n                    with open(\"word_today.txt\", \"a\", encoding=\"utf-8\") as file:\r\n                        file.write(word + \" |KnowAll\"\"\\n\")\r\n                    self.count_know_all += 1\r\n                    self.knowall_list.append(dict)\r\n                    next_level = str(int(level) + 1)\r\n                    if int(next_level) > 9:\r\n                        next_level = '9'\r\n                    next_str = self.next_day_on_level(next_level)\r\n                elif KnowSome:\r\n                    with open(\"word_today.txt\", \"a\", encoding=\"utf-8\") as file:\r\n                        file.write(word + \" |KnowSome\"\"\\n\")\r\n                    self.count_know_some += 1\r\n                    self.knowsome_list.append(dict)\r\n                    if int(level) >= 4:\r\n                        next_level = str(int(int(level) /2))\r\n                        # if int(next_level) < 1:\r\n                        #     next_level = '0'\r\n                    elif int(level) >= 2:\r\n                        next_level = str(int(level) - 1)\r\n                    else:\r\n                        next_level = str(int(level) )\r\n                    next_str = self.next_day_on_level(next_level)\r\n                elif ForgetAll:\r\n                    with open(\"word_today.txt\", \"a\", encoding=\"utf-8\") as file:\r\n                        file.write(word + \" |ForgetAll\\n\")\r\n                    self.count_forget_all += 1\r\n                    self.forgetall_list.append(dict)\r\n                    next_level = '0'\r\n                    next_str = self.next_day_on_level(next_level)\r\n                else:\r\n                    next_level = '0'\r\n                    next_str = self.next_day_on_level(next_level)\r\n                try:\r\n                    self.word_next_dict[next_str] = self.word_next_dict[next_str] + 1\r\n                except:\r\n                    self.word_next_dict[next_str] = 1\r\n                try:\r\n                    self.word_level_dict[next_level] = self.word_level_dict[next_level] + 1\r\n                except:\r\n                    self.word_level_dict[next_level] = 1\r\n                if next_str in self.date_dict.keys():\r\n                    self.date_dict[date].append(dict)\r\n                else:\r\n                    self.date_dict[date] = [dict]\r\n                self.today[\"KnowAll\"] = self.knowall_list\r\n                self.today[\"KnowSome\"] = self.knowsome_list\r\n                self.today[\"ForgetAll\"] = self.forgetall_list\r\n\r\n                data = {\r\n                    \"parent\": {\"type\": \"database_id\", \"database_id\": self.database_id},\r\n                    'properties': {\r\n                        \"Last\": {\"date\": {\"start\": today_str}},\r\n                        \"Next\": {\"date\": {\"start\": next_str}},\r\n                        \"Level\": {\"select\": {\"name\": next_level, \"color\": colors[int(next_level)]}},\r\n                        \"KnowAll\": {\"checkbox\": False},\r\n                        \"KnowSome\": {\"checkbox\": False},\r\n                        \"ForgetAll\": {\"checkbox\": False},\r\n                        \"Checked Times\": {\"number\": checked_times},\r\n\r\n                        # \"words\": {\"title\": [{\"type\": \"text\", \"text\": {\"content\": origin}}]},\r\n                        # \"phonetic symbol\": {\"rich_text\": [{\"type\": \"text\", \"text\": {\"content\": pronoun}}]},\r\n                        # \"voice\": {\"url\": url_voice},\r\n                        # \"Date Wrong\": {\"date\": {\"start\": \"2023-11-21\"}},\r\n                        # '移動方式': {'rich_text': [{\"text\": {\"content\": move}}]},\r\n                    }\r\n                }\r\n                # must change\r\n                self.patch_one_data(data,page_id)\r\n\r\n            # 如果没选\r\n            else:\r\n                try:\r\n                    next = dict['properties'][\"Next\"]['date']['start']\r\n                    last = dict['properties'][\"Last\"]['date']['start']\r\n                    level = dict['properties'][\"Level\"]['select']['name']\r\n                except:\r\n                    next = None\r\n                    level = 0\r\n                # second_time = datetime.datetime.strptime(next, \"%Y-%m-%d %H:%M:%S\")\r\n\r\n                try:\r\n                    self.word_level_dict[level] = self.word_level_dict[level] + 1\r\n                except:\r\n                    self.word_level_dict[level] = 1\r\n\r\n                if next != None:\r\n                    second_time = datetime.datetime.strptime(next, \"%Y-%m-%d\").date()\r\n                    last_time = datetime.datetime.strptime(last, \"%Y-%m-%d\").date()\r\n                    late = False\r\n                    if second_time < today:\r\n                        late = True\r\n                    else:\r\n                        try:\r\n                            self.word_next_dict[str(second_time)] = self.word_next_dict[str(second_time)] + 1\r\n                        except:\r\n                            self.word_next_dict[str(second_time)] = 1\r\n                    if late:\r\n                        d_day = [0,1,2,3]\r\n                        n = random.sample(d_day, len(d_day))[0]\r\n                        next_str = (date.today() + timedelta(days=n)).strftime('%Y-%m-%d')\r\n                        data = {\r\n                            \"parent\": {\"type\": \"database_id\", \"database_id\": self.database_id},\r\n                            'properties': {\r\n                                \"Next\": {\"date\": {\"start\": next_str}},\r\n                                # \"Level\": {\"select\": {\"name\": level, \"color\": colors[int(level)]}},\r\n                                # \"Today\": {\"checkbox\": False},\r\n                                # \"words\": {\"title\": [{\"type\": \"text\", \"text\": {\"content\": origin}}]},\r\n                                # \"phonetic symbol\": {\"rich_text\": [{\"type\": \"text\", \"text\": {\"content\": pronoun}}]},\r\n                                # \"voice\": {\"url\": url_voice},\r\n                                # \"Date Wrong\": {\"date\": {\"start\": \"2023-11-21\"}},\r\n                                # '移動方式': {'rich_text': [{\"text\": {\"content\": move}}]},\r\n                            }\r\n                        }\r\n                        # r = requests.patch(\r\n                        #     \"https://api.notion.com/v1/pages/{}\".format(page_id),\r\n                        #     json=data,\r\n                        #     headers=headers,\r\n                        # )\r\n                        self.patch_one_data(data, page_id)\r\n                        try:\r\n                            self.word_next_dict[next_str] = self.word_next_dict[next_str] + 1\r\n                        except:\r\n                            self.word_next_dict[next_str] = 1\r\n                        # print(r.text)\r\n\r\n                else:\r\n                    try:\r\n                        level = dict['properties'][\"Level\"]['select']['name']\r\n                        next = self.next_day_on_level(level)\r\n                    except:\r\n                        next = \"0\"\r\n                    data = {\r\n                        \"parent\": {\"type\": \"database_id\", \"database_id\": self.database_id},\r\n                        'properties': {\r\n                            \"Next\": {\"date\": {\"start\": next}},\r\n                            # \"Level\": {\"select\": {\"name\": level, \"color\": colors[int(level)]}},\r\n                            # \"Today\": {\"checkbox\": False},\r\n                            # \"words\": {\"title\": [{\"type\": \"text\", \"text\": {\"content\": origin}}]},\r\n                            # \"phonetic symbol\": {\"rich_text\": [{\"type\": \"text\", \"text\": {\"content\": pronoun}}]},\r\n                            # \"voice\": {\"url\": url_voice},\r\n                            # \"Date Wrong\": {\"date\": {\"start\": \"2023-11-21\"}},\r\n                            # '移動方式': {'rich_text': [{\"text\": {\"content\": move}}]},\r\n                        }\r\n                    }\r\n\r\n                    self.patch_one_data(data, page_id)\r\n                pass\r\n        print(count)\r\n\r\n\r\n        self.draw_pic()\r\n        self.checked_move_to_today()\r\n\r\n        # 判断是否需要分配压力\r\n        categories_next = list(self.word_next_dict.keys())\r\n        values_next = list(self.word_next_dict.values())\r\n        need_to_release = False\r\n        tension_date = []\r\n        for num in range(len(values_next)):\r\n            if values_next[num] > 300:\r\n                tension_date.append(categories_next[num])\r\n                print(\"日期：\" + categories_next[num] + \" , 这天需要背的单词为 \"\r\n                      + str(values_next[num]) + \" 个，超过300个\")\r\n                need_to_release = True\r\n        want_to_release = \"\"\r\n        # if need_to_release:\r\n        #     want_to_release = input(\"出现压力过大的日期，是否要分配压力，是打 1 ，不是可以直接 enter\")\r\n        # if want_to_release == \"1\":\r\n        #     self.release_the_tension(tension_date)\r\n\r\n    def draw_pic(self):\r\n        # # 显示图形\r\n        # plt.show()\r\n        # plt.figure()\r\n        # plt.figure(figsize=(6, 6))  # 调整图的大小\r\n        categories = list(self.word_level_dict.keys())\r\n        values = list(self.word_level_dict.values())\r\n\r\n        # 对标签进行排序并获取排序后的索引\r\n        sorted_indices = sorted(range(len(categories)), key=lambda k: categories[k])\r\n        categories_level = [categories[i] for i in sorted_indices]\r\n        values_level = [values[i] for i in sorted_indices]\r\n\r\n        self.word_next_dict = OrderedDict(\r\n            sorted(self.word_next_dict.items(), key=lambda x: dt.strptime(x[0], '%Y-%m-%d')))\r\n        categories_next = list(self.word_next_dict.keys())\r\n        values_next = list(self.word_next_dict.values())\r\n\r\n        colors = ['red', 'green', 'blue', 'purple', 'orange']\r\n\r\n        # plt.figure(figsize=(6, 6))  # 调整图的大小\r\n\r\n        # 开始绘图\r\n        fig, axs = plt.subplots(2, 2, figsize=(10, 6))\r\n        bars1 = axs[0, 0].bar(range(len(categories_level)), values_level, color=colors)\r\n        axs[0, 0].set_title('Level Bar Chart')\r\n        axs[0, 0].set_label('Levels')\r\n        axs[0, 0].set_ylabel('Word Amount')\r\n        axs[0, 0].set_xticks(range(len(categories_level)), categories_level, rotation=45, ha='right')\r\n        axs[0, 0].grid(True, axis='y', linestyle='--', alpha=0.7)\r\n\r\n        for bar in bars1:\r\n            axs[0, 0].text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())),\r\n                           ha='center',\r\n                           va='bottom')\r\n\r\n        # 创建下方的子图\r\n        bars2 = axs[1, 0].bar(range(len(categories_next)), values_next, color=colors, alpha=0.7)\r\n        axs[1, 0].set_title('Next Day Chart')\r\n        axs[1, 0].set_xlabel('Next Day')\r\n        axs[1, 0].set_ylabel('Word Amount')\r\n        axs[1, 0].set_xticks(range(len(categories_next)), categories_next, rotation=45, ha='right')\r\n        axs[1, 0].grid(True, axis='y', linestyle='--', alpha=0.7)\r\n\r\n        for bar in bars2:\r\n            axs[1, 0].text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())),\r\n                           ha='center',\r\n                           va='bottom')\r\n\r\n        my_dpi = 96\r\n        # plt.figure(figsize=(480/my_dpi,480/my_dpi), dpi=my_dpi)\r\n        if self.count_forget_all == 0 and self.count_know_some == 0 and self.count_forget_all == 0:\r\n            axs[0, 1].axis('off')\r\n        else:\r\n            axs[0, 1].pie(x=[self.count_know_all, self.count_know_some, self.count_forget_all],\r\n                          labels=['know all', 'know some', 'forget all'],\r\n                          autopct='%.2f%%')\r\n            # plt.legend(patches, [f\"{label}: {size}\" for label, size in zip(labels, sizes)], loc=\"upper left\")\r\n            title = \"Know All: {}    Know Some:{}    Forget All:{}\".format(self.count_know_all, self.count_know_some,\r\n                                                                           self.count_forget_all)\r\n            axs[0, 1].set_title(title)\r\n\r\n        today_word_level_dict = {\"KnowAll\":0,\"KnowSome\":0,\"ForgetAll\":0}\r\n        with open(\"word_today.txt\",\"r\",encoding=\"utf-8\") as file:\r\n            today_word_levels = file.readlines()\r\n        for today_word_level in today_word_levels:\r\n            word_level = today_word_level.strip('\\n')\r\n            word_level = word_level.split('|')\r\n            level = word_level[1]\r\n            # try:\r\n            #     today_word_level_dict[level] += 1\r\n            # except:\r\n            #     today_word_level_dict[level] = 0\r\n            today_word_level_dict[level] += 1\r\n\r\n\r\n\r\n\r\n        try:\r\n            length = len(today_word_level_dict.keys())\r\n        except:\r\n            axs[1, 1].axis('off')\r\n        if len(today_word_level_dict.keys()) ==0:\r\n            axs[1, 1].axis('off')\r\n        else:\r\n            axs[1, 1].pie(x=[today_word_level_dict[\"KnowAll\"], today_word_level_dict[\"KnowSome\"],\r\n                             today_word_level_dict[\"ForgetAll\"]],\r\n                          labels=['know all', 'know some', 'forget all'],\r\n                          autopct='%.2f%%')\r\n            # plt.legend(patches, [f\"{label}: {size}\" for label, size in zip(labels, sizes)], loc=\"upper left\")\r\n            title = \"Today all:  Know All: {}    Know Some:{}    Forget All:{}\".format(today_word_level_dict[\"KnowAll\"], today_word_level_dict[\"KnowSome\"],\r\n                                                                           today_word_level_dict[\"ForgetAll\"])\r\n            axs[1, 1].set_title(title)\r\n\r\n        plt.tight_layout(pad=2.0)  # 增加子图间的纵向距离\r\n        today_str = date.today().strftime('%Y-%m-%d')\r\n        file_path = today_str + \".png\"\r\n        plt.savefig(file_path)\r\n        plt.show()\r\n\r\n\r\n\r\n\r\n    def checked_move_to_today(self):\r\n        print(\"开始导入today单词库\")\r\n        response = self.DataBase_item_query(self.today_query_id)\r\n        # 判断是否有之前的内容，如果有就清空\r\n        # just_add = False\r\n        if len(response) == 0:\r\n            pass\r\n        else:\r\n            if self.tomorrow:\r\n                print(\"晚于凌晨4点，清空前日单词\")\r\n                for dict in response:\r\n                    checked_date = dt.strptime(dict['properties'][\"Checked Date\"]['date']['start'], '%Y-%m-%d')\r\n                    today = date.today()\r\n                    checked_date = checked_date.date()\r\n                    if checked_date != today:\r\n                        self.delete_page(dict[\"id\"])\r\n            else:\r\n                print(\"早于凌晨4点，不清空前日单词\")\r\n        # 不是今天且表格不空的话就清空\r\n        # if just_add != True and len(response) != 0:\r\n        #     self.DataBase_item_delete(response)\r\n\r\n        #清空后post今天看到的单词\r\n        for selection in self.today.keys():\r\n            checked_list = self.today[selection]\r\n            for body in checked_list:\r\n                word_content = body[\"properties\"]['words']['title'][0]['plain_text']\r\n                print(word_content)\r\n                body[\"parent\"][\"database_id\"] = self.today_database_id\r\n                word_tag = body[\"properties\"]['Tags']['select']['name']\r\n                word_color = body[\"properties\"]['Tags']['select']['color']\r\n                title = body[\"properties\"]['passage']['multi_select'][0]['name']\r\n                pronoun = body[\"properties\"]['phonetic symbol']['rich_text'][0]['text']['content']\r\n                meaning = body[\"properties\"]['meaning']['rich_text'][0]['text']['content']\r\n                today_str = date.today().strftime('%Y-%m-%d')\r\n                # next_str = body[\"properties\"]['Next']['date']['start']\r\n                voice_url = body[\"properties\"]['voice']['url']\r\n                passage_id = body[\"properties\"]['\uD83C\uDF0F Economist Reading']['relation'][0]['id']\r\n                # today_str = body[\"properties\"]['words']['title'][0]['plain_text']\r\n\r\n                p = {\r\n                    \"parent\": {\"database_id\": self.today_query_id},\r\n                    # \"properties\":body[\"properties\"]\r\n                     \"properties\": {\r\n                         \"Tags\": {\"select\": {\"name\": word_tag, \"color\": word_color}},\r\n                         \"words\": {\"title\": [{\"type\": \"text\", \"text\": {\"content\": word_content}}]},\r\n                         \"passage\": {\"multi_select\": [{\"name\": title}]},\r\n                         \"phonetic symbol\": {\"rich_text\": [{\"type\": \"text\", \"text\": {\"content\": pronoun}}]},\r\n                         \"meaning\": {\r\n                             \"rich_text\": [{\"type\": \"text\", \"text\": {\"content\": meaning}}]},\r\n                         \"Checked Date\": {\"date\": {\"start\": today_str}},\r\n                         # \"Next\": {\"date\": {\"start\": next_str}},\r\n                         \"voice\": {\"url\": voice_url},\r\n                         \"Level\": {\"select\": {\"name\": \"0\", \"color\": \"default\"}},\r\n                         # \"KnowAll\": {\"checkbox\": False},\r\n                         # \"KnowSome\": {\"checkbox\": False},\r\n                         # \"ForgetAll\": {\"checkbox\": False},\r\n                         # \"Checked Times\": {\"number\": 0},\r\n                         \"\uD83C\uDF0F Economist Reading\": {\r\n                             \"relation\": [\r\n                                 {\r\n                                     \"id\": passage_id\r\n                                 }\r\n                             ]\r\n                         },\r\n                         \"Selection\":{\r\n                             \"select\":{\"name\":selection,\"color\":self.selection_dict[selection]}\r\n                         }\r\n                     },\r\n                 }\r\n\r\n                url = \"https://api.notion.com/v1/pages\"\r\n                headers = {\r\n                    \"Notion-Version\": \"2022-06-28\",\r\n                    \"Content-Type\": \"application/json\",\r\n                    \"Authorization\": \"Bearer \" + self.token\r\n                }\r\n                r = requests.post(url, json=p, headers=self.headers)\r\n                print(r.text)\r\n\r\n    def release_the_tension(self,tension_date):\r\n        print(\"先不做了，如果之后背单词真背不下去再写\")\r\n        # for date in tension_date:\r\n        #     this_day_response = self.date_dict[date]\r\n        #     print(len(this_day_response))\r\n        #     count = -1\r\n        #     for dict in this_day_response:\r\n        #         count += 1\r\n        #         word_content = dict[\"properties\"]['words']['title'][0]['plain_text']\r\n        #         print(word_content)\r\n        #         print(count,count/len(this_day_response))\r\n        #         level = dict[\"properties\"]['Level']['select'][\"name\"]\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nif __name__ == \"__main__\":\r\n    # print(next_day_on_level(\"8\"))\r\n\r\n    # print(\"start getting response\")\r\n    a = Update_anki()\r\n    # response = a.DataBase_item_query()\r\n    # response = None\r\n    print(\"start updating\")\r\n    a.patch_update()\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/notion_patch_all_anki.py b/notion_patch_all_anki.py
+--- a/notion_patch_all_anki.py	(revision 3e03d0e8f896eae518b97a2036fbd0bf987790f1)
++++ b/notion_patch_all_anki.py	(date 1694021866365)
+@@ -375,7 +375,9 @@
+                 print(word)
+                 print(KnowAll, KnowSome, ForgetAll)
+                 level = dict['properties']["Level"]['select']['name']
++                word_selection = ""
+                 if KnowAll:
++                    word_selection = 'KnowAll'
+                     with open("word_today.txt", "a", encoding="utf-8") as file:
+                         file.write(word + " |KnowAll""\n")
+                     self.count_know_all += 1
+@@ -385,6 +387,7 @@
+                         next_level = '9'
+                     next_str = self.next_day_on_level(next_level)
+                 elif KnowSome:
++                    word_selection = 'KnowSome'
+                     with open("word_today.txt", "a", encoding="utf-8") as file:
+                         file.write(word + " |KnowSome""\n")
+                     self.count_know_some += 1
+@@ -399,6 +402,7 @@
+                         next_level = str(int(level) )
+                     next_str = self.next_day_on_level(next_level)
+                 elif ForgetAll:
++                    word_selection = 'ForgetAll'
+                     with open("word_today.txt", "a", encoding="utf-8") as file:
+                         file.write(word + " |ForgetAll\n")
+                     self.count_forget_all += 1
+@@ -420,9 +424,9 @@
+                     self.date_dict[date].append(dict)
+                 else:
+                     self.date_dict[date] = [dict]
+-                self.today["KnowAll"] = self.knowall_list
+-                self.today["KnowSome"] = self.knowsome_list
+-                self.today["ForgetAll"] = self.forgetall_list
++                # self.today["KnowAll"] = self.knowall_list
++                # self.today["KnowSome"] = self.knowsome_list
++                # self.today["ForgetAll"] = self.forgetall_list
+ 
+                 data = {
+                     "parent": {"type": "database_id", "database_id": self.database_id},
+@@ -444,6 +448,7 @@
+                 }
+                 # must change
+                 self.patch_one_data(data,page_id)
++                self.checked_move_to_today(dict,word_selection)
+ 
+             # 如果没选
+             else:
+@@ -463,9 +468,12 @@
+ 
+                 if next != None:
+                     second_time = datetime.datetime.strptime(next, "%Y-%m-%d").date()
+-                    last_time = datetime.datetime.strptime(last, "%Y-%m-%d").date()
++                    # second_time_hour = datetime.datetime.strptime(next, "%Y-%m-%d")
++                    # last_time = datetime.datetime.strptime(last, "%Y-%m-%d")
++                    # 获取当前日期和时间
++                    today = dt.now().date()
+                     late = False
+-                    if second_time < today:
++                    if second_time < today and self.tomorrow:
+                         late = True
+                     else:
+                         try:
+@@ -473,7 +481,8 @@
+                         except:
+                             self.word_next_dict[str(second_time)] = 1
+                     if late:
+-                        d_day = [0,1,2,3]
++                        print(word + "  late")
++                        d_day = [1,2]
+                         n = random.sample(d_day, len(d_day))[0]
+                         next_str = (date.today() + timedelta(days=n)).strftime('%Y-%m-%d')
+                         data = {
+@@ -499,7 +508,6 @@
+                             self.word_next_dict[next_str] = self.word_next_dict[next_str] + 1
+                         except:
+                             self.word_next_dict[next_str] = 1
+-                        # print(r.text)
+ 
+                 else:
+                     try:
+@@ -525,10 +533,8 @@
+                 pass
+         print(count)
+ 
+-
+         self.draw_pic()
+-        self.checked_move_to_today()
+-
++        self.today_delete_before()
+         # 判断是否需要分配压力
+         categories_next = list(self.word_next_dict.keys())
+         values_next = list(self.word_next_dict.values())
+@@ -574,13 +580,13 @@
+         axs[0, 0].set_title('Level Bar Chart')
+         axs[0, 0].set_label('Levels')
+         axs[0, 0].set_ylabel('Word Amount')
+-        axs[0, 0].set_xticks(range(len(categories_level)), categories_level, rotation=45, ha='right')
++        axs[0, 0].set_xticks(range(len(categories_level)), categories_level, ha='right')
+         axs[0, 0].grid(True, axis='y', linestyle='--', alpha=0.7)
+ 
+         for bar in bars1:
+             axs[0, 0].text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())),
+                            ha='center',
+-                           va='bottom')
++                           va='bottom',fontsize=6)
+ 
+         # 创建下方的子图
+         bars2 = axs[1, 0].bar(range(len(categories_next)), values_next, color=colors, alpha=0.7)
+@@ -588,12 +594,13 @@
+         axs[1, 0].set_xlabel('Next Day')
+         axs[1, 0].set_ylabel('Word Amount')
+         axs[1, 0].set_xticks(range(len(categories_next)), categories_next, rotation=45, ha='right')
++        axs[1, 0].tick_params(axis='x', labelsize=8)  # 设置x轴刻度标签的字体大小为8
+         axs[1, 0].grid(True, axis='y', linestyle='--', alpha=0.7)
+ 
+         for bar in bars2:
+             axs[1, 0].text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(int(bar.get_height())),
+                            ha='center',
+-                           va='bottom')
++                           va='bottom',fontsize=6)
+ 
+         my_dpi = 96
+         # plt.figure(figsize=(480/my_dpi,480/my_dpi), dpi=my_dpi)
+@@ -620,10 +627,6 @@
+             # except:
+             #     today_word_level_dict[level] = 0
+             today_word_level_dict[level] += 1
+-
+-
+-
+-
+         try:
+             length = len(today_word_level_dict.keys())
+         except:
+@@ -644,90 +647,87 @@
+         today_str = date.today().strftime('%Y-%m-%d')
+         file_path = today_str + ".png"
+         plt.savefig(file_path)
+-        plt.show()
+-
++        plt.show(block=True)
+ 
+ 
+ 
+-    def checked_move_to_today(self):
+-        print("开始导入today单词库")
+-        response = self.DataBase_item_query(self.today_query_id)
+-        # 判断是否有之前的内容，如果有就清空
+-        # just_add = False
+-        if len(response) == 0:
+-            pass
+-        else:
+-            if self.tomorrow:
+-                print("晚于凌晨4点，清空前日单词")
+-                for dict in response:
+-                    checked_date = dt.strptime(dict['properties']["Checked Date"]['date']['start'], '%Y-%m-%d')
+-                    today = date.today()
+-                    checked_date = checked_date.date()
+-                    if checked_date != today:
+-                        self.delete_page(dict["id"])
+-            else:
+-                print("早于凌晨4点，不清空前日单词")
+-        # 不是今天且表格不空的话就清空
+-        # if just_add != True and len(response) != 0:
+-        #     self.DataBase_item_delete(response)
+-
+-        #清空后post今天看到的单词
+-        for selection in self.today.keys():
+-            checked_list = self.today[selection]
+-            for body in checked_list:
+-                word_content = body["properties"]['words']['title'][0]['plain_text']
+-                print(word_content)
+-                body["parent"]["database_id"] = self.today_database_id
+-                word_tag = body["properties"]['Tags']['select']['name']
+-                word_color = body["properties"]['Tags']['select']['color']
+-                title = body["properties"]['passage']['multi_select'][0]['name']
+-                pronoun = body["properties"]['phonetic symbol']['rich_text'][0]['text']['content']
+-                meaning = body["properties"]['meaning']['rich_text'][0]['text']['content']
+-                today_str = date.today().strftime('%Y-%m-%d')
+-                # next_str = body["properties"]['Next']['date']['start']
+-                voice_url = body["properties"]['voice']['url']
+-                passage_id = body["properties"]['🌏 Economist Reading']['relation'][0]['id']
+-                # today_str = body["properties"]['words']['title'][0]['plain_text']
++    def checked_move_to_today(self, body, selection):
++        # #清空后post今天看到的单词
++        # for selection in self.today.keys():
++        #     checked_list = self.today[selection]
++        #     for body in checked_list:
++        word_content = body["properties"]['words']['title'][0]['plain_text']
++        print("正在导入 " + word_content+ " 到today单词库中")
++        body["parent"]["database_id"] = self.today_database_id
++        word_tag = body["properties"]['Tags']['select']['name']
++        word_color = body["properties"]['Tags']['select']['color']
++        title = body["properties"]['passage']['multi_select'][0]['name']
++        pronoun = body["properties"]['phonetic symbol']['rich_text'][0]['text']['content']
++        meaning = body["properties"]['meaning']['rich_text'][0]['text']['content']
++        today_str = date.today().strftime('%Y-%m-%d')
++        # next_str = body["properties"]['Next']['date']['start']
++        voice_url = body["properties"]['voice']['url']
++        passage_id = body["properties"]['🌏 Economist Reading']['relation'][0]['id']
++        # today_str = body["properties"]['words']['title'][0]['plain_text']
+ 
+-                p = {
+-                    "parent": {"database_id": self.today_query_id},
+-                    # "properties":body["properties"]
+-                     "properties": {
+-                         "Tags": {"select": {"name": word_tag, "color": word_color}},
+-                         "words": {"title": [{"type": "text", "text": {"content": word_content}}]},
+-                         "passage": {"multi_select": [{"name": title}]},
+-                         "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": pronoun}}]},
+-                         "meaning": {
+-                             "rich_text": [{"type": "text", "text": {"content": meaning}}]},
+-                         "Checked Date": {"date": {"start": today_str}},
+-                         # "Next": {"date": {"start": next_str}},
+-                         "voice": {"url": voice_url},
+-                         "Level": {"select": {"name": "0", "color": "default"}},
+-                         # "KnowAll": {"checkbox": False},
+-                         # "KnowSome": {"checkbox": False},
+-                         # "ForgetAll": {"checkbox": False},
+-                         # "Checked Times": {"number": 0},
+-                         "🌏 Economist Reading": {
+-                             "relation": [
+-                                 {
+-                                     "id": passage_id
+-                                 }
+-                             ]
+-                         },
+-                         "Selection":{
+-                             "select":{"name":selection,"color":self.selection_dict[selection]}
+-                         }
+-                     },
+-                 }
++        p = {
++            "parent": {"database_id": self.today_query_id},
++            # "properties":body["properties"]
++             "properties": {
++                 "Tags": {"select": {"name": word_tag, "color": word_color}},
++                 "words": {"title": [{"type": "text", "text": {"content": word_content}}]},
++                 "passage": {"multi_select": [{"name": title}]},
++                 "phonetic symbol": {"rich_text": [{"type": "text", "text": {"content": pronoun}}]},
++                 "meaning": {
++                     "rich_text": [{"type": "text", "text": {"content": meaning}}]},
++                 "Checked Date": {"date": {"start": today_str}},
++                 # "Next": {"date": {"start": next_str}},
++                 "voice": {"url": voice_url},
++                 "Level": {"select": {"name": "0", "color": "default"}},
++                 # "KnowAll": {"checkbox": False},
++                 # "KnowSome": {"checkbox": False},
++                 # "ForgetAll": {"checkbox": False},
++                 # "Checked Times": {"number": 0},
++                 "🌏 Economist Reading": {
++                     "relation": [
++                         {
++                             "id": passage_id
++                         }
++                     ]
++                 },
++                 "Selection":{
++                     "select":{"name":selection,"color":self.selection_dict[selection]}
++                 }
++             },
++         }
+ 
+-                url = "https://api.notion.com/v1/pages"
+-                headers = {
+-                    "Notion-Version": "2022-06-28",
+-                    "Content-Type": "application/json",
+-                    "Authorization": "Bearer " + self.token
+-                }
+-                r = requests.post(url, json=p, headers=self.headers)
+-                print(r.text)
++        url = "https://api.notion.com/v1/pages"
++        headers = {
++            "Notion-Version": "2022-06-28",
++            "Content-Type": "application/json",
++            "Authorization": "Bearer " + self.token
++        }
++        r = requests.post(url, json=p, headers=self.headers)
++        print(r.text)
++        print("导入" + word_content + " 到today，完成")
++
++    def today_delete_before(self):
++        response = self.DataBase_item_query(self.today_query_id)
++        # 判断是否有之前的内容，如果有就清空
++        # just_add = False
++        if len(response) == 0:
++            pass
++        else:
++            if self.tomorrow:
++                print("晚于凌晨4点，清空前日单词")
++                for dict in response:
++                    checked_date = dt.strptime(dict['properties']["Checked Date"]['date']['start'], '%Y-%m-%d')
++                    today = date.today()
++                    checked_date = checked_date.date()
++                    if checked_date != today:
++                        self.delete_page(dict["id"])
++            else:
++                print("早于凌晨4点，不清空前日单词")
+ 
+     def release_the_tension(self,tension_date):
+         print("先不做了，如果之后背单词真背不下去再写")
+Index: TestFiles/test_pyqt5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/TestFiles/test_pyqt5.py b/TestFiles/test_pyqt5.py
+new file mode 100644
+--- /dev/null	(date 1694051830637)
++++ b/TestFiles/test_pyqt5.py	(date 1694051830637)
+@@ -0,0 +1,52 @@
++import sys
++from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QDialog, QVBoxLayout, QComboBox, QLabel, QWidget
++class MyWindow(QMainWindow):
++    def __init__(self):
++        super().__init__()
++
++        # 创建按钮
++        self.button1 = QPushButton("1", self)
++        self.button1.clicked.connect(self.button_clicked)
++
++        self.button2 = QPushButton("2", self)
++        self.button2.clicked.connect(self.button_clicked)
++
++        self.button3 = QPushButton("3", self)
++        self.button3.clicked.connect(self.button_clicked)
++
++        # 设置主窗口布局
++        layout = QVBoxLayout()
++        layout.addWidget(self.button1)
++        layout.addWidget(self.button2)
++        layout.addWidget(self.button3)
++
++        central_widget = QWidget()
++        central_widget.setLayout(layout)
++        self.setCentralWidget(central_widget)
++
++        # 初始化标签
++        self.label = QLabel("等待按钮输入", self)
++        layout.addWidget(self.label)
++
++    def button_clicked(self):
++        sender = self.sender()
++        if sender:
++            button_text = sender.text()
++            if button_text == "1":
++                self.label.setText("您点击了按钮1，执行操作1")
++                print("您点击了1")
++            elif button_text == "2":
++                self.label.setText("您点击了按钮2，执行操作2")
++                print("您点击了2")
++            elif button_text == "3":
++                self.label.setText("您点击了按钮3，执行操作3")
++                print("您点击了3")
++
++def main():
++    app = QApplication(sys.argv)
++    window = MyWindow()
++    window.show()
++    sys.exit(app.exec_())
++
++if __name__ == "__main__":
++    main()
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"cb27d502-3185-46dc-be7a-c5a5ac312a57\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/基于notion的外刊阅读脚本.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/基于notion的外刊阅读脚本.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/TestFiles/notion_patch_all_anki.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/TestFiles/notion_patch_all_anki.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/TestFiles/test.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/TestFiles/test.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FlaskConsoleOptions\" custom-start-script=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\">\r\n    <envs>\r\n      <env key=\"FLASK_APP\" value=\"app\" />\r\n    </envs>\r\n    <option name=\"myCustomStartScript\" value=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\" />\r\n    <option name=\"myEnvs\">\r\n      <map>\r\n        <entry key=\"FLASK_APP\" value=\"app\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/TestFiles/notion_patch_all_anki.py\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2UNnXSNP306WOuhRCWpKuWodwRC\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;E:/anaconda3/envs/paddle_gpu_38/Lib/site-packages/qt5_applications/Qt/bin/designer.exe&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalTools&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [\r\n      &quot;directory&quot;,\r\n      &quot;module&quot;,\r\n      &quot;repository&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\MyProjects\\基于notion的外刊阅读脚本\\TestFiles\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.main\">\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"基于notion的外刊阅读脚本\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"notion_patch_all_anki (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"基于notion的外刊阅读脚本\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/notion_patch_all_anki.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"test\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"基于notion的外刊阅读脚本\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/TestFiles\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/TestFiles/test.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"test_fresh_vacabularies_data\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"基于notion的外刊阅读脚本\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/TestFiles\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/TestFiles/test_fresh_vacabularies_data.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"test_pic_like_momo\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"基于notion的外刊阅读脚本\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/TestFiles\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/TestFiles/test_pic_like_momo.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.main\" />\r\n        <item itemvalue=\"Python.test_pic_like_momo\" />\r\n        <item itemvalue=\"Python.test_fresh_vacabularies_data\" />\r\n        <item itemvalue=\"Python.test\" />\r\n        <item itemvalue=\"Python.notion_patch_all_anki (1)\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"cb27d502-3185-46dc-be7a-c5a5ac312a57\" name=\"Changes\" comment=\"\" />\r\n      <created>1692788944380</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1692788944380</updated>\r\n      <workItem from=\"1692878952548\" duration=\"1048000\" />\r\n      <workItem from=\"1692880024313\" duration=\"2220000\" />\r\n      <workItem from=\"1692931192189\" duration=\"3428000\" />\r\n      <workItem from=\"1692945224957\" duration=\"12063000\" />\r\n      <workItem from=\"1693025734979\" duration=\"5401000\" />\r\n      <workItem from=\"1693057819399\" duration=\"7791000\" />\r\n      <workItem from=\"1693068979949\" duration=\"1205000\" />\r\n      <workItem from=\"1693295832294\" duration=\"386000\" />\r\n      <workItem from=\"1693296318352\" duration=\"2542000\" />\r\n      <workItem from=\"1693377781994\" duration=\"3415000\" />\r\n      <workItem from=\"1693411786665\" duration=\"2562000\" />\r\n      <workItem from=\"1693460032235\" duration=\"1495000\" />\r\n      <workItem from=\"1693486514828\" duration=\"7121000\" />\r\n      <workItem from=\"1693506276702\" duration=\"594000\" />\r\n      <workItem from=\"1693548035325\" duration=\"604000\" />\r\n      <workItem from=\"1693671404963\" duration=\"10583000\" />\r\n      <workItem from=\"1693830525181\" duration=\"552000\" />\r\n      <workItem from=\"1693843811502\" duration=\"4199000\" />\r\n      <workItem from=\"1693848647348\" duration=\"671000\" />\r\n      <workItem from=\"1693889894951\" duration=\"2970000\" />\r\n      <workItem from=\"1694001756306\" duration=\"2611000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"修改段落分句算法，增加通过剪切板识别文章的算法，再次简化流程\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692796587524</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692796587524</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"修改检查选中修改下次查看日期的算法\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692884321499</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692884321499</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"修改notion_patch_all_anki，增加绘制统计图的函数\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692950395271</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692950395271</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"修改notion_patch_all_anki，增加绘制统计图的函数\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692950399812</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692950399812</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"修改notion_patch_all_anki，增加绘制统计图的函数\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692950411913</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692950411913</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"debug获得句子的算法\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693047686615</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693047686615</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"release_tension写了但没完全写\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693294952316</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693294952316</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"release_tension写了但没完全写\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693294956789</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693294956789</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"release_tension写了但没完全写\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693294958427</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693294958427</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"更新关闭vpn算法模式和绘图debug\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693296360157</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693296360157</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"更新关闭vpn算法模式和绘图debug\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693297271932</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693297271932</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"更新关闭vpn算法模式和绘图debug\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693297404597</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693297404597</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"再次修改get_sentences算法\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693315141276</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693315141276</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"修改绘图算法\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693377849874</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693377849874</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"修改getsenteces里面的bug\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693736596387</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693736596387</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"进行少量代码优化\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693848688969</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693848688969</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"进行少量代码优化\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693848694373</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693848694373</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"18\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"修改段落分句算法，增加通过剪切板识别文章的算法，再次简化流程\" />\r\n    <MESSAGE value=\"修改检查选中修改下次查看日期的算法\" />\r\n    <MESSAGE value=\"修改notion_patch_all_anki，增加绘制统计图的函数\" />\r\n    <MESSAGE value=\"debug获得句子的算法\" />\r\n    <MESSAGE value=\"release_tension写了但没完全写\" />\r\n    <MESSAGE value=\"更新关闭vpn算法模式和绘图debug\" />\r\n    <MESSAGE value=\"再次修改get_sentences算法\" />\r\n    <MESSAGE value=\"修改绘图算法\" />\r\n    <MESSAGE value=\"修改getsenteces里面的bug\" />\r\n    <MESSAGE value=\"进行少量代码优化\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"进行少量代码优化\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" suspend=\"THREAD\" type=\"python-line\">\r\n          <url>file://$PROJECT_DIR$/TestFiles/get_clip_passage.py</url>\r\n          <line>4</line>\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" suspend=\"THREAD\" type=\"python-line\">\r\n          <url>file://$PROJECT_DIR$/TestFiles/notion_api.py</url>\r\n          <line>218</line>\r\n          <option name=\"timeStamp\" value=\"20\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" suspend=\"THREAD\" type=\"python-line\">\r\n          <url>file://$PROJECT_DIR$/TestFiles/notion_relation_test.py</url>\r\n          <line>115</line>\r\n          <option name=\"timeStamp\" value=\"26\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n    <watches-manager>\r\n      <configuration name=\"PythonConfigurationType\">\r\n        <watch expression=\"result['properties']['\uD83C\uDF0F Economist Reading']['relation']\" />\r\n      </configuration>\r\n    </watches-manager>\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/notion$test.coverage\" NAME=\"test Coverage Results\" MODIFIED=\"1693395297683\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$test_release_tension_dict.coverage\" NAME=\"test_release_tension_dict Coverage Results\" MODIFIED=\"1693291871924\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$_solution.coverage\" NAME=\"重复_solution Coverage Results\" MODIFIED=\"1693281771718\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$main.coverage\" NAME=\"main Coverage Results\" MODIFIED=\"1694014693925\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$notion_api_patch.coverage\" NAME=\"notion_api_patch Coverage Results\" MODIFIED=\"1692983283256\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$test_ordered_dict.coverage\" NAME=\"test_ordered_dict Coverage Results\" MODIFIED=\"1693109411250\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$notion_relation_test.coverage\" NAME=\"notion_relation_test Coverage Results\" MODIFIED=\"1692963907305\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$Economist_anki.coverage\" NAME=\"Economist_anki Coverage Results\" MODIFIED=\"1693155409543\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$notion_patch_all_anki.coverage\" NAME=\"notion_patch_all_anki Coverage Results\" MODIFIED=\"1693281985759\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$test_today.coverage\" NAME=\"test_today Coverage Results\" MODIFIED=\"1693124539623\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$notion_api.coverage\" NAME=\"notion_api Coverage Results\" MODIFIED=\"1693122218322\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$test_plt.coverage\" NAME=\"test_plt Coverage Results\" MODIFIED=\"1693079822277\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$test_fresh_vacabularies_data.coverage\" NAME=\"test_fresh_vacabularies_data Coverage Results\" MODIFIED=\"1693760098677\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$notion_patch_all_pronoun_voice_relation.coverage\" NAME=\"notion_patch_all_pronoun_voice_relation Coverage Results\" MODIFIED=\"1692978448787\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$notion_patch_all_anki__1_.coverage\" NAME=\"notion_patch_all_anki (1) Coverage Results\" MODIFIED=\"1693295428454\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/notion$test_pic_like_momo.coverage\" NAME=\"test_pic_like_momo Coverage Results\" MODIFIED=\"1693847098964\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/TestFiles\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 3e03d0e8f896eae518b97a2036fbd0bf987790f1)
++++ b/.idea/workspace.xml	(date 1694063398853)
+@@ -78,7 +78,7 @@
+       <recent name="D:\MyProjects\基于notion的外刊阅读脚本\TestFiles" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Python.main">
++  <component name="RunManager" selected="Python.test_pyqt5">
+     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="基于notion的外刊阅读脚本" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+@@ -101,7 +101,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="notion_patch_all_anki (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="基于notion的外刊阅读脚本" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -109,12 +109,12 @@
+         <env name="PYTHONUNBUFFERED" value="1" />
+       </envs>
+       <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestFiles" />
+       <option name="IS_MODULE_SDK" value="true" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notion_patch_all_anki.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/test.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -123,7 +123,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++    <configuration name="test_fresh_vacabularies_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="基于notion的外刊阅读脚本" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -136,7 +136,7 @@
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/test.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/test_fresh_vacabularies_data.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -145,7 +145,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="test_fresh_vacabularies_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++    <configuration name="test_pic_like_momo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="基于notion的外刊阅读脚本" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -158,7 +158,7 @@
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/test_fresh_vacabularies_data.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/test_pic_like_momo.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -167,7 +167,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="test_pic_like_momo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++    <configuration name="test_pyqt5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="基于notion的外刊阅读脚本" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -180,7 +180,7 @@
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/test_pic_like_momo.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFiles/test_pyqt5.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -191,11 +191,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Python.test_pyqt5" />
+         <item itemvalue="Python.main" />
+         <item itemvalue="Python.test_pic_like_momo" />
+         <item itemvalue="Python.test_fresh_vacabularies_data" />
+         <item itemvalue="Python.test" />
+-        <item itemvalue="Python.notion_patch_all_anki (1)" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -227,7 +227,8 @@
+       <workItem from="1693843811502" duration="4199000" />
+       <workItem from="1693848647348" duration="671000" />
+       <workItem from="1693889894951" duration="2970000" />
+-      <workItem from="1694001756306" duration="2611000" />
++      <workItem from="1694001756306" duration="11261000" />
++      <workItem from="1694054737813" duration="596000" />
+     </task>
+     <task id="LOCAL-00001" summary="修改段落分句算法，增加通过剪切板识别文章的算法，再次简化流程">
+       <option name="closed" value="true" />
+@@ -365,7 +366,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1693848694373</updated>
+     </task>
+-    <option name="localTasksCounter" value="18" />
++    <task id="LOCAL-00018" summary="修正一个小bug">
++      <option name="closed" value="true" />
++      <created>1694016217806</created>
++      <option name="number" value="00018" />
++      <option name="presentableId" value="LOCAL-00018" />
++      <option name="project" value="LOCAL" />
++      <updated>1694016217806</updated>
++    </task>
++    <option name="localTasksCounter" value="19" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -393,7 +402,8 @@
+     <MESSAGE value="修改绘图算法" />
+     <MESSAGE value="修改getsenteces里面的bug" />
+     <MESSAGE value="进行少量代码优化" />
+-    <option name="LAST_COMMIT_MESSAGE" value="进行少量代码优化" />
++    <MESSAGE value="修正一个小bug" />
++    <option name="LAST_COMMIT_MESSAGE" value="修正一个小bug" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+@@ -425,9 +435,10 @@
+     <SUITE FILE_PATH="coverage/notion$test.coverage" NAME="test Coverage Results" MODIFIED="1693395297683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
+     <SUITE FILE_PATH="coverage/notion$test_release_tension_dict.coverage" NAME="test_release_tension_dict Coverage Results" MODIFIED="1693291871924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
+     <SUITE FILE_PATH="coverage/notion$_solution.coverage" NAME="重复_solution Coverage Results" MODIFIED="1693281771718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
+-    <SUITE FILE_PATH="coverage/notion$main.coverage" NAME="main Coverage Results" MODIFIED="1694014693925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
++    <SUITE FILE_PATH="coverage/notion$main.coverage" NAME="main Coverage Results" MODIFIED="1694051226322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+     <SUITE FILE_PATH="coverage/notion$notion_api_patch.coverage" NAME="notion_api_patch Coverage Results" MODIFIED="1692983283256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
+     <SUITE FILE_PATH="coverage/notion$test_ordered_dict.coverage" NAME="test_ordered_dict Coverage Results" MODIFIED="1693109411250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
++    <SUITE FILE_PATH="coverage/notion$test_pyqt5.coverage" NAME="test_pyqt5 Coverage Results" MODIFIED="1694051845772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
+     <SUITE FILE_PATH="coverage/notion$notion_relation_test.coverage" NAME="notion_relation_test Coverage Results" MODIFIED="1692963907305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
+     <SUITE FILE_PATH="coverage/notion$Economist_anki.coverage" NAME="Economist_anki Coverage Results" MODIFIED="1693155409543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+     <SUITE FILE_PATH="coverage/notion$notion_patch_all_anki.coverage" NAME="notion_patch_all_anki Coverage Results" MODIFIED="1693281985759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
