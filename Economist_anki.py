@@ -40,6 +40,8 @@ import random
 import configparser
 import copy
 from notion_patch_all_anki import Update_anki
+import platform
+import sys
 class Economists:
     # 类属性（类级别的属性）
     # class_attribute = "This is a class attribute"
@@ -50,6 +52,14 @@ class Economists:
         # self.title = None
         # self.DataBaseAPI = None
         # self.epub_path = "E:/TsinghuaCloud/Seafile/Economist/2023-3-11/TE-2023-03-11-EPUB.epub"
+        system = platform.system()
+        if system == "Windows":
+            self.system = "W"
+        elif system == "Darwin":
+            self.system = "M"
+        else:
+            print("当前系统没有适配")
+            sys.exit()
         config = configparser.ConfigParser()
         config.read('token.ini')
         self.token = config.get('token', 'id')
@@ -612,7 +622,8 @@ class Economists:
         # 打开txt，进行修改，比如将动词还原等
         print("即将打开包含选中的单词的txt，可手动将单词修改为原型，将词组修改为更容易查到的形式\n")
         time.sleep(3)
-        subprocess.run(['notepad.exe',"words_to_cambridge.txt"],check = True)
+        self.open_txt_in_pad("words_to_cambridge.txt")
+        # subprocess.run(['notepad.exe',"words_to_cambridge.txt"],check = True)
         with open("words_to_cambridge.txt","r") as file:
             words_txt = file.readlines()
         for word in words_txt:
@@ -666,6 +677,12 @@ class Economists:
                 sentence = sentence[0:index_1] + sentence[index_1+1:index_2] + sentence[index_4+1:len(sentence)]
                 print(sentence)
 
+
+    def open_txt_in_pad(self,path):
+        if self.system == "W":
+            subprocess.run(['notepad.exe',path],check = True)
+        elif self.system == "M":
+            subprocess.Popen(["open","-t",path])
 
 
 
@@ -970,7 +987,8 @@ class Economists:
         with open("words_repeat.txt","r",encoding="utf-8") as file:
             a = file.readlines()
         if len(a) != 0:
-            subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
+            self.open_txt_in_pad("words_repeat.txt")
+            # subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
 
     # def words_in_passage_patch(self):
     #     with open('vocabularies.data', 'rb') as file:
@@ -1181,8 +1199,10 @@ class Economists:
 
         if chongfu_num + len(up_meaning) == len(self.words):
             input("都对应上了，准备上传notion，可以enter")
-        subprocess.run(['notepad.exe',"words_upload.txt"],check = True)
-        subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
+        self.open_txt_in_pad("words_upload.txt")
+        self.open_txt_in_pad("words_repeat.txt")
+        # subprocess.run(['notepad.exe',"words_upload.txt"],check = True)
+        # subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
         # input("检查result.txt，如果没有问题就enter")
         # 设置tag color
         for content_num in range(len(up_word_content)):
