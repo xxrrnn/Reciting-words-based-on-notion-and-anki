@@ -77,8 +77,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MyProjects\基于notion的外刊阅读脚本\TestFiles" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\基于notion的外刊阅读脚本\TestFiles" />
+      <recent name="D:\MyProjects\基于notion的外刊阅读脚本\TxtDataFiles" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.notion_patch_all_anki (1)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="基于notion的外刊阅读脚本" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,9 +195,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.notion_patch_all_anki (1)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.test_pic_like_momo" />
+        <item itemvalue="Python.notion_patch_all_anki (1)" />
         <item itemvalue="Python.test_fresh_vacabularies_data" />
         <item itemvalue="Python.test" />
       </list>
@@ -228,6 +232,9 @@
       <workItem from="1693848647348" duration="671000" />
       <workItem from="1693889894951" duration="2970000" />
       <workItem from="1694001756306" duration="2611000" />
+      <workItem from="1694159355561" duration="3186000" />
+      <workItem from="1694254566178" duration="2450000" />
+      <workItem from="1694259353727" duration="4840000" />
     </task>
     <task id="LOCAL-00001" summary="修改段落分句算法，增加通过剪切板识别文章的算法，再次简化流程">
       <option name="closed" value="true" />
@@ -365,7 +372,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693848694373</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="进行少量代码优化">
+      <option name="closed" value="true" />
+      <created>1694095355705</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1694095355705</updated>
+    </task>
+    <task id="LOCAL-00019" summary="进行少量代码优化">
+      <option name="closed" value="true" />
+      <created>1694095360354</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1694095360354</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +448,7 @@
     <SUITE FILE_PATH="coverage/notion$test.coverage" NAME="test Coverage Results" MODIFIED="1693395297683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
     <SUITE FILE_PATH="coverage/notion$test_release_tension_dict.coverage" NAME="test_release_tension_dict Coverage Results" MODIFIED="1693291871924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
     <SUITE FILE_PATH="coverage/notion$_solution.coverage" NAME="重复_solution Coverage Results" MODIFIED="1693281771718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$main.coverage" NAME="main Coverage Results" MODIFIED="1694063447397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notion$main.coverage" NAME="main Coverage Results" MODIFIED="1694264244152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notion$notion_api_patch.coverage" NAME="notion_api_patch Coverage Results" MODIFIED="1692983283256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
     <SUITE FILE_PATH="coverage/notion$test_ordered_dict.coverage" NAME="test_ordered_dict Coverage Results" MODIFIED="1693109411250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
     <SUITE FILE_PATH="coverage/notion$test_pyqt5.coverage" NAME="test_pyqt5 Coverage Results" MODIFIED="1694051845772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
@@ -437,7 +460,7 @@
     <SUITE FILE_PATH="coverage/notion$test_plt.coverage" NAME="test_plt Coverage Results" MODIFIED="1693079822277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
     <SUITE FILE_PATH="coverage/notion$test_fresh_vacabularies_data.coverage" NAME="test_fresh_vacabularies_data Coverage Results" MODIFIED="1693760098677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
     <SUITE FILE_PATH="coverage/notion$notion_patch_all_pronoun_voice_relation.coverage" NAME="notion_patch_all_pronoun_voice_relation Coverage Results" MODIFIED="1692978448787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
-    <SUITE FILE_PATH="coverage/notion$notion_patch_all_anki__1_.coverage" NAME="notion_patch_all_anki (1) Coverage Results" MODIFIED="1693295428454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notion$test_pic_like_momo.coverage" NAME="test_pic_like_momo Coverage Results" MODIFIED="1693847098964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
+    <SUITE FILE_PATH="coverage/notion$notion_patch_all_anki__1_.coverage" NAME="notion_patch_all_anki (1) Coverage Results" MODIFIED="1694096351839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notion$test_pic_like_momo.coverage" NAME="test_pic_like_momo Coverage Results" MODIFIED="1694261981028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestFiles" />
   </component>
 </project>

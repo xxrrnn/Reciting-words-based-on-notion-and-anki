@@ -1,4 +1,4 @@
-with open("passage.txt", "rb") as file:
+with open("TxtDataFiles/passage.txt", "rb") as file:
     lines = file.readlines()
 
 decoded_lines = []

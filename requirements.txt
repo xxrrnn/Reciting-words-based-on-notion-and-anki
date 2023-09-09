@@ -1,0 +1,6 @@
+numpy
+pyperclip
+requests
+bs4
+chardet
+matplotlib

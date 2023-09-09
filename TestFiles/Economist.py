@@ -424,9 +424,9 @@ class Economists:
                 print(dict)
                 continue
         print("count", count)
-        # with open('vocabularies.data', 'wb') as file:
+        # with open('TxtDataFiles/vocabularies.data', 'wb') as file:
         #     pickle.dump(words, file)
-        # with open('vocabularies.data', 'rb') as file:
+        # with open('TxtDataFiles/vocabularies.data', 'rb') as file:
         #     my_dict = pickle.load(file)
 
         for dict_num in range(len(words)):
@@ -434,12 +434,12 @@ class Economists:
             words[dict_num] = words[dict_num].strip()
             words[dict_num] = words[dict_num].replace('\n', '')
             print(words[dict_num])
-        with open('vocabularies.data', 'wb') as file:
+        with open('../TxtDataFiles/vocabularies.data', 'wb') as file:
             pickle.dump(words, file)
 
     def get_words_txt(self):
 
-        with open("words.txt", "rb") as file:
+        with open("../TxtDataFiles/words.txt", "rb") as file:
             raw_data = file.read()
             result = chardet.detect(raw_data)
 
@@ -449,8 +449,8 @@ class Economists:
 
 
 
-        # with open("words.txt", "r", encoding="utf-8") as file:
-        with open("words.txt", "r", encoding=self.detected_encoding) as file:
+        # with open("TxtDataFiles/words.txt", "r", encoding="utf-8") as file:
+        with open("../TxtDataFiles/words.txt", "r", encoding=self.detected_encoding) as file:
             words = file.readlines()
         for num in range(len(words)):
             words[num] = words[num].replace('\n','')
@@ -463,7 +463,7 @@ class Economists:
         pyperclip.copy('')
         # 初始上一次的剪切板内容为空
         prev_clipboard_content = ''
-        with open("words.txt", 'w',encoding='utf-8') as file:
+        with open("../TxtDataFiles/words.txt", 'w', encoding='utf-8') as file:
             file.truncate()
         print("检查clash是否关闭")
         print("文档已经清空，开始运行")
@@ -475,7 +475,7 @@ class Economists:
                 break
             # 如果剪切板内容发生变化且不为空，则写入到txt文件中
             if clipboard_content != prev_clipboard_content and clipboard_content and clipboard_content not in self.words:
-                with open("words.txt", 'a',encoding='utf-8') as file:
+                with open("../TxtDataFiles/words.txt", 'a', encoding='utf-8') as file:
                     file.write(clipboard_content + '\n')
                     print(clipboard_content)
                     # self.words.append(clipboard_content)
@@ -484,9 +484,9 @@ class Economists:
 
             # 每隔一秒钟检查一次剪切板内容
             time.sleep(1)
-        subprocess.run(['notepad.exe',"words.txt"],check = True)
+        subprocess.run(['notepad.exe',"TxtDataFiles/words.txt"],check = True)
         # myinput = input("完成剪切板调用，请检查文档内容并修正")
-        with open("words.txt","r") as file:
+        with open("../TxtDataFiles/words.txt", "r") as file:
             words_txt = file.readlines()
         for word in words_txt:
             word = word.replace('\n','')
@@ -499,17 +499,17 @@ class Economists:
 
 
     def get_sentences(self):
-        # with open("words.txt","r",encoding='utf-8') as file:
+        # with open("TxtDataFiles/words.txt","r",encoding='utf-8') as file:
         #     words = file.readlines()
         # words = [item.replace('\n', '') for item in words]
         # self.words = words
 
-        # with open("passage.txt", "r", encoding='utf-8') as bookFile:
+        # with open("TxtDataFiles/passage.txt", "r", encoding='utf-8') as bookFile:
         #     paragraphs = bookFile.readlines()
 
 
         # copy notion to txt, use this
-        with open("passage.txt", "rb") as file:
+        with open("../TxtDataFiles/passage.txt", "rb") as file:
             lines = file.readlines()
 
         paragraphs = []
@@ -672,7 +672,7 @@ class Economists:
 
     def run(self):
         self.setup()
-        selection = input("words.txt是否已经是拷贝的单词,是打1,不是打0 \n")
+        selection = input("TxtDataFiles/words.txt是否已经是拷贝的单词,是打1,不是打0 \n")
         if selection == "1":
             self.get_words_txt()
         else:
@@ -684,7 +684,7 @@ class Economists:
             print("单词和例句数量不对应，debug！")
             return None
         print(len(self.words),len(self.sentences))
-        with open("words.txt", 'w',encoding=self.detected_encoding) as file:
+        with open("../TxtDataFiles/words.txt", 'w', encoding=self.detected_encoding) as file:
             file.truncate()
             for w in self.words:
                 file.write(w + "\n")
@@ -698,7 +698,7 @@ class Economists:
         print("error",error_words)
         is_check = input("要不要检查有没有重复 1/0: \n")
         if is_check == "1":
-            with open('vocabularies.data', 'rb') as file:
+            with open('../TxtDataFiles/vocabularies.data', 'rb') as file:
                 self.my_dict = pickle.load(file)
         else:
             pass
@@ -874,7 +874,7 @@ class Economists:
         #     if word not in self.my_dict:
         #         self.my_dict.append(word)
         self.new_dict()
-        # with open('vocabularies.data', 'wb') as file:
+        # with open('TxtDataFiles/vocabularies.data', 'wb') as file:
         #     pickle.dump(self.my_dict, file)
     # for word in self.words:
         #     con = True

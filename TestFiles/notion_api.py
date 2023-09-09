@@ -253,9 +253,9 @@ for dict in response:
             print(dict)
             continue
 print("count",count)
-with open('vocabularies.data', 'wb') as file:
+with open('TxtDataFiles/vocabularies.data', 'wb') as file:
     pickle.dump(words,file)
-with open('vocabularies.data','rb') as file:
+with open('TxtDataFiles/vocabularies.data','rb') as file:
     my_dict = pickle.load(file)
 
 for dict_num in range(len(my_dict)):
@@ -263,7 +263,7 @@ for dict_num in range(len(my_dict)):
     my_dict[dict_num] = my_dict[dict_num].strip()
     my_dict[dict_num] = my_dict[dict_num].replace('\n', '')
     print(my_dict[dict_num])
-with open('vocabularies.data', 'wb') as file:
+with open('TxtDataFiles/vocabularies.data', 'wb') as file:
     pickle.dump(my_dict,file)
 
 # print(vocabulary)

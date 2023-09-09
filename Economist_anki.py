@@ -18,8 +18,8 @@ anki 版本，修改上传的类型
 # import extract_epub
 
 import numpy as np
-import cv2
-import pyautogui
+# import cv2
+# import pyautogui
 # import paddleocr
 # from PIL import Image
 import time
@@ -503,9 +503,9 @@ class Economists:
                 print(dict)
                 continue
         print("count", count)
-        # with open('vocabularies.data', 'wb') as file:
+        # with open('TxtDataFiles/vocabularies.data', 'wb') as file:
         #     pickle.dump(words, file)
-        # with open('vocabularies.data', 'rb') as file:
+        # with open('TxtDataFiles/vocabularies.data', 'rb') as file:
         #     my_dict = pickle.load(file)
 
         # for dict_num in range(len(self.my_dict.keys())):
@@ -513,12 +513,12 @@ class Economists:
         #     self.my_dict[dict_num] = self.my_dict[dict_num].strip()
         #     self.my_dict[dict_num] = self.my_dict[dict_num].replace('\n', '')
         #     print(self.my_dict[dict_num])
-        with open('vocabularies.data', 'wb') as file:
+        with open('TxtDataFiles/vocabularies.data', 'wb') as file:
             pickle.dump(self.my_dict, file)
 
     def get_words_txt(self):
 
-        with open("words.txt", "rb") as file:
+        with open("TxtDataFiles/words.txt", "rb") as file:
             raw_data = file.read()
             result = chardet.detect(raw_data)
 
@@ -526,14 +526,14 @@ class Economists:
         self.detected_encoding = result["encoding"]
         # with open("filename.txt", "r", encoding=detected_encoding) as file:
 
-        # with open("words.txt", "r", encoding="utf-8") as file:
-        with open("words.txt", "r", encoding="utf-8") as file:
+        # with open("TxtDataFiles/words.txt", "r", encoding="utf-8") as file:
+        with open("TxtDataFiles/words.txt", "r", encoding="utf-8") as file:
             words_clip = file.readlines()
         for num in range(len(words_clip)):
             words_clip[num] = words_clip[num].replace('\n','')
 
 
-        with open("words_to_cambridge.txt", "r", encoding="utf-8") as file:
+        with open("TxtDataFiles/words_to_cambridge.txt", "r", encoding="utf-8") as file:
             words_to_cambridge = file.readlines()
         for num in range(len(words_to_cambridge)):
             words_to_cambridge[num] = words_to_cambridge[num].replace('\n','')
@@ -549,10 +549,11 @@ class Economists:
         pyperclip.copy('')
         # 初始上一次的剪切板内容为空
         prev_clipboard_content = ''
-        with open("passage.txt", 'w', encoding='utf-8') as file:
+        with open("TxtDataFiles/passage.txt", 'w', encoding='utf-8') as file:
             file.truncate()
-        input("文档已经清空，请选中并复制本次要导入单词的notion中的文章全部，然后enter开始运行")
+        print("文档已经全部清空")
         while True:
+            input("请选中并复制本次要导入单词的notion中的文章全部，然后enter开始运行")
             # 获取剪切板内容
             # time.sleep(5)
             clipboard_content = pyperclip.paste()
@@ -560,9 +561,9 @@ class Economists:
             # # 如果剪切板内容发生变化且不为空，则写入到txt文件中
             # if clipboard_content != prev_clipboard_content and clipboard_content and clipboard_content not in self.words:
             print(clipboard_content)
-            # with open("all_passage.txt", 'r', encoding='utf-8') as file:
+            # with open("all_TxtDataFiles/passage.txt", 'r', encoding='utf-8') as file:
             #     file.write(clipboard_content)
-            with open("passage.txt", 'w', encoding='utf-8') as file:
+            with open("TxtDataFiles/passage.txt", 'w', encoding='utf-8') as file:
                 file.write(clipboard_content)
             # self.words.append(clipboard_content)
             # 更新上一次的剪切板内容为当前内容
@@ -572,20 +573,20 @@ class Economists:
                 break
             # 每隔一秒钟检查一次剪切板内容
             time.sleep(1)
-        # subprocess.run(['notepad.exe', "passage.txt"], check=True)
+        # subprocess.run(['notepad.exe', "TxtDataFiles/passage.txt"], check=True)
 
     def get_clip(self):
         pyperclip.copy('')
         # 初始上一次的剪切板内容为空
         prev_clipboard_content = ''
-        with open("words.txt", 'w',encoding='utf-8') as file:
+        with open("TxtDataFiles/words.txt", 'w',encoding='utf-8') as file:
             file.truncate()
-        with open("words_to_cambridge.txt", 'w',encoding='utf-8') as file:
+        with open("TxtDataFiles/words_to_cambridge.txt", 'w',encoding='utf-8') as file:
             file.truncate()
         print("检查clash是否关闭")
         print("文档已经清空，开始运行。\n"
               "依次选中你要导入的生词或词组，然后复制：\n")
-        print("复制数字20即结束复制\n")
+        print("复制数字20、and、the即结束复制\n")
         words_clip = []
         while True:
             # 获取剪切板内容
@@ -593,16 +594,16 @@ class Economists:
             clipboard_content = clipboard_content.strip()
             clipboard_content = clipboard_content.replace('\n', '')
             clipboard_content = clipboard_content.strip()
-            if clipboard_content == "20":
+            if clipboard_content == "20" or clipboard_content == "and" or clipboard_content == "the":
                 print("停止检测单词")
                 break
             # 如果剪切板内容发生变化且不为空，则写入到txt文件中
             if clipboard_content != prev_clipboard_content and len(clipboard_content) != 0 and clipboard_content not in words_clip:
                 words_clip.append(clipboard_content)
-                with open("words.txt", 'a',encoding='utf-8') as file:
+                with open("TxtDataFiles/words.txt", 'a',encoding='utf-8') as file:
                     file.write(clipboard_content + '\n')
                     print(clipboard_content)
-                with open("words_to_cambridge.txt", 'a', encoding='utf-8') as file:
+                with open("TxtDataFiles/words_to_cambridge.txt", 'a', encoding='utf-8') as file:
                     file.write(clipboard_content + '\n')
                     # self.words.append(clipboard_content)
                 # 更新上一次的剪切板内容为当前内容
@@ -622,9 +623,9 @@ class Economists:
         # 打开txt，进行修改，比如将动词还原等
         print("即将打开包含选中的单词的txt，可手动将单词修改为原型，将词组修改为更容易查到的形式\n")
         time.sleep(3)
-        self.open_txt_in_pad("words_to_cambridge.txt")
-        # subprocess.run(['notepad.exe',"words_to_cambridge.txt"],check = True)
-        with open("words_to_cambridge.txt","r") as file:
+        self.open_txt_in_pad("TxtDataFiles/words_to_cambridge.txt")
+        # subprocess.run(['notepad.exe',"TxtDataFiles/words_to_cambridge.txt"],check = True)
+        with open("TxtDataFiles/words_to_cambridge.txt","r") as file:
             words_txt = file.readlines()
         for word in words_txt:
             word = word.replace('\n','')
@@ -641,7 +642,7 @@ class Economists:
 
 
 
-        with open("words.txt", "rb") as file:
+        with open("TxtDataFiles/words.txt", "rb") as file:
             raw_data = file.read()
             result = chardet.detect(raw_data)
 
@@ -689,18 +690,18 @@ class Economists:
 
 
     def get_sentences(self):
-        # with open("words.txt","r",encoding='utf-8') as file:
+        # with open("TxtDataFiles/words.txt","r",encoding='utf-8') as file:
         #     words = file.readlines()
         # words = [item.replace('\n', '') for item in words]
         # self.words = words
 
-        # with open("passage.txt", "r", encoding='utf-8') as bookFile:
+        # with open("TxtDataFiles/passage.txt", "r", encoding='utf-8') as bookFile:
         #     paragraphs = bookFile.readlines()
-        with open("passage.txt", "rb") as file:
+        with open("TxtDataFiles/passage.txt", "rb") as file:
             self.passage = file.readlines()
         lines = []
         # copy notion to txt, use this
-        with open("passage.txt", "rb") as file:
+        with open("TxtDataFiles/passage.txt", "rb") as file:
             # lines = file.readlines()
             for line in file:
                 lines.append(line.strip())
@@ -984,14 +985,14 @@ class Economists:
                 headers=self.notion_headers,
             )
             print(r.text)
-        with open("words_repeat.txt","r",encoding="utf-8") as file:
+        with open("TxtDataFiles/words_repeat.txt","r",encoding="utf-8") as file:
             a = file.readlines()
         if len(a) != 0:
-            self.open_txt_in_pad("words_repeat.txt")
-            # subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
+            self.open_txt_in_pad("TxtDataFiles/words_repeat.txt")
+            # subprocess.run(['notepad.exe',"TxtDataFiles/words_repeat.txt"],check = True)
 
     # def words_in_passage_patch(self):
-    #     with open('vocabularies.data', 'rb') as file:
+    #     with open('TxtDataFiles/vocabularies.data', 'rb') as file:
     #         self.my_dict = pickle.load(file)
     #     words_in_dict = self.my_dict.keys()
     #     self.words = []
@@ -1031,13 +1032,13 @@ class Economists:
             print("单词和例句数量不对应，debug！")
             return None
         print(len(self.words),len(self.sentences))
-        with open("words.txt", 'w',encoding=self.detected_encoding) as file:
+        with open("TxtDataFiles/words.txt", 'w',encoding=self.detected_encoding) as file:
             file.truncate()
             for w in self.words:
                 file.write(w + "\n")
-        with open("words_upload.txt", 'w',encoding=self.detected_encoding) as file:
+        with open("TxtDataFiles/words_upload.txt", 'w',encoding=self.detected_encoding) as file:
             file.truncate()
-        with open("words_repeat.txt", 'w',encoding=self.detected_encoding) as file:
+        with open("TxtDataFiles/words_repeat.txt", 'w',encoding=self.detected_encoding) as file:
             file.truncate()
 
         print("word",self.words)
@@ -1045,7 +1046,7 @@ class Economists:
         print("error",error_words)
         is_check = input("要不要检查有没有重复 不要打0: \n")
         if is_check != "0":
-            with open('vocabularies.data', 'rb') as file:
+            with open('TxtDataFiles/vocabularies.data', 'rb') as file:
                 self.my_dict = pickle.load(file)
         else:
             pass
@@ -1078,7 +1079,7 @@ class Economists:
                         self.repeat_words.append(self.words[i])
                     else:
                         self.repeat_words.append(self.words_origin[i])
-                    with open("words_repeat.txt","a", encoding='utf-8') as file:
+                    with open("TxtDataFiles/words_repeat.txt","a", encoding='utf-8') as file:
                         current_translation = translations[translations_num]
                         # except:
                         # print(self.words[i])
@@ -1116,7 +1117,7 @@ class Economists:
                 else:
             # if self.words[i] not in error_words:
             #         translations_num += 1
-                    with open("words_upload.txt","a",encoding='utf-8') as file:
+                    with open("TxtDataFiles/words_upload.txt","a",encoding='utf-8') as file:
                         # file.write(self.words[i] + " " + origin_pronoun + "\n")
                         # file.write(translations[i] + "\n")
                         # file.write(self.sentences[i] + "\n")
@@ -1180,14 +1181,14 @@ class Economists:
                 if self.words[i] in self.my_dict:
                     chongfu_num += 1
                     self.repeat_words.append(self.words[i])
-                    with open("words_repeat.txt","a",encoding='utf-8') as file:
+                    with open("TxtDataFiles/words_repeat.txt","a",encoding='utf-8') as file:
                         file.write("-------------------- error word " + str(i) + " --------------------" + "\n")
                         file.write(self.words[i] + "\n")
                         file.write("///// sentences " + str(i) + " /////" + "\n")
                         file.write(self.sentences[i] + "\n")
                 else:
                     up_word_content.append(self.words[i])
-                    with open("words_upload.txt","a",encoding='utf-8') as file:
+                    with open("TxtDataFiles/words_upload.txt","a",encoding='utf-8') as file:
                         file.write("-------------------- error word " + str(i) + " --------------------" + "\n")
                         file.write(self.words[i] + "\n")
                         file.write("///// sentences " + str(i) + " /////" + "\n")
@@ -1199,10 +1200,10 @@ class Economists:
 
         if chongfu_num + len(up_meaning) == len(self.words):
             input("都对应上了，准备上传notion，可以enter")
-        self.open_txt_in_pad("words_upload.txt")
-        self.open_txt_in_pad("words_repeat.txt")
-        # subprocess.run(['notepad.exe',"words_upload.txt"],check = True)
-        # subprocess.run(['notepad.exe',"words_repeat.txt"],check = True)
+        self.open_txt_in_pad("TxtDataFiles/words_upload.txt")
+        self.open_txt_in_pad("TxtDataFiles/words_repeat.txt")
+        # subprocess.run(['notepad.exe',"TxtDataFiles/words_upload.txt"],check = True)
+        # subprocess.run(['notepad.exe',"TxtDataFiles/words_repeat.txt"],check = True)
         # input("检查result.txt，如果没有问题就enter")
         # 设置tag color
         for content_num in range(len(up_word_content)):
@@ -1247,7 +1248,7 @@ class Economists:
         print("End, 恭喜你精读了一篇文章，这是您看的第" + str(self.passage_num) + "篇")
         print("Rest at the end, not in the middle.")
 
-        # with open('vocabularies.data', 'wb') as file:
+        # with open('TxtDataFiles/vocabularies.data', 'wb') as file:
         #     pickle.dump(self.my_dict, file)
     # for word in self.words:
         #     con = True
@@ -1277,7 +1278,7 @@ if __name__ == "__main__":
         test = Economists()
         test.run()
     # test.new_dict()
-    # with open('vocabularies.data', 'rb') as file:
+    # with open('TxtDataFiles/vocabularies.data', 'rb') as file:
     #     my_dict = pickle.load(file)
     # print(my_dict)
     # soup = test.get_cambridge_soup("suasion")

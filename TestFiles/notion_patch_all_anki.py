@@ -295,13 +295,13 @@ class Update_anki:
         print(r.text)
 
     def patch_update(self,response):
-        modified_time = os.path.getmtime("word_today.txt")
+        modified_time = os.path.getmtime("TxtDataFiles/word_today.txt")
         modified_datetime = datetime.datetime.fromtimestamp(modified_time)
         modified_datetime = modified_datetime.date()
         # 获取当前日期
         current_datetime = datetime.datetime.now().date()
         if modified_datetime != current_datetime:
-            with open("word_today.txt", "w") as file:
+            with open("TxtDataFiles/word_today.txt", "w") as file:
                 file.truncate()
         word_next_dict = {}
         word_level_dict = {}
@@ -329,7 +329,7 @@ class Update_anki:
             #     pass
             # 如果选了
             if KnowAll or KnowSome or ForgetAll:
-                with open("word_today.txt","a",encoding="utf-8") as file:
+                with open("TxtDataFiles/word_today.txt","a",encoding="utf-8") as file:
                     file.write(word + "\n")
                 checked_times += 1
                 print(word)

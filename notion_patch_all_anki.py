@@ -10,6 +10,10 @@ import os
 from collections import OrderedDict
 from datetime import datetime as dt
 from datetime import timedelta
+import multiprocessing
+import time
+import os
+import signal
 
 # short https://www.notion.so/58951b5a29544562a93fd0c1f5d7112f?v=316bed45c314462c84dca09b30578cea&pvs=4
 # query_id = "58951b5a29544562a93fd0c1f5d7112f"
@@ -338,12 +342,12 @@ class Update_anki:
             self.tomorrow = True
         print("start get response")
         response = self.DataBase_item_query(self.query_id)
-        modified_time = os.path.getmtime("word_today.txt")
+        modified_time = os.path.getmtime("TxtDataFiles/word_today.txt")
         modified_datetime = datetime.datetime.fromtimestamp(modified_time)
         modified_datetime = modified_datetime.date()
         # 获取当前日期
         if modified_datetime != dt.today().date():
-            with open("word_today.txt", "w") as file:
+            with open("TxtDataFiles/word_today.txt", "w") as file:
                 file.truncate()
         # self.word_next_dict = {}
 
@@ -378,7 +382,7 @@ class Update_anki:
                 word_selection = ""
                 if KnowAll:
                     word_selection = 'KnowAll'
-                    with open("word_today.txt", "a", encoding="utf-8") as file:
+                    with open("TxtDataFiles/word_today.txt", "a", encoding="utf-8") as file:
                         file.write(word + " |KnowAll""\n")
                     self.count_know_all += 1
                     self.knowall_list.append(dict)
@@ -388,7 +392,7 @@ class Update_anki:
                     next_str = self.next_day_on_level(next_level)
                 elif KnowSome:
                     word_selection = 'KnowSome'
-                    with open("word_today.txt", "a", encoding="utf-8") as file:
+                    with open("TxtDataFiles/word_today.txt", "a", encoding="utf-8") as file:
                         file.write(word + " |KnowSome""\n")
                     self.count_know_some += 1
                     self.knowsome_list.append(dict)
@@ -403,7 +407,7 @@ class Update_anki:
                     next_str = self.next_day_on_level(next_level)
                 elif ForgetAll:
                     word_selection = 'ForgetAll'
-                    with open("word_today.txt", "a", encoding="utf-8") as file:
+                    with open("TxtDataFiles/word_today.txt", "a", encoding="utf-8") as file:
                         file.write(word + " |ForgetAll\n")
                     self.count_forget_all += 1
                     self.forgetall_list.append(dict)
@@ -448,7 +452,8 @@ class Update_anki:
                 }
                 # must change
                 self.patch_one_data(data,page_id)
-                self.checked_move_to_today(dict,word_selection)
+                # self.checked_move_to_today(dict,word_selection)
+                self.run_upload_with_timeout(dict,word_selection)
 
             # 如果没选
             else:
@@ -616,7 +621,7 @@ class Update_anki:
             axs[0, 1].set_title(title)
 
         today_word_level_dict = {"KnowAll":0,"KnowSome":0,"ForgetAll":0}
-        with open("word_today.txt","r",encoding="utf-8") as file:
+        with open("TxtDataFiles/word_today.txt","r",encoding="utf-8") as file:
             today_word_levels = file.readlines()
         for today_word_level in today_word_levels:
             word_level = today_word_level.strip('\n')
@@ -645,7 +650,7 @@ class Update_anki:
 
         plt.tight_layout(pad=2.0)  # 增加子图间的纵向距离
         today_str = date.today().strftime('%Y-%m-%d')
-        file_path = today_str + ".png"
+        file_path = "StatisticsPics/"+ today_str + ".png"
         plt.savefig(file_path)
         plt.show(block=True)
 
@@ -711,6 +716,18 @@ class Update_anki:
         print(r.text)
         print("导入" + word_content + " 到today，完成")
 
+    def run_upload_with_timeout(self,dict,word_selection):
+        while True:
+            upload_process = multiprocessing.Process(target=self.checked_move_to_today(dict,word_selection))
+            upload_process.start()
+            upload_process.join(timeout=15)  # 主进程等待上传进程最多10秒
+
+            if not upload_process.is_alive():
+                break  # 如果上传进程已完成，退出循环
+            else:
+                print("函数执行时间超过10秒，停止当前进程并重新执行程序")
+                os.kill(upload_process.pid, signal.SIGTERM)  # 终止上传进程
+
     def today_delete_before(self):
         response = self.DataBase_item_query(self.today_query_id)
         # 判断是否有之前的内容，如果有就清空
@@ -753,8 +770,9 @@ if __name__ == "__main__":
 
     # print
     # https://www.notion.so/56b03c71d936493ab95a789cee835112?v=08662e1ef850458bb90b333d1f56fa60&pvs=4
+    # https://www.notion.so/35907aea3e044dc29996ff4b070b6836?v=d041ee4b1708414a90bbd4f508c8026d&pvs=4
     a = Update_anki()
-    response = a.DataBase_item_query("56b03c71d936493ab95a789cee835112")
+    response = a.DataBase_item_query("35907aea3e044dc29996ff4b070b6836")
     a.DataBase_item_delete(response)
 
     # response = None

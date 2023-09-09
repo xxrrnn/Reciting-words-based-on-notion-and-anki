@@ -1,6 +1,9 @@
 token.ini
-words.txt
-words_repeat.txt
-words_upload.txt
-vocabularies.data
-passage.txt
+TxtDataFiles/words.txt
+TxtDataFiles/words_repeat.txt
+TxtDataFiles/words_upload.txt
+TxtDataFiles/vocabularies.data
+TxtDataFiles/passage.txt
+*.png
+*.data
+TxtDataFiles
